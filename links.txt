@@ -1,5 +1,0 @@
-{
-	links: [
-		http://www.ex.ua/53349605
-	]
-}
