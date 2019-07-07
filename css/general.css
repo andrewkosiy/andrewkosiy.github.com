@@ -1,0 +1,233 @@
+body {
+  font-family: 'Rajdhani', sans-serif;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../img/terms-background.png") top center no-repeat;
+}
+ul {
+  list-style-type: none;
+}
+h1 {
+  color: #448e28;
+  font-size: 62px;
+  font-weight: bold;
+  line-height: 72px;
+  text-transform: uppercase;
+  letter-spacing: -0.31px;
+}
+.header {
+  position: relative;
+  height: 274px;
+}
+.header .container {
+  margin-left: 135px;
+  margin-right: 135px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.header .row {
+  margin-left: -17px;
+  margin-right: -17px;
+}
+.header-content {
+  padding-top: 112px;
+}
+.header-content h1 {
+  color: #448E28;
+  font-family: Rajdhani;
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: -0.19px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header .logo {
+  position: absolute;
+  top: 21px;
+  left: 30px;
+}
+.header .menu {
+  float: right;
+}
+.header .menu ul {
+  float: left;
+  padding-right: 27px;
+  padding-top: 24px;
+}
+.header .menu li {
+  display: inline;
+  padding-left: 27px;
+}
+.header .menu a {
+  color: #234D70;
+  font-family: Rajdhani;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.08px;
+  line-height: 21px;
+  position: relative;
+}
+.header .menu a:hover,
+.header .menu a:focus,
+.header .menu a:visited {
+  text-decoration: none;
+}
+.header .menu a:hover:before {
+  content: url("../img/left-bkt.svg");
+  position: absolute;
+  left: -15px;
+  top: 1px;
+}
+.header .menu a:hover:after {
+  content: url("../img/right-bkt.svg");
+  position: absolute;
+  left: -15px;
+  top: 1px;
+}
+.header .menu li:nth-child(2) a:hover:after {
+  left: 5px;
+}
+.header .menu li:nth-child(3) a:hover:after {
+  left: 10px;
+}
+.header .menu li:nth-child(4) a:hover:after {
+  left: 15px;
+}
+.header .menu li:nth-child(5) a:hover:after {
+  left: 12px;
+}
+.header .menu button {
+  height: 36px;
+  width: 130px;
+  border-radius: 2px;
+  background-color: #305791;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  color: #FFF;
+  font-family: Rajdhani;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: -0.08px;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 4px;
+  padding-left: 5px;
+  margin-top: 16px;
+  margin-right: 57px;
+}
+.box {
+  width: 926px;
+  border: 1px solid #EBF0F4;
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 91px 96px 91px 96px;
+  color: #4A4A4A;
+  font-family: Lato;
+  font-size: 15px;
+  letter-spacing: -0.07px;
+  line-height: 26px;
+}
+.box .container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.box .row {
+  padding: 0;
+  margin: 0;
+}
+.box .col-md-12 {
+  padding: 0;
+}
+.box h4 {
+  color: #234D70;
+  font-family: Rajdhani;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -0.11px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 28px;
+}
+.box p {
+  padding-top: 12px;
+}
+.box h5 {
+  margin-top: 34px;
+  margin-bottom: -8px;
+  font-weight: 900;
+  font-size: 15px;
+}
+.footer {
+  position: relative;
+  margin-top: 14px;
+  height: 427px;
+}
+.footer-content {
+  padding-top: 74px;
+  height: 356px;
+  background-color: #142c48;
+}
+.footer-content .headline {
+  margin-bottom: 14px;
+  color: #85A6B9;
+  font-family: Rajdhani;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: -0.07px;
+}
+.footer-content .home {
+  margin-left: 8px;
+}
+.footer-content .platform {
+  margin-left: 6px;
+}
+.footer-content .resources,
+.footer-content .solutions,
+.footer-content .company {
+  margin-left: -6px;
+}
+.footer-content ul {
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 23px;
+  font-family: Lato;
+  font-size: 14px;
+  letter-spacing: -0.07px;
+  font-weight: 400;
+  color: #DCE5EC;
+  line-height: 17px;
+}
+.footer-floor {
+  padding-top: 27px;
+  height: 71px;
+  background-color: #0e2133;
+}
+.footer-floor a,
+.footer-floor p {
+  color: #DCE5EC;
+  font-family: Rajdhani;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.07px;
+  line-height: 18px;
+}
+.footer-floor .terms {
+  margin-left: 3px;
+}
+.footer-floor p {
+  margin-left: -5px;
+}
+.footer .logo {
+  position: absolute;
+  top: 67px;
+  left: 40px;
+}
