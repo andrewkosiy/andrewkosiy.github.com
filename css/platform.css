@@ -402,7 +402,22 @@ section.features .trial-button button {
   height: 356px;
   background-color: #142c48;
 }
-.footer-content .headline {
+.footer .home {
+  margin-left: 9px;
+}
+.footer .platform {
+  margin-left: 7px;
+}
+.footer .resources {
+  margin-left: 0px;
+}
+.footer .solutions {
+  margin-left: -7px;
+}
+.footer .company {
+  margin-left: -12px;
+}
+.footer h5 {
   margin-bottom: 14px;
   color: #85A6B9;
   font-family: Rajdhani;
@@ -412,18 +427,18 @@ section.features .trial-button button {
   text-transform: uppercase;
   letter-spacing: -0.07px;
 }
-.footer-content .home {
-  margin-left: 8px;
+.footer a {
+  display: inline-block;
+  margin-top: 2px;
+  padding-bottom: 22px;
+  color: #DCE5EC;
+  font-family: Lato;
+  font-size: 14px;
+  letter-spacing: -0.07px;
+  line-height: 17px;
 }
-.footer-content .platform {
-  margin-left: 6px;
-}
-.footer-content .resources,
-.footer-content .solutions,
-.footer-content .company {
-  margin-left: -6px;
-}
-.footer-content ul {
+.footer ul {
+  margin-top: -10px;
   padding-left: 0;
   margin-left: 0;
   margin-bottom: 23px;
