@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reposify</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/resources.css">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="header">
+    <div class="logo">
+        <img src="img/logo-top.png" alt="Logo">
+    </div>
+    <div class="row menu">
+        <ul class="header-menu">
+            <li class="header-home"><a href="/">Home</a></li>
+            <li class="header-platform">
+                <div class="modals platform">
+                    <ul>
+                        <li><a href="/platform">Overview</a></li>
+                        <li><a href="/platform">External Surface Management</a></li>
+                        <li><a href="/platform">Comprehensive Analysis</a></li>
+                        <li><a href="/platform">Risk Insights & Prioritization</a></li>
+                        <li><a href="/platform">Inspect & Repair</a></li>
+                        <li><a href="/platform">Product Features</a></li>
+                    </ul>
+                </div>
+                <a href="/platform">Platform</a>
+            </li>
+            <li class="header-solutions"><a href="/solutions">Solutions</a></li>
+            <li class="header-resources active">
+                <div class="modals resources">
+                    <ul>
+                        <li><a href="/resources">Datasheet</a></li>
+                        <li><a href="/resources">From The News</a></li>
+                        <li><a href="/resources">Integrations</a></li>
+                    </ul>
+                </div>
+                <a href="/resources">Resources</a>
+            </li>
+            <li class="header-company"><a href="/about">Company</a></li>
+        </ul>
+        <button>Free trial</button>
+    </div>
+
+    <div class="header-content">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h2>Resources</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tabs">
+    <div class="container">
+        <!-- Nav tabs -->
+        <div class="row tabs-header">
+            <div class="col-md-6 col-md-offset-3">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active tag">
+                        <a href="#datasheet" aria-controls="datasheet" role="tab" data-toggle="tab">DATASHEET</a>
+                    </li>
+                    <li class="tag">
+                        <a href="#news" data-toggle="tab">FROM THE NEWS</a>
+                    </li>
+                    <li class="tag">
+                        <a href="#integrations" aria-controls="integrations" role="tab"
+                           data-toggle="tab">INTEGRATIONS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="datasheet">
+                <div class="row">
+
+                    <div class="col-md-6 datasheet-left">
+                        <img class="datasheet" src="img/resources/datasheet.png" alt="datasheet">
+                        <a class="download" href="#">Download this data sheet to learn more about<br>Reposify and
+                            our external surface management SaaS<br>solution.</a>
+                    </div>
+
+                    <div class="col-md-6 datasheet-form">
+                        <div class="row description">
+                            <p>Fill in the below form and we will send<br>the file to your mailbox right away:</p>
+                        </div>
+
+                        <form action="#">
+                            <div class="row name-row">
+                                <div class="col-md-6">
+                                    <div class="first_name form-field">
+                                        <legend>First Name*</legend>
+                                        <input type="text" placeholder="Your name" class="name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="last_name form-field">
+                                        <legend>Last Name*</legend>
+                                        <input type="text" placeholder="Your last name" class="name">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <legend>Company Email*</legend>
+                                <input type="text" placeholder="e.g. name@example.com">
+                            </div>
+
+                            <div class="company form-field">
+                                <legend>Company Name*</legend>
+                                <input type="text" placeholder="Your Company Name">
+                            </div>
+
+                            <div class="phone form-field">
+                                <legend>Phone Number</legend>
+                                <input type="text" placeholder="Your phone number">
+                            </div>
+
+                            <div class="form-field information">
+                                <input type="checkbox" id="agree" name="agree">
+                                <label for="agree">I agree to receive information from Reposify</label>
+                            </div>
+
+                            <button>Download Datasheet</button>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="tab-pane" id="news">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2>Under The Looking Glass</h2>
+                            <p class="green">Join us and take a good hard look at some infamous cyber attack cases that
+                                could have easily been prevented using Reposify’s CyberSecurity SaaS platform.</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="row">
+                            <div class="col-md-6 card">
+                                <div class="date">
+                                    <p class="month">Nov</p>
+                                    <p class="year">2014</p>
+                                </div>
+                                <div class="info">
+                                    <h3><b>Sony Pictures</b></h3>
+                                    <p>Apache Struts vulnerability allowed<br>a breach to take place at Equifax</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 card">
+                                <div class="date">
+                                    <p class="month">May</p>
+                                    <p class="year">2017</p>
+                                </div>
+                                <div class="info">
+                                    <h3><b>Unpatched Software</b> - Equifax</h3>
+                                    <p>Apache Struts vulnerability allowed<br>a breach to take place at Equifax</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 card">
+                                <div class="date">
+                                    <p class="month">Jun</p>
+                                    <p class="year">2017</p>
+                                </div>
+                                <div class="info">
+                                    <h3><b>Misconfigured S3</b> - Verizon Leak</h3>
+                                    <p>Data of 6 million users leaked<br>from AWS S3 Bucket</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 card">
+                                <div class="date">
+                                    <p class="month">Jun</p>
+                                    <p class="year">2017</p>
+                                </div>
+                                <div class="info">
+                                    <h3><b>Sensitive Port Open</b> - Boeing WannaCry</h3>
+                                    <p>Production servers were hit by WannaCry<br>in Airplanes division</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 card">
+                                <div class="date">
+                                    <p class="month">Jul</p>
+                                    <p class="year">2018</p>
+                                </div>
+                                <div class="info">
+                                    <h3><b>Exposed File Server</b> - Level One Robotics</h3>
+                                    <p>Data breach exposes trade secrets of<br>carmakers GM, Ford, Tesla, Toyota</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 card">
+                                <div class="date">
+                                    <p class="month">May</p>
+                                    <p class="year">2019</p>
+                                </div>
+                                <div class="info">
+                                    <h3><b>Exposed Database</b> - Government of India</h3>
+                                    <p> 275M records of India's citizens leaked</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p class="green">It is crucial for every organization to gain full visibility of the
+                                uncharted territories in their company’s visible and invisible perimeter and stay on top
+                                of their external surface to avoid huge costs, setback, damage their brand reputation
+                                etc.</p>
+                        </div>
+                    </div>
+                    <div class="row text-center trial-button">
+                        <div class="col-md-4 col-md-offset-4">
+                            <button>Start free trial</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="integrations">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 text-center">
+                            <h2>Integrate Reposify with your existing security stack solutions to push remediation steps
+                                and secure your external surface in no time.</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 rectangle text-center">
+                            <img src="img/resources/logo1.png" alt="logo1">
+                            <p>This is a short explanation about how Reposify is integrating with this specific product
+                                or service and how the user will benefit from this integration.</p>
+                        </div>
+                        <div class="col-md-3 rectangle text-center">
+                            <img src="img/resources/logo2.png" alt="logo1">
+                            <p>This is a short explanation about how Reposify is integrating with this specific product
+                                or service and how the user will benefit from this integration.</p>
+                        </div>
+                        <div class="col-md-3 rectangle text-center">
+                            <img src="img/resources/logo3.png" alt="logo1">
+                            <p>This is a short explanation about how Reposify is integrating with this specific product
+                                or service and how the user will benefit from this integration.</p>
+                        </div>
+                        <div class="col-md-3 rectangle text-center">
+                            <img src="img/resources/logo4.png" alt="logo1">
+                            <p>This is a short explanation about how Reposify is integrating with this specific product
+                                or service and how the user will benefit from this integration.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 rectangle text-center">
+                            <img src="img/resources/logo5.png" alt="logo1">
+                            <p>This is a short explanation about how Reposify is integrating with this specific product
+                                or service and how the user will benefit from this integration.</p>
+                        </div>
+                        <div class="col-md-3 rectangle text-center">
+                            <img src="img/resources/logo6.png" alt="logo1">
+                            <p>This is a short explanation about how Reposify is integrating with this specific product
+                                or service and how the user will benefit from this integration.</p>
+                        </div>
+                        <div class="col-md-3 rectangle text-center">
+                            <img src="img/resources/logo7.png" alt="logo1">
+                            <p>This is a short explanation about how Reposify is integrating with this specific product
+                                or service and how the user will benefit from this integration.</p>
+                        </div>
+                        <div class="col-md-3 rectangle text-center">
+                            <img src="img/resources/logo8.png" alt="logo1">
+                            <p>This is a short explanation about how Reposify is integrating with this specific product
+                                or service and how the user will benefit from this integration.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 rectangle text-center">
+                            <img src="img/resources/logo9.png" alt="logo1">
+                            <p>This is a short explanation about how Reposify is integrating with this specific product
+                                or service and how the user will benefit from this integration.</p>
+                        </div>
+                        <div class="col-md-3 rectangle text-center">
+                            <img src="img/resources/logo10.png" alt="logo1">
+                            <p>This is a short explanation about how Reposify is integrating with this specific product
+                                or service and how the user will benefit from this integration.</p>
+                        </div>
+                        <div class="col-md-3 rectangle text-center">
+                            <img src="img/resources/logo11.png" alt="logo1">
+                            <p>This is a short explanation about how Reposify is integrating with this specific product
+                                or service and how the user will benefit from this integration.</p>
+                        </div>
+                        <div class="col-md-3 rectangle text-center">
+                            <img src="img/resources/logo12.png" alt="logo1">
+                            <p>This is a short explanation about how Reposify is integrating with this specific product
+                                or service and how the user will benefit from this integration.</p>
+                        </div>
+                    </div>
+                    <div class="row button-row">
+                        <div class="col-md-12 text-center">
+                            <button>Start free trial</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="logo">
+        <img src="img/logo-bottom.png" alt="Logo">
+    </div>
+
+    <div class="footer-content">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-1 col-md-offset-1">
+                    <ul class="home">
+                        <li><h5><a href="/">Home</a></h5>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="platform">
+                        <li><h5><a href="/platform">Platform</a></h5></li>
+                        <li><a href="/platform">Overview</a></li>
+                        <li><a href="/platform">External Surface Management</a></li>
+                        <li><a href="/platform">Comprehensive Analysis</a></li>
+                        <li><a href="/platform">Risk Insights & Prioritization</a></li>
+                        <li><a href="/platform">Inspect & Repair</a></li>
+                        <li><a href="/platform">Product Features</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <ul class="resources">
+                        <li><h5><a href="/resources">Resources</a></h5></li>
+                        <li><a href="/resources">DataSheet</a></li>
+                        <li><a href="/resources">From The News</a></li>
+                        <li><a href="/resources">Integrations</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <ul class="solutions">
+                        <li><h5><a href="#">Support</a></h5></li>
+                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">API Status</a></li>
+                        <li><a href="#">Github</a></li>
+                        <li><a href="/security">Security</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <ul class="company">
+                        <li><h5><a href="/about">Company</a></h5></li>
+                        <li><a href="/about">About us</a></li>
+                        <li><a href="/events">Events</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-floor">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-2 col-md-offset-2">
+                    <a class="terms" href="/terms">Terms and conditions</a>
+                </div>
+
+                <div class="col-md-2 col-md-offset-1">
+                    <a href="/privacy">Privacy policy</a>
+                </div>
+
+                <div class="col-md-3">
+                    <p>© 2019 Reposify Ltd. All Rights Reserved.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
