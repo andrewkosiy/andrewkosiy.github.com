@@ -19,7 +19,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #555;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   body {
     width: 375px;
     background: url("../img/home/mobile-dots2.png") center 2808px no-repeat, url("../img/home/mobile-dots1.png") center 1107px no-repeat, url("../img/home/mobile-background.png") top center no-repeat;
@@ -36,7 +36,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: -0.31px;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   h1 {
     font-size: 47px;
     line-height: 56px;
@@ -57,7 +57,7 @@ button:active {
   padding-right: 0;
   height: 1000px;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   .header .container.header-content {
     padding-top: 82px;
     width: 320px;
@@ -81,7 +81,7 @@ button:active {
   line-height: 28px;
   letter-spacing: -0.01px;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   .header-content p {
     font-size: 16px;
     line-height: 25px;
@@ -92,7 +92,7 @@ button:active {
   padding-top: 20px;
   padding-left: 4px;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   .header-description {
     padding-top: 0;
   }
@@ -112,7 +112,7 @@ button:active {
   border: none;
   box-shadow: 0 16px 24px 0 rgba(31, 55, 75, 0.25);
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   .header-button {
     margin-top: 256px;
     padding-top: 3px;
@@ -128,7 +128,7 @@ button:active {
   top: 21px;
   left: 30px;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   .header .logo {
     width: 100%;
     top: 18px;
@@ -140,7 +140,7 @@ button:active {
   position: relative;
   z-index: 10;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   .header .menu {
     display: none;
   }
@@ -374,7 +374,7 @@ button:active {
   line-height: 27px;
   font-weight: 600;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   .header {
     width: 100%;
     height: 712px;
@@ -389,7 +389,7 @@ section.second {
   padding-top: 140px;
   margin-left: -2px;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   section.second {
     padding-top: 66px;
     margin: 0;
@@ -403,7 +403,7 @@ section.second h2 {
   line-height: 50px;
   text-transform: uppercase;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   section.second h2 {
     width: 340px;
     margin-left: auto;
@@ -424,7 +424,7 @@ section.second p {
   margin-left: auto;
   margin-right: auto;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   section.second p {
     padding-top: 6px;
     line-height: 26px;
@@ -529,7 +529,7 @@ section.list .row:nth-child(4) img {
 section.list .row:nth-child(4) p {
   padding-top: 9px;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   section.list {
     margin-bottom: 100px;
     text-align: center;
@@ -678,7 +678,7 @@ section.world .polygon:nth-child(4) .pre-header {
   width: 100%;
   top: -48px;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   section.world {
     margin-top: 0;
     height: 1230px;
@@ -784,7 +784,7 @@ section.mapping p.colored {
   margin-top: -13px;
   font-weight: bold;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   section.mapping {
     padding-top: 98px;
   }
@@ -879,7 +879,7 @@ section.solutions .row:nth-child(2) button {
   margin-top: 21px;
   letter-spacing: 0.4px;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   section.solutions {
     padding-top: 0;
   }
@@ -1045,7 +1045,7 @@ section.solutions .row:nth-child(2) button {
   text-transform: uppercase;
   border: none;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   .integrate {
     height: unset;
     margin-top: 72px;
@@ -1150,7 +1150,7 @@ section.solutions .row:nth-child(2) button {
   text-align: center;
   text-transform: uppercase;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   .gartner {
     font-size: 15px;
     letter-spacing: -0.1px;
@@ -1253,7 +1253,7 @@ section.solutions .row:nth-child(2) button {
   top: 48px;
   left: 40px;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   .footer {
     height: 881px;
     background-color: #142c48;
