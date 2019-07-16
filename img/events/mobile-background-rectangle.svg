@@ -1,0 +1,14 @@
+
+<svg width="375px" height="4328px" viewBox="0 0 375 4328" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="99.3427998%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F0F4F7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile---Platform" fill="url(#linearGradient-1)">
+            <rect id="Rectangle-Copy-9" transform="translate(188.000000, 2164.000000) scale(1, -1) translate(-188.000000, -2164.000000) " x="0" y="0" width="376" height="4328"></rect>
+        </g>
+    </g>
+</svg>
