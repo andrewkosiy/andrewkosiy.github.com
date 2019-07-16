@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reposify</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600&display=swap" rel="stylesheet">
@@ -15,6 +16,21 @@
     <div class="logo">
         <img src="img/logo-top.png" alt="Logo">
     </div>
+
+    <button class="menu-open" id="menu-open">
+        <svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Header---Home-mobile" transform="translate(-331.000000, -20.000000)" stroke="#0E2133" stroke-width="2">
+                    <g id="Group" transform="translate(331.000000, 21.000000)">
+                        <path d="M23.4132543,0.413793103 L0,0.413793103" id="Path-2"></path>
+                        <path d="M23.4132543,9.03448276 L0,9.03448276" id="Path-2-Copy"></path>
+                        <path d="M23.4132543,17.6551724 L0,17.6551724" id="Path-2-Copy-2"></path>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </button>
+
     <div class="row menu">
         <ul class="header-menu">
             <li class="header-home active"><a href="/">Home</a></li>
@@ -47,22 +63,182 @@
         <button>Free trial</button>
     </div>
 
+    <div class="mobile-menu" id="menu-root">
+        <div class="logo">
+            <img src="img/logo-top.png" alt="Logo">
+        </div>
+
+        <button class="close">
+            <svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="mobile---Menu" transform="translate(-333.000000, -19.000000)" stroke="#0E2133" stroke-width="2">
+                        <g id="Group" transform="translate(334.000000, 20.000000)">
+                            <path d="M0,0.434782609 L18.9576151,19.3923977" id="Path-3"></path>
+                            <path d="M0,19.3923977 L18.9576151,0.434782609" id="Path-3-Copy-3"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
+
+        <div class="menu-list">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li id="menu-platform-open">
+                    <span>Platform</span>
+                    <span class="next">
+                    <svg width="9px" height="13px" viewBox="0 0 9 13" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                           stroke-linecap="square">
+                            <g id="mobile---Menu" transform="translate(-257.000000, -174.000000)" stroke="#85A6B9"
+                               stroke-width="2">
+                                <g id="Group-2" transform="translate(259.000000, 175.000000)">
+                                    <path d="M0.218211288,10.1741864 L4.95761505,5.43478261"
+                                          id="Path-3-Copy-3"></path>
+                                    <path d="M0.218211288,0.695378846 L4.95761505,5.43478261"
+                                          id="Path-3-Copy-4"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+                </li>
+                <li>
+                    <a href="/solutions">Solution</a>
+                </li>
+                <li id="menu-resources-open">
+                    <span>Resources</span>
+                    <span class="next">
+                    <svg width="9px" height="13px" viewBox="0 0 9 13" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                           stroke-linecap="square">
+                            <g id="mobile---Menu" transform="translate(-257.000000, -174.000000)" stroke="#85A6B9"
+                               stroke-width="2">
+                                <g id="Group-2" transform="translate(259.000000, 175.000000)">
+                                    <path d="M0.218211288,10.1741864 L4.95761505,5.43478261"
+                                          id="Path-3-Copy-3"></path>
+                                    <path d="M0.218211288,0.695378846 L4.95761505,5.43478261"
+                                          id="Path-3-Copy-4"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+                </li>
+                <li id="menu-company-open">
+                    <a href="/about">Company</a>
+                </li>
+            </ul>
+        </div>
+
+        <button class="trial-button">Free trial</button>
+    </div>
+
+    <div class="mobile-menu" id="menu-platform">
+        <button class="back">
+            <svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="mobile---Menu---platform" transform="translate(-19.000000, -19.000000)" stroke="#0E2133" stroke-width="2">
+                        <g id="Group-Copy" transform="translate(20.000000, 20.000000)">
+                            <path d="M0.478807525,9.91359013 L9.95761505,19.3923977" id="Path-3" stroke-linecap="square"></path>
+                            <path d="M0.478807525,9.91359013 L9.95761505,0.434782609" id="Path-3-Copy-3" stroke-linecap="square"></path>
+                            <path d="M0.478807525,10 L31.2919922,10" id="Path-2"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
+
+        <h3 class="menu-title">Platform</h3>
+
+        <button class="close">
+            <svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="mobile---Menu" transform="translate(-333.000000, -19.000000)" stroke="#0E2133" stroke-width="2">
+                        <g id="Group" transform="translate(334.000000, 20.000000)">
+                            <path d="M0,0.434782609 L18.9576151,19.3923977" id="Path-3"></path>
+                            <path d="M0,19.3923977 L18.9576151,0.434782609" id="Path-3-Copy-3"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
+
+        <div class="menu-list">
+            <ul>
+                <li><a href="/platform">Overview</a></li>
+                <li><a href="/platform">External Surface Management</a></li>
+                <li><a href="/platform">Comprehensive Analysis</a></li>
+                <li><a href="/platform">Risk Insights & Prioritization</a></li>
+                <li><a href="/platform">Inspect & Repair</a></li>
+                <li><a href="/platform">Product Features</a></li>
+            </ul>
+        </div>
+
+        <button class="trial-button">Free trial</button>
+    </div>
+
+    <div class="mobile-menu" id="menu-resources">
+        <button class="back">
+            <svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="mobile---Menu---platform" transform="translate(-19.000000, -19.000000)" stroke="#0E2133" stroke-width="2">
+                        <g id="Group-Copy" transform="translate(20.000000, 20.000000)">
+                            <path d="M0.478807525,9.91359013 L9.95761505,19.3923977" id="Path-3" stroke-linecap="square"></path>
+                            <path d="M0.478807525,9.91359013 L9.95761505,0.434782609" id="Path-3-Copy-3" stroke-linecap="square"></path>
+                            <path d="M0.478807525,10 L31.2919922,10" id="Path-2"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
+
+        <h3 class="menu-title">Platform</h3>
+
+        <button class="close">
+            <svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="mobile---Menu" transform="translate(-333.000000, -19.000000)" stroke="#0E2133" stroke-width="2">
+                        <g id="Group" transform="translate(334.000000, 20.000000)">
+                            <path d="M0,0.434782609 L18.9576151,19.3923977" id="Path-3"></path>
+                            <path d="M0,19.3923977 L18.9576151,0.434782609" id="Path-3-Copy-3"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
+
+        <div class="menu-list">
+            <ul>
+                <li><a href="/resources">Datasheet</a></li>
+                <li><a href="/resources">From The News</a></li>
+                <li><a href="/resources">Integrations</a></li>
+            </ul>
+        </div>
+
+        <button class="trial-button">Free trial</button>
+    </div>
+
     <div class="container header-content">
         <div class="row ">
-            <div class="col-md-5">
+            <div class="col-md-5 col-sm-12">
                 <h1>Take Control of Your Assets</h1>
             </div>
         </div>
 
         <div class="row header-description">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12">
                 <p>Our SaaS platform ensures organizations everywhere are able to effortlessly manage their external
                     surface.</p>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12">
                 <button class="header-button">Free trial</button>
             </div>
         </div>
@@ -105,6 +281,20 @@
             </g>
         </svg>
     </div>
+    <div class="mobile-lines">
+        <svg width="74px" height="1853px" viewBox="0 0 74 1853" version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                <g id="Mobile---Homepage" transform="translate(-151.000000, -1397.000000)" stroke="#7EB346"
+                   stroke-width="3">
+                    <path d="M153,1398.5 L223,1398.5" id="Line"></path>
+                    <path d="M153,2023.5 L223,2023.5" id="Line-Copy"></path>
+                    <path d="M153,2619.5 L223,2619.5" id="Line-Copy-2"></path>
+                    <path d="M153,3248.5 L223,3248.5" id="Line-Copy-3"></path>
+                </g>
+            </g>
+        </svg>
+    </div>
 
     <div class="content">
         <div class="row">
@@ -114,8 +304,8 @@
             <div class="col-md-5">
                 <div class="description">
                     <h3>External Surface Management</h3>
-                    <p>Manage your external surface, secure your perimeter,<br>and avoid possible threats and
-                        configuration issues</p>
+                    <p>Manage your external surface, secure your perimeter, and avoid possible threats and configuration
+                        issues</p>
                     <button>Learn more</button>
                 </div>
             </div>
@@ -124,7 +314,7 @@
             <div class="col-md-5 col-md-offset-2">
                 <div class="description">
                     <h3>Comprehensive Analysis</h3>
-                    <p>Explore your company’s managed and unmanaged assets<br>and blind spots to minimize your global
+                    <p>Explore your company’s managed and unmanaged assets and blind spots to minimize your global
                         exposure</p>
                     <button>Learn more</button>
                 </div>
@@ -140,7 +330,7 @@
             <div class="col-md-5">
                 <div class="description">
                     <h3>Risk Insights & Prioritization</h3>
-                    <p>Identify your security posture and exposure level before<br>an attacker does, and prioritize your
+                    <p>Identify your security posture and exposure level before an attacker does, and prioritize your
                         To Do’s</p>
                     <button>Learn more</button>
                 </div>
@@ -150,7 +340,7 @@
             <div class="col-md-5 col-md-offset-2">
                 <div class="description">
                     <h3>Inspect & Repair</h3>
-                    <p>Get actionable remediation steps integrated into your<br>security stack to resolve the issue in
+                    <p>Get actionable remediation steps integrated into your security stack to resolve the issue in
                         no time</p>
                     <button>Learn more</button>
                 </div>
@@ -169,10 +359,10 @@
             <h2>
                 The World HAs Changed
             </h2>
-            <p>
-                With billions of assets and devices all weaved in the tangled web of cloud providers,<br>subsidiaries
-                and third-party vendors, companies are now facing new challenges in<br>discovering, mapping, managing
-                and protecting servers and IoT that are scattered<br>across the entire internet.
+            <p class="world-text">
+                With billions of assets and devices all weaved in the tangled web of cloud providers, subsidiaries
+                and third-party vendors, companies are now facing new challenges in discovering, mapping, managing
+                and protecting servers and IoT that are scattered across the entire internet.
             </p>
             <h3>Many potential risks arise and left<br>
                 unattended, or simply unnoticed.</h3>
@@ -325,8 +515,9 @@
     </div>
     <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center">
-            <h2>We are mapping the entire<br>internet on a daily basis</h2>
-            <p>We have thousands of servers around the world that we use to map and index the entire internet, monitoring
+            <h2>We are mapping the entire internet on a daily basis</h2>
+            <p>We have thousands of servers around the world that we use to map and index the entire internet,
+                monitoring
                 and classifying the exposed assets of the world, checking for data leakage and searching the surface
                 for potential security and configuration issues.</p>
             <p class="colored">We automatically compile and create your inventory for you to manage.</p>
@@ -341,9 +532,9 @@
         </div>
         <div class="col-md-6">
             <h3>Give yourself an advantage</h3>
-            <p>Our system allows you to zoom in and explore the uncharted<br>territories in your company’s visible and
-                invisible perimeter, discover<br>your assets and global external surface, keep track of your supply<br>chain’s
-                security standards, assess merger and acquisition targets, and<br>so much more with just a few clicks.
+            <p>Our system allows you to zoom in and explore the uncharted territories in your company’s visible and
+                invisible perimeter, discover your assets and global external surface, keep track of your supply chain’s
+                security standards, assess merger and acquisition targets, and so much more with just a few clicks.
             </p>
             <button>Our Solutions</button>
         </div>
@@ -351,10 +542,10 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-2">
             <h3>Maximize your visibility</h3>
-            <p>Take an Xray look into your company’s internet-exposed<br>environment and draw actionable remediation
-                steps within mere<br>minutes using our innovative asset classification & association<br>mechanism, risk
-                prioritization algorithm, security stack<br>integrations, global perimeter insights, and many more of
-                our<br>platform’s invaluable features.</p>
+            <p>Take an Xray look into your company’s internet-exposed environment and draw actionable remediation
+                steps within mere minutes using our innovative asset classification & association mechanism, risk
+                prioritization algorithm, security stack integrations, global perimeter insights, and many more of
+                our platform’s invaluable features.</p>
             <button>Our Features</button>
         </div>
         <div class="col-md-2">
@@ -383,32 +574,32 @@
             <div class="col-md-3">
                 <div class="box box-first">
                     <img class="stack1" src="img/home/stack1.png" alt="stack1">
-                    <p>This is a short explanation about <br> how Reposify is integrating with <br> this specific
-                        product or service <br> and how the user will benefit <br> from this integration.</p>
+                    <p>This is a short explanation about how Reposify is integrating with this specific
+                        product or service and how the user will benefit from this integration.</p>
                 </div>
             </div>
 
             <div class="col-md-3">
                 <div class="box box-second">
                     <img class="stack2" src="img/home/stack2.png" alt="stack2">
-                    <p>This is a short explanation about <br> how Reposify is integrating with <br> this specific
-                        product or service <br> and how the user will benefit <br> from this integration.</p>
+                    <p>This is a short explanation about how Reposify is integrating with this specific
+                        product or service and how the user will benefit from this integration.</p>
                 </div>
             </div>
 
             <div class="col-md-3">
                 <div class="box box-third">
                     <img class="stack3" src="img/home/stack3.png" alt="stack3">
-                    <p>This is a short explanation about <br> how Reposify is integrating with <br> this specific
-                        product or service <br> and how the user will benefit <br> from this integration.</p>
+                    <p>This is a short explanation about how Reposify is integrating with this specific
+                        product or service and how the user will benefit from this integration.</p>
                 </div>
             </div>
 
             <div class="col-md-3">
                 <div class="box box-fourth">
                     <img class="stack4" src="img/home/stack4.png" alt="stack4">
-                    <p>This is a short explanation about <br> how Reposify is integrating with <br> this specific
-                        product or service <br> and how the user will benefit <br> from this integration..</p>
+                    <p>This is a short explanation about how Reposify is integrating with this specific
+                        product or service and how the user will benefit from this integration..</p>
                 </div>
             </div>
 
@@ -423,7 +614,7 @@
 </section>
 
 <section class="gartner">
-    <p> “By 2020, 60% of digital businesses will suffer major service failures due to the<br>inability of security team
+    <p> “By 2020, 60% of digital businesses will suffer major service failures due to the inability of security team
         to manage digital risk.”</p>
     <img src="img/home/gartner.png" alt="gartner">
     <button class="gartner-btn">Start Free Trial</button>
@@ -515,5 +706,49 @@
     </div>
 </section>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+
+    var openMenu = function (id) {
+      document.getElementById(id).classList.add("opened");
+      document.body.style.overflow = "hidden";
+    };
+
+    var hideMenu = function (id) {
+      document.getElementById(id).classList.remove("opened");
+      document.body.style.overflow = "auto";
+    };
+
+    var hideAll = function() {
+      hideMenu("menu-root");
+      hideMenu("menu-platform");
+      hideMenu("menu-resources");
+    };
+
+    var openRoot = function () {
+      hideAll();
+      openMenu("menu-root");
+    };
+
+    var listListener = function(listenerId, menuId) {
+      document.getElementById(listenerId).addEventListener("click", function () {
+        hideAll();
+        openMenu(menuId);
+      });
+    };
+
+    document.getElementById("menu-open").addEventListener("click", openRoot);
+
+    listListener("menu-platform-open", "menu-platform");
+    listListener("menu-resources-open", "menu-resources");
+
+    document.getElementsByClassName("close")[0].addEventListener("click", hideAll);
+    document.getElementsByClassName("close")[1].addEventListener("click", hideAll);
+    document.getElementsByClassName("close")[2].addEventListener("click", hideAll);
+
+    document.getElementsByClassName("back")[0].addEventListener("click", openRoot);
+    document.getElementsByClassName("back")[1].addEventListener("click", openRoot);
+  });
+</script>
 </body>
 </html>
