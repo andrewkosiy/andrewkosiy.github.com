@@ -279,6 +279,8 @@ button:active {
 }
 .header .mobile-menu#menu-root {
   max-height: 0;
+  left: 0;
+  width: 100%;
   overflow: hidden;
   transition: max-height 1s;
 }
