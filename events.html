@@ -268,22 +268,22 @@
             </div>
         </div>
         <div class="row past-events">
-            <div class="col-md-3 box">
+            <div class="col-md-3 col-sm-6 box">
                 <img src="img/events/blackhat.png" alt="past events">
                 <h4>BLACK HAT ASIA</h4>
                 <p>March 26-29, 2019<br>Marina Bay Sands, Singapore</p>
             </div>
-            <div class="col-md-3 box">
+            <div class="col-md-3 col-sm-6 box">
                 <img src="img/events/infosec.png" alt="past events">
                 <h4>InfoSec World</h4>
                 <p>April 1-2, 2019<br>Lake Buena Vista, Florida, USA</p>
             </div>
-            <div class="col-md-3 box">
+            <div class="col-md-3 col-sm-6 box">
                 <img src="img/events/fs-isac.png" alt="past events">
                 <h4>FS-ISAC Annual Summit</h4>
                 <p class="fs">April 28-May 1, 2019<br>Orlando, Florida, USA</p>
             </div>
-            <div class="col-md-3 box">
+            <div class="col-md-3 col-sm-6 box">
                 <img src="img/events/infosecurity.png" alt="past events">
                 <h4>Info Security Europe</h4>
                 <p class="fs">June 4-6, 2019<br>Olympia, London, UK</p>
@@ -389,7 +389,7 @@
 
         var hideMenu = function (id) {
             document.getElementById(id).classList.remove("opened");
-            document.body.style.overflow = "auto";
+            document.body.style["overflow-y"] = "auto";
         };
 
         var hideAll = function() {

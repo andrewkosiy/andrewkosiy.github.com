@@ -1,6 +1,7 @@
 body {
   font-family: 'Rajdhani', sans-serif;
-  width: 1440px;
+  max-width: 1440px;
+  overflow-x: hidden;
   margin-left: auto;
   margin-right: auto;
   background: url("../img/contact/dots.png") 120px 468px no-repeat, url("../img/contact/background.png") top center no-repeat;
@@ -21,7 +22,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media only screen and (max-width: 414px) and (max-height: 896px) and (orientation: portrait) {
   body {
-    width: 375px;
+    max-width: 375px;
     background: url("../img/contact/mobile-dots.png") -689px 1231px no-repeat, url("../img/contact/mobile-background.png") top center no-repeat;
   }
 }
@@ -44,8 +45,6 @@ button:active {
   height: 274px;
 }
 .header .container {
-  margin-left: 135px;
-  margin-right: 135px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -195,7 +194,7 @@ button:active {
   display: none;
   position: absolute;
   top: 19px;
-  right: 14px;
+  right: 4%;
   -webkit-appearance: button;
   background: 0 0;
   border: 0;
@@ -204,7 +203,6 @@ button:active {
   display: none;
   position: fixed;
   height: 100%;
-  width: 375px;
   z-index: 1000;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 1%, rgba(241, 245, 248, 0.96) 50%, #f0f4f7 100%);
 }
@@ -309,7 +307,7 @@ button:active {
   line-height: 27px;
   font-weight: 600;
 }
-@media only screen and (max-width: 414px) and (max-height: 896px) and (orientation: portrait) {
+@media (max-width: 776px) {
   .header .menu {
     display: none;
   }
@@ -322,7 +320,7 @@ button:active {
   .header-content h1 {
     margin-left: auto;
     margin-right: auto;
-    width: 375px;
+    max-width: 375px;
     font-size: 32px;
     line-height: 36px;
     letter-spacing: -0.16px;
@@ -340,22 +338,26 @@ button:active {
 .box {
   margin-left: auto;
   margin-right: auto;
-  height: 824px;
-  width: 1200px;
+  max-width: 1200px;
   border: 1px solid #EBF0F4;
   background-color: #FFFFFF;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
 }
 .box-address {
   padding-top: 78px;
+  padding-left: 0;
+  padding-right: 0;
   margin-left: -1px;
-  height: 356px;
-  width: 600px;
   border: 1px solid #EBF0F4;
   background: linear-gradient(180deg, #FCFEFF 0%, #EEF2F5 100%);
 }
 .box-form {
   padding-top: 78px;
+  padding-right: 72px;
+  padding-left: 72px;
+}
+.box-form .col-md-6 {
+  padding: 0;
 }
 .box .container {
   padding: 0;
@@ -373,20 +375,19 @@ button:active {
   font-weight: bold;
   letter-spacing: -0.14px;
   line-height: 40px;
-  text-align: center;
   text-transform: uppercase;
 }
 .box .send {
   margin-left: 26px;
   margin-top: -1px;
   margin-bottom: 0;
+  text-align: center;
 }
 .box .address {
-  margin-left: 35px;
+  margin-left: 82px;
   margin-top: -1px;
 }
 .box .help {
-  margin-left: -25px;
   margin-top: -1px;
   margin-bottom: 25px;
 }
@@ -399,7 +400,7 @@ button:active {
 }
 .box p {
   margin-top: 15px;
-  margin-left: 67px;
+  margin-left: 82px;
   padding-top: 12px;
   padding-bottom: 4px;
   color: #4A4A4A;
@@ -418,7 +419,7 @@ button:active {
   line-height: 25px;
 }
 .box .info {
-  margin-left: 67px;
+  margin-left: 82px;
 }
 .box h5 {
   margin-top: 34px;
@@ -438,12 +439,12 @@ button:active {
 }
 .box input,
 .box textarea {
-  margin-top: -10px;
+  margin-top: -9px;
   padding-top: 11px;
   padding-left: 16px;
   padding-bottom: 13px;
   height: 40px;
-  width: 456px;
+  width: 100%;
   border: 1px solid #B9CED9;
   border-radius: 2px;
   background-color: #FFFFFF;
@@ -469,29 +470,33 @@ button:active {
   letter-spacing: -0.06px;
   line-height: 16px;
 }
-.box .name {
-  width: 218px;
+@media (min-width: 992px) {
+  .box .name {
+    max-width: 218px;
+  }
 }
 .box .message {
   height: 150px;
 }
 .box .form-input {
   margin-top: 16px;
-  margin-left: 56px;
 }
 .box .first_name {
   margin-top: 41px;
-  margin-left: 41px;
 }
-.box .last_name {
-  margin-top: 41px;
-  margin-left: -6px;
+@media (min-width: 992px) {
+  .box .last_name {
+    margin-top: 41px;
+  }
+}
+.box .last_name input {
+  float: right;
 }
 .box button {
-  margin-top: 14px;
+  display: block;
+  margin: 14px auto 20px auto;
   height: 42px;
   width: 160px;
-  margin-left: 206px;
   border-radius: 2px;
   background-color: #305791;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -506,10 +511,12 @@ button:active {
   border: none;
 }
 .box .maps {
-  margin-top: 0px;
-  margin-left: -1px;
-  width: 600px;
+  margin-top: 105px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
   height: 467px;
+  display: block;
 }
 .box .success {
   height: 700px;
@@ -525,7 +532,7 @@ button:active {
 }
 @media only screen and (max-width: 414px) and (max-height: 896px) and (orientation: portrait) {
   .box {
-    width: 375px;
+    max-width: 375px;
     border: none;
     height: unset;
   }
@@ -537,6 +544,10 @@ button:active {
   .box .row {
     padding: 0px;
     margin: 0px;
+  }
+  .box .col-xs-6,
+  .box .col-xs-4 {
+    width: 100%;
   }
   .box form {
     margin-top: 10px;
@@ -551,12 +562,14 @@ button:active {
     margin-top: 0;
   }
   .box-form {
-    padding-top: 0;
+    padding: 0 15px;
+  }
+  .box-form .col-md-6 {
+    padding: 0 15px;
   }
   .box-address {
-    width: 375px;
+    max-width: 375px;
     padding-top: 50px;
-    height: 382px;
     text-align: center;
   }
   .box-address .address {
@@ -583,12 +596,12 @@ button:active {
     width: unset;
   }
   .box .form-input {
-    margin: 0px;
+    margin: 0;
   }
   .box input,
   .box textarea,
   .box .name {
-    width: 327px;
+    max-width: 327px;
   }
   .box legend {
     margin-bottom: 15px;
@@ -599,7 +612,7 @@ button:active {
     margin-left: -15px;
   }
   .box .name {
-    margin-left: 0px;
+    margin-left: 0;
   }
   .box .checkbox input {
     transform: scale(2.5);
@@ -619,8 +632,9 @@ button:active {
     height: 42px;
   }
   .box .maps {
-    width: 375px;
+    max-width: 375px;
     height: 293px;
+    margin-top: 60px;
   }
   .box .success {
     padding-top: 236px;
@@ -632,8 +646,11 @@ button:active {
   padding-bottom: 80px;
 }
 .follow-header {
-  margin-left: 18px;
   margin-top: 0;
+}
+.follow-row {
+  display: flex;
+  justify-content: center;
 }
 .follow h4 {
   color: #305791;
@@ -645,19 +662,21 @@ button:active {
   text-align: center;
   text-transform: uppercase;
 }
-.follow .facebook {
-  margin-left: 445px;
-  margin-top: 19px;
-}
 .follow .github,
 .follow .linkedin,
-.follow .twitter {
-  margin-left: -27px;
+.follow .twitter,
+.follow .facebook {
   margin-top: 19px;
+}
+.follow .github.col-md-1,
+.follow .linkedin.col-md-1,
+.follow .twitter.col-md-1,
+.follow .facebook.col-md-1 {
+  width: unset;
 }
 @media only screen and (max-width: 414px) and (max-height: 896px) and (orientation: portrait) {
   .follow {
-    width: 375px;
+    max-width: 375px;
     height: 210px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -757,7 +776,7 @@ button:active {
   top: 48px;
   left: 40px;
 }
-@media only screen and (max-width: 414px) and (max-height: 896px) and (orientation: portrait) {
+@media (max-width: 1130px) {
   .footer {
     height: 881px;
     background-color: #142c48;
@@ -775,12 +794,16 @@ button:active {
     padding-top: 42px;
     padding-left: 10px;
     height: unset;
+    margin-left: 15px;
   }
   .footer-content .row {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 600px;
+    max-width: 365px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .footer .home {
     margin-left: 7px;
@@ -790,6 +813,10 @@ button:active {
   .footer .col-md-2,
   .footer .col-md-3 {
     width: 50%;
+  }
+  .footer .col-md-offset-1,
+  .footer .col-md-offset-2 {
+    margin-left: 0;
   }
   .footer .platform {
     margin-bottom: 5px;
@@ -823,5 +850,11 @@ button:active {
   .footer-floor p {
     margin-left: 0;
     padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 414px) and (max-height: 896px) and (orientation: portrait) {
+  .footer-content .row {
+    margin-left: -15px;
+    margin-right: -15px;
   }
 }

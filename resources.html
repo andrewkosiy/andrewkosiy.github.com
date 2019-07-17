@@ -280,7 +280,7 @@
                             <p>Fill in the below form and we will send the file to your mailbox right away:</p>
                         </div>
 
-                        <form action="#">
+                        <form method="get" action="./Testing PDF for Datasheet download form.pdf" target="_blank">
                             <div class="row name-row">
                                 <div class="col-md-6">
                                     <div class="first_name form-field">
@@ -596,7 +596,7 @@
 <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
 
         var openMenu = function (id) {
             document.getElementById(id).classList.add("opened");
@@ -605,10 +605,10 @@
 
         var hideMenu = function (id) {
             document.getElementById(id).classList.remove("opened");
-            document.body.style.overflow = "auto";
+            document.body.style["overflow-y"] = "auto";
         };
 
-        var hideAll = function () {
+        var hideAll = function() {
             hideMenu("menu-root");
             hideMenu("menu-platform");
             hideMenu("menu-resources");
@@ -619,7 +619,7 @@
             openMenu("menu-root");
         };
 
-        var listListener = function (listenerId, menuId) {
+        var listListener = function(listenerId, menuId) {
             document.getElementById(listenerId).addEventListener("click", function () {
                 hideAll();
                 openMenu(menuId);
