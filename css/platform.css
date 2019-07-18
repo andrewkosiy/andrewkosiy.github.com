@@ -950,6 +950,7 @@ button:hover {
     padding-top: 0;
     width: 328px;
     max-width: 80%;
+    margin-top: 100px;
   }
 }
 @media (max-width: 520px) {
