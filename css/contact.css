@@ -858,11 +858,13 @@ button:hover {
     margin-left: 0;
     padding-top: 20px;
   }
+  .footer .pixart {
+    padding-top: 20px;
+  }
 }
-.footer .pixart {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
+.footer .pixart a {
+  color: #dce5ec;
+  font-weight: 600;
 }
 @media (max-width: 414px) {
   .footer-content .row {
