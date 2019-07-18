@@ -1,9 +1,11 @@
 body {
+  border: 1px solid red;
   font-family: 'Rajdhani', sans-serif;
-  width: 1440px;
+  max-width: 1440px;
+  overflow-x: hidden;
   margin-left: auto;
   margin-right: auto;
-  background: url("../img/platform/dots1.png") 1318px 357px no-repeat, url("../img/platform/dots2.png") 120px 264px no-repeat, url("../img/platform/dots3.png") 1292px 924px no-repeat, url("../img/platform/dots4.png") 120px 1564px no-repeat, url("../img/background.png") top center no-repeat;
+  background: url("../img/platform/dots1.png") right 357px no-repeat, url("../img/platform/dots2.png") left 264px no-repeat, url("../img/platform/dots3.png") right 924px no-repeat, url("../img/platform/dots4.png") left 1564px no-repeat, url("../img/background.png") top center no-repeat;
 }
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -21,7 +23,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media only screen and (max-device-width: 812px) {
   body {
-    width: 375px;
+    max-width: 375px;
     background: url("../img/events/mobile-dots2.png") -34px 2130px no-repeat, url("../img/events/mobile-dots1.png") -480px 1032px no-repeat, url("../img/events/mobile-background.png") top center no-repeat;
   }
 }
@@ -204,7 +206,7 @@ button:active {
   display: none;
   position: absolute;
   top: 19px;
-  right: 14px;
+  right: 4%;
   -webkit-appearance: button;
   background: 0 0;
   border: 0;
@@ -213,7 +215,6 @@ button:active {
   display: none;
   position: fixed;
   height: 100%;
-  width: 375px;
   z-index: 1000;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 1%, rgba(241, 245, 248, 0.96) 50%, #f0f4f7 100%);
 }
@@ -318,7 +319,7 @@ button:active {
   line-height: 27px;
   font-weight: 600;
 }
-@media only screen and (max-device-width: 812px) {
+@media (max-width: 776px) {
   .header {
     height: 227px;
   }
@@ -364,7 +365,7 @@ button:active {
     margin: 0;
   }
   .second p {
-    width: 300px;
+    max-width: 300px;
     letter-spacing: 0.4px;
   }
 }
@@ -390,8 +391,8 @@ button:active {
   text-transform: uppercase;
 }
 .block-left-box p {
+  max-width: 481px;
   padding-top: 12px;
-  width: 481px;
   color: #4A4A4A;
   font-family: Lato;
   font-size: 15px;
@@ -428,8 +429,8 @@ button:active {
   text-transform: uppercase;
 }
 .block-right-box p {
+  max-width: 490px;
   padding-top: 12px;
-  width: 490px;
   color: #4A4A4A;
   font-family: Lato;
   font-size: 15px;
@@ -462,28 +463,56 @@ button:active {
   margin-top: 113px;
 }
 .block .block2 p {
-  width: 470px;
+  max-width: 470px;
 }
 .block .block3 {
   margin-top: 112px;
 }
 .block .block3 p {
-  width: 455px;
+  max-width: 455px;
 }
 .block .block4 {
   margin-top: 110px;
 }
 .block .block4 p {
-  width: 420px;
+  max-width: 420px;
+}
+@media (max-width: 1439px) {
+  .block-left img,
+  .block-right img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 992px) {
+  .block-left-box,
+  .block-right-box {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .block-left-box p,
+  .block-right-box p,
+  .block-left-box-btn,
+  .block-right-box-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .block .block2,
+  .block .block4 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 @media only screen and (max-device-width: 812px) {
   .block .container {
     margin: 0;
-    width: 375px;
+    max-width: 375px;
   }
   .block .container img {
     display: block;
-    width: 372px;
+    max-width: 372px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -513,7 +542,7 @@ button:active {
   .block .block2 p,
   .block .block3 p,
   .block .block4 p {
-    width: 300px;
+    max-width: 300px;
   }
   .block-right-box,
   .block-left-box {
@@ -521,7 +550,7 @@ button:active {
   }
   .block-right-box h3,
   .block-left-box h3 {
-    width: 300px;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -529,7 +558,7 @@ button:active {
   }
   .block-right-box p,
   .block-left-box p {
-    width: 300px;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 0;
@@ -714,6 +743,33 @@ button:active {
   text-transform: uppercase;
   padding-top: 5px;
   border: none;
+}
+@media (max-width: 1200px) {
+  .features .polygon-row {
+    max-width: 1300px;
+    width: 1100px;
+  }
+  .features .container {
+    width: 100%;
+  }
+  .features .polygon {
+    transform: scale(0.8);
+  }
+  .features .polygons .row {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .features .polygons .row:nth-child(2) .polygon,
+  .features .polygons .row:nth-child(3) .polygon {
+    margin-top: -169px;
+  }
+  .features .polygons .row .polygon:nth-child(2),
+  .features .polygons .row .polygon:nth-child(3) {
+    margin-left: -81px;
+  }
+  .features .polygons .row:nth-child(2) {
+    padding-left: 136px;
+  }
 }
 @media only screen and (max-device-width: 812px) {
   .features {
@@ -949,7 +1005,7 @@ button:active {
   top: 48px;
   left: 40px;
 }
-@media only screen and (max-device-width: 812px) {
+@media (max-width: 1130px) {
   .footer {
     height: 881px;
     background-color: #142c48;
@@ -967,12 +1023,16 @@ button:active {
     padding-top: 42px;
     padding-left: 10px;
     height: unset;
+    margin-left: 15px;
   }
   .footer-content .row {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 600px;
+    max-width: 365px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .footer .home {
     margin-left: 7px;
@@ -982,6 +1042,10 @@ button:active {
   .footer .col-md-2,
   .footer .col-md-3 {
     width: 50%;
+  }
+  .footer .col-md-offset-1,
+  .footer .col-md-offset-2 {
+    margin-left: 0;
   }
   .footer .platform {
     margin-bottom: 5px;
@@ -1015,5 +1079,11 @@ button:active {
   .footer-floor p {
     margin-left: 0;
     padding-top: 20px;
+  }
+}
+@media only screen and (max-device-width: 812px) {
+  .footer-content .row {
+    margin-left: -15px;
+    margin-right: -15px;
   }
 }
