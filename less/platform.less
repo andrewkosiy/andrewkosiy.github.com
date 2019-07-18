@@ -1,12 +1,10 @@
 @mobile-area: 375px;
 
 .mobile(@rules) {
-  @media (max-width: 415px) { @rules();
-  }
+  @media (max-width: 415px) { @rules(); }
 }
 
 body {
-  border: 1px solid red;
   font-family: 'Rajdhani', sans-serif;
   max-width: 1440px;
   overflow-x: hidden;
@@ -976,7 +974,9 @@ button:active {
   }
 
   .trial-button {
-    padding-top: 150px;
+    @media (min-width: 1200px) {
+      padding-top: 150px;
+    }
 
     button {
       height: 42px;
@@ -1057,7 +1057,7 @@ button:active {
             &:nth-child(4) img {
               transform: scale(1.6);
               padding-top: 12px;
-              margin-left: 16px;
+              margin-left: 24px;
               margin-bottom: -33px;
             }
 
@@ -1140,7 +1140,7 @@ button:active {
 
     .polygon {
       display: block;
-      margin: 0 auto 310px auto;
+      margin: 0 auto 360px auto;
       padding-top: 474px;
       width: 100%;
 
@@ -1156,30 +1156,35 @@ button:active {
     }
 
     .trial-button {
-      margin-top: -700px;
+      margin-top: -800px;
     }
 
     .trial-button button {
       padding-top: 0;
       width: 328px;
+      max-width: 80%;
     }
   }
 
   @media (max-width: 520px) {
     .polygons .polygon-content-back p {
-      width: 360px;
+      width: 440px;
       margin-top: 36px;
       font-size: 24px;
       line-height: 38px;
       letter-spacing: 0.5px;
       margin-left: auto;
       margin-right: auto;
-      transform: translateX(-12.5%);
+      transform: translateX(-18.5%);
     }
   }
 
   .mobile({
     margin-top: 0;
+
+    .trial-button {
+      margin-top: -550px;
+    }
 
     .polygon {
       transform: scale(0.7);
@@ -1215,6 +1220,25 @@ button:active {
       }
     }
   });
+
+  @media (max-width: 350px) {
+    .polygon {
+      margin-left: -70px;
+      padding-top: 505px;
+    }
+
+    .polygons {
+
+      .polygon-content {
+        &-back {
+          p {
+            width: 450px;
+            transform: translateX(-18.5%);
+          }
+        }
+      }
+    }
+  }
 }
 
 .footer {
