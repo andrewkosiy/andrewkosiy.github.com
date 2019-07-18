@@ -1,7 +1,8 @@
 @mobile-area: 375px;
 
 .mobile(@rules) {
-  @media only screen and (max-device-width: 812px) { @rules(); }
+  @media (max-width: 415px) { @rules();
+  }
 }
 
 body {
@@ -12,30 +13,26 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  background:
-          url("../img/platform/dots1.png") right 357px no-repeat,
-          url("../img/platform/dots2.png") left 264px no-repeat,
-          url("../img/platform/dots3.png") right 924px no-repeat,
-          url("../img/platform/dots4.png") left 1564px no-repeat,
-          url("../img/background.png") top center no-repeat;
+  background: url("../img/platform/dots1.png") right 357px no-repeat,
+  url("../img/platform/dots2.png") left 264px no-repeat,
+  url("../img/platform/dots3.png") right 924px no-repeat,
+  url("../img/platform/dots4.png") left 1564px no-repeat,
+  url("../img/background.png") top center no-repeat;
 
-  &::-webkit-scrollbar-track
-  {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     background-color: #F5F5F5;
   }
 
-  &::-webkit-scrollbar
-  {
+  &::-webkit-scrollbar {
     width: 12px;
     background-color: #F5F5F5;
   }
 
-  &::-webkit-scrollbar-thumb
-  {
+  &::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #555;
   }
 
@@ -167,7 +164,7 @@ button:active {
       }
 
       &:nth-child(4) {
-        &.active{
+        &.active {
           a {
             &:after {
               left: 15px;
@@ -177,7 +174,7 @@ button:active {
       }
 
       &:nth-child(5) {
-        &.active{
+        &.active {
           a {
             &:after {
               left: 12px;
@@ -262,7 +259,7 @@ button:active {
       ul {
         padding: 25px 0;
         background-color: white;
-        box-shadow: 0 1px 30px 0 rgba(0,0,0,0.15);
+        box-shadow: 0 1px 30px 0 rgba(0, 0, 0, 0.15);
       }
 
       &.resources {
@@ -420,7 +417,7 @@ button:active {
   }
 
   @media (max-width: 776px) {
-    height: 227px;
+    height: 327px;
 
     .container, .row {
       margin: 0;
@@ -448,12 +445,18 @@ button:active {
     .menu-open, .mobile-menu {
       display: block;
     }
+
+    .mobile({
+      height: 227px;
+    });
+
   }
 }
 
 .second {
   p {
     width: 700px;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     color: #4A4A4A;
@@ -470,7 +473,8 @@ button:active {
     margin: 0;
 
     p {
-      max-width: 300px;
+      width: 300px;
+      max-width: 80%;
       letter-spacing: 0.4px;
     }
   });
@@ -490,7 +494,9 @@ button:active {
     }
 
     &-box {
-      margin-left: -33px;
+      @media (min-width: 1440px) {
+        margin-left: -33px;
+      }
 
       h3 {
         padding-top: 68px;
@@ -504,7 +510,8 @@ button:active {
       }
 
       p {
-        max-width: 481px;
+        width: 481px;
+        max-width: 80%;
         padding-top: 12px;
         color: #4A4A4A;
         font-family: Lato;
@@ -549,7 +556,8 @@ button:active {
       }
 
       p {
-        max-width: 490px;
+        width: 490px;
+        max-width: 80%;
         padding-top: 12px;
         color: #4A4A4A;
         font-family: Lato;
@@ -590,7 +598,8 @@ button:active {
     margin-top: 113px;
 
     p {
-      max-width: 470px;
+      width: 470px;
+      max-width: 80%;
     }
   }
 
@@ -598,7 +607,8 @@ button:active {
     margin-top: 112px;
 
     p {
-      max-width: 455px;
+      width: 455px;
+      max-width: 80%;
     }
   }
 
@@ -606,7 +616,8 @@ button:active {
     margin-top: 110px;
 
     p {
-      max-width: 420px;
+      width: 420px;
+      max-width: 80%;
     }
   }
 
@@ -643,11 +654,12 @@ button:active {
   .mobile({
     .container {
       margin: 0;
-      max-width: @mobile-area;
+      width: 100%;
 
       img {
         display: block;
-        max-width: 372px;
+        width: 372px;
+        max-width: 80%;
         margin-left: auto;
         margin-right: auto;
       }
@@ -682,7 +694,8 @@ button:active {
 
     .block1, .block2, .block3, .block4 {
       p {
-        max-width: 300px;
+        width: 300px;
+        max-width: 80%;
       }
     }
 
@@ -691,15 +704,17 @@ button:active {
         margin-left: 0;
 
         h3 {
-          max-width: 300px;
+          width: 300px;
+          max-width: 80%;
           margin-left: auto;
           margin-right: auto;
           text-align: center;
-          padding-top: 8px;
+          padding-top: 65px;
         }
 
         p {
-          max-width: 300px;
+          width: 300px;
+          max-width: 80%;
           margin-left: auto;
           margin-right: auto;
           padding-top: 0;
@@ -745,27 +760,45 @@ button:active {
     padding-top: 9px;
   }
 
+  .container {
+    @media (min-width: 992px) {
+      width: 750px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 1170px;
+    }
+  }
+
   .polygon {
     display: inline-block;
     position: relative;
-    width: 357px;
     height: 397px;
-    margin-left: -15px;
+    padding: 0;
+
+    @media (min-width: 1200px) {
+      margin-left: -15px;
+      margin-bottom: -97px;
+      margin-right: -33px;
+
+      &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(7), &:nth-child(8), &:nth-child(9) {
+        transform: translateX(10px);
+      }
+
+      &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+        transform: translateX(183px);
+      }
+    }
 
     &:hover {
       .polygon-back {
         transform: rotateY(360deg);
       }
+
       .polygon-front {
         transform: rotateY(180deg);
       }
     }
-  }
-
-  .polygon-row {
-    margin-left: -37px;
-    height: 397px;
-    width: 1300px;
   }
 
   .polygons {
@@ -773,12 +806,23 @@ button:active {
     position: relative;
 
     .row {
-      margin-top: 3px;
-      margin-left: -21px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      margin-top: -150px;
+      margin-left: -100px;
+
+      @media (min-width: 1200px) {
+        margin-left: -21px;
+        display: block;
+        margin-top: 3px;
+      }
 
       &:nth-child(2) {
         padding-left: 174px;
         margin-top: -99px;
+
         .polygon {
           margin-top: -99px;
         }
@@ -786,6 +830,7 @@ button:active {
 
       &:nth-child(3) {
         margin-top: -99px;
+
         .polygon {
           margin-top: -99px;
         }
@@ -833,12 +878,14 @@ button:active {
     }
 
     .polygon-back {
-      background: url("../img/platform/polygon-back.svg");
+      background: url("../img/platform/polygon-back.svg") no-repeat;
+      background-size: contain;
       transform: rotateY(180deg);
     }
 
     .polygon-front {
       background: url(../img/platform/polygon.svg) no-repeat;
+      background-size: contain;
     }
 
     .polygon-front, .polygon-back {
@@ -846,10 +893,17 @@ button:active {
       top: 0;
       height: 100%;
       width: 100%;
-      margin-left: -15px;
       padding-left: 15px;
       transition: transform 1s;
       backface-visibility: hidden;
+
+      @media (min-width: 769px) {
+        margin-left: 70px;
+      }
+
+      @media (min-width: 1200px) {
+        margin-left: -15px;
+      }
     }
 
     .row:nth-child(1) {
@@ -859,12 +913,14 @@ button:active {
           margin-left: 18px;
         }
       }
+
       .polygon:nth-child(2) {
         img {
           margin-top: -35px;
           margin-left: 2px;
         }
       }
+
       .polygon:nth-child(3) {
         img {
           margin-top: -45px;
@@ -880,12 +936,14 @@ button:active {
           margin-left: -3px;
         }
       }
+
       .polygon:nth-child(2) {
         img {
           margin-top: -27px;
           margin-left: 4px;
         }
       }
+
       .polygon:nth-child(3) {
         img {
           margin-top: -28px;
@@ -900,22 +958,25 @@ button:active {
           margin-left: -2px;
         }
       }
+
       .polygon:nth-child(2) {
         img {
           margin-top: -33px;
           margin-left: 2px;
         }
       }
+
       .polygon:nth-child(3) {
         img {
           margin-top: -30px;
-          margin-left: 4px;        }
+          margin-left: 4px;
+        }
       }
     }
   }
 
   .trial-button {
-    padding-top: 46px;
+    padding-top: 150px;
 
     button {
       height: 42px;
@@ -923,7 +984,7 @@ button:active {
       border-radius: 2px;
       background-color: #305791;
       color: #FFF;
-      box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.2);
+      box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
       font-size: 15px;
       font-family: Rajdhani;
       font-weight: bold;
@@ -935,52 +996,19 @@ button:active {
     }
   }
 
-  @media (max-width: 1200px) {
-    .polygon-row {
-      max-width: 1300px;
-      width: 1100px;
-    }
-
-    .container {
-      width: 100%;
-    }
-
-    .polygon {
+  @media (max-width: 1250px) {
+    .polygons {
       transform: scale(0.8);
     }
-
-    .polygons {
-      .row{
-        margin-left: auto;
-        margin-right: auto;
-
-        &:nth-child(2), &:nth-child(3) {
-          .polygon {
-            margin-top: -169px;
-          }
-        }
-
-        .polygon {
-          &:nth-child(2), &:nth-child(3) {
-            margin-left: -81px;
-          }
-        }
-      }
-
-      .row:nth-child(2) {
-        padding-left: 136px;
-      }
-    }
-
   }
 
-  .mobile({
-    margin-top: 0;
+  @media (max-width: 768px) {
     padding-top: 62px;
 
     .container {
       margin: 0;
-      padding: 0;
+      padding: 0 40px;
+      width: 100%;
     }
 
     h2 {
@@ -989,7 +1017,7 @@ button:active {
       margin-bottom: -5px;
     }
 
-    .polygon-row, .polygons .row {
+    .polygons .row {
       margin: 0;
       width: @mobile-area;
     }
@@ -999,7 +1027,9 @@ button:active {
       flex-direction: column;
 
       .row {
-        margin-top: -100px;
+        margin-top: -750px;
+        margin-left: auto;
+        margin-right: auto;
 
         &:nth-child(1) {
           .polygon {
@@ -1013,86 +1043,58 @@ button:active {
             }
 
             &:nth-child(2) img {
-              margin-left: 15px;
+              margin-left: 45px;
               padding-top: 40px;
               margin-bottom: -38px;
             }
 
             &:nth-child(3) img {
-              margin-left: 10px;
+              margin-left: 30px;
               margin-bottom: -40px;
               transform: scale(1.5);
             }
-          }
-        }
 
-        &:nth-child(2) {
-          padding-left: 0;
-          margin-top: 80px;
-
-          .polygon {
-            padding-top: 595px;
-
-            &:nth-child(1), &:nth-child(2), &:nth-child(3) {
-              img {
-                transform: scale(1.4);
-                padding-top: 29px;
-                margin-left: 10px;
-                margin-bottom: -32px;
-              }
-            }
-
-            &:nth-child(2) img {
+            &:nth-child(4) img {
               transform: scale(1.6);
-              padding-top: 33px;
-              margin-left: 4px;
+              padding-top: 12px;
+              margin-left: 16px;
               margin-bottom: -33px;
             }
 
-            &:nth-child(3) img {
-              margin-left: -2px;
-              margin-bottom: -34px;
-              padding-top: 41px;
-            }
-          }
-        }
-
-        &:nth-child(3) {
-          padding-left: 0;
-          margin-top: 19px;
-
-          .polygon {
-            padding-top: 514px;
-
-            &:nth-child(1), &:nth-child(2), &:nth-child(3) {
-              img {
-                transform: scale(1.45);
-                padding-top: 39px;
-                margin-left: 4px;
-                margin-bottom: -38px;
-              }
-            }
-
-            &:nth-child(2) img {
+            &:nth-child(5) img {
               transform: scale(1.6);
-              padding-top: 32px;
-              margin-left: 5px;
-              margin-bottom: -31px;
+              padding-top: 21px;
+              margin-left: 16px;
+              margin-bottom: -33px;
             }
 
-            &:nth-child(3) {
-              padding-top: 410px;
-
-              img {
-                margin-left: -2px;
-                margin-bottom: -34px;
-                padding-top: 41px;
-              }
+            &:nth-child(6) img {
+              transform: scale(1.6);
+              padding-top: 19px;
+              margin-left: 20px;
+              margin-bottom: -33px;
             }
-          }
 
-          .polygon-content-back p {
-            margin-top: -39px;
+            &:nth-child(7) img {
+              transform: scale(1.6);
+              padding-top: 6px;
+              margin-left: 16px;
+              margin-bottom: -33px;
+            }
+
+            &:nth-child(8) img {
+              transform: scale(1.6);
+              padding-top: 18px;
+              margin-left: 23px;
+              margin-bottom: -33px;
+            }
+
+            &:nth-child(9) img {
+              transform: scale(1.6);
+              padding-top: 12px;
+              margin-left: 22px;
+              margin-bottom: -33px;
+            }
           }
         }
       }
@@ -1106,11 +1108,13 @@ button:active {
 
         p {
           width: 560px;
-          margin-left: -136px;
           margin-top: 36px;
           font-size: 24px;
           line-height: 38px;
           letter-spacing: 0.5px;
+          margin-left: auto;
+          margin-right: auto;
+          transform: translateX(-25%);
         }
       }
 
@@ -1135,10 +1139,10 @@ button:active {
     }
 
     .polygon {
-      transform: scale(0.6);
       display: block;
-      margin: 0 auto;
+      margin: 0 auto 310px auto;
       padding-top: 474px;
+      width: 100%;
 
       &:hover {
         .polygon-back {
@@ -1151,15 +1155,64 @@ button:active {
       }
     }
 
-
-    .polygon-row {
-      height: unset;
+    .trial-button {
+      margin-top: -700px;
     }
 
     .trial-button button {
-      margin-top: 82px;
       padding-top: 0;
       width: 328px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .polygons .polygon-content-back p {
+      width: 360px;
+      margin-top: 36px;
+      font-size: 24px;
+      line-height: 38px;
+      letter-spacing: 0.5px;
+      margin-left: auto;
+      margin-right: auto;
+      transform: translateX(-12.5%);
+    }
+  }
+
+  .mobile({
+    margin-top: 0;
+
+    .polygon {
+      transform: scale(0.7);
+      margin-left: -40px;
+      margin-bottom: 125px;
+    }
+
+    .polygons {
+      .row {
+        margin-top: -670px;
+      }
+
+      .polygon-content {
+        h4 {
+          margin-top: 210px;
+        }
+
+        p {
+          margin-top: 76px;
+        }
+
+        &-back {
+          p {
+            width: 600px;
+            max-width: 200%;
+            margin-top: 83px;
+            font-size: 26px;
+            line-height: 40px;
+            letter-spacing: 0.4px;
+            transform: translateX(-26.5%);
+          }
+        }
+      }
     }
   });
 }
