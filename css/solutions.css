@@ -46,6 +46,9 @@ h4 {
 button:active {
   filter: brightness(85%);
 }
+button:hover {
+  filter: brightness(90%);
+}
 .header {
   height: 353px;
   position: relative;
@@ -869,6 +872,11 @@ button:active {
     margin-left: 0;
     padding-top: 20px;
   }
+}
+.footer .pixart {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 @media (max-width: 414px) {
   .footer-content .row {

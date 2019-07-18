@@ -53,6 +53,9 @@ h1 {
 button:active {
   filter: brightness(85%);
 }
+button:hover {
+  filter: brightness(90%);
+}
 .header {
   position: relative;
 }
@@ -1483,4 +1486,9 @@ section.solutions button {
     margin-left: -15px;
     margin-right: -15px;
   }
+}
+.footer .pixart {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }

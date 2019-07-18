@@ -1,5 +1,4 @@
 body {
-  border: 1px solid red;
   font-family: 'Rajdhani', sans-serif;
   max-width: 1440px;
   overflow-x: hidden;
@@ -41,6 +40,9 @@ h1 {
 }
 button:active {
   filter: brightness(85%);
+}
+button:hover {
+  filter: brightness(90%);
 }
 .header {
   position: relative;
@@ -578,6 +580,11 @@ button:active {
     margin-left: 0;
     padding-top: 20px;
   }
+}
+.footer .pixart {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 @media (max-width: 414px) {
   .footer-content .row {

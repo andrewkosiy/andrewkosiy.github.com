@@ -40,6 +40,9 @@ h1 {
 button:active {
   filter: brightness(85%);
 }
+button:hover {
+  filter: brightness(90%);
+}
 .header {
   height: 353px;
   position: relative;
@@ -771,6 +774,11 @@ section.next .box .text-block button {
     margin-left: 0;
     padding-top: 20px;
   }
+}
+.footer .pixart {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 @media (max-width: 415px) {
   .footer-content .row {

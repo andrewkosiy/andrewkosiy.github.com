@@ -398,51 +398,7 @@
         </div>
 
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-
-            var openMenu = function (id) {
-                document.getElementById(id).classList.add("opened");
-                document.body.style.overflow = "hidden";
-            };
-
-            var hideMenu = function (id) {
-                document.getElementById(id).classList.remove("opened");
-                document.body.style.overflow = "auto";
-            };
-
-            var hideAll = function() {
-                hideMenu("menu-root");
-                hideMenu("menu-platform");
-                hideMenu("menu-resources");
-            };
-
-            var openRoot = function () {
-                hideAll();
-                openMenu("menu-root");
-            };
-
-            var listListener = function(listenerId, menuId) {
-                document.getElementById(listenerId).addEventListener("click", function () {
-                    hideAll();
-                    openMenu(menuId);
-                });
-            };
-
-            document.getElementById("menu-open").addEventListener("click", openRoot);
-
-            listListener("menu-platform-open", "menu-platform");
-            listListener("menu-resources-open", "menu-resources");
-
-            document.getElementsByClassName("close")[0].addEventListener("click", hideAll);
-            document.getElementsByClassName("close")[1].addEventListener("click", hideAll);
-            document.getElementsByClassName("close")[2].addEventListener("click", hideAll);
-
-            document.getElementsByClassName("back")[0].addEventListener("click", openRoot);
-            document.getElementsByClassName("back")[1].addEventListener("click", openRoot);
-        });
-    </script>
+    <div class="pixart"><a href="https://pixart.dev/">built by Pixart</a></div>
 </section>
 
 <script>
