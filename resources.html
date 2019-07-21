@@ -10,6 +10,14 @@
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <script>
+        function openTab(id) {
+          if (id) {
+            $('.nav-tabs a[href="#' + id + '"]').tab('show');
+          }
+        }
+    </script>
 </head>
 <body>
 
@@ -57,9 +65,9 @@
                         <li class="header-resources active">
                             <div class="modals resources">
                                 <ul>
-                                    <li><a href="/resources.html#datasheet">Datasheet</a></li>
-                                    <li><a href="/resources.html#news">From The News</a></li>
-                                    <li><a href="/resources.html#integrations">Integrations</a></li>
+                                    <li><a onclick="openTab('datasheet')">Datasheet</a></li>
+                                    <li><a onclick="openTab('news')">From The News</a></li>
+                                    <li><a onclick="openTab('integrations')">Integrations</a></li>
                                 </ul>
                             </div>
                             <a href="/resources.html">Resources</a>
@@ -454,7 +462,6 @@
     </div>
 </div>
 
-
 <div class="menu-block">
     <div class="mobile-menu" id="menu-root">
         <div class="logo">
@@ -762,7 +769,6 @@
         <button class="trial-button" onclick="location.href='/contact.html'">Free trial</button>
     </div>
 </div>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
