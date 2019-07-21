@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Reposify</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600&display=swap" rel="stylesheet">
@@ -11,65 +11,429 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="body-wrapper">
+    <div class="scrollable-content">
+        <div class="background-block"></div>
+        <section class="header">
 
-<section class="header">
-    <div class="logo">
-        <img src="img/logo-top.png" alt="Logo">
-    </div>
-    <div class="row menu">
-        <ul class="header-menu">
-            <li class="header-home active"><a href="/">Home</a></li>
-            <li class="header-platform">
-                <div class="modals platform">
-                    <ul>
-                        <li><a href="/platform">Overview</a></li>
-                        <li><a href="/platform">External Surface Management</a></li>
-                        <li><a href="/platform">Comprehensive Analysis</a></li>
-                        <li><a href="/platform">Risk Insights & Prioritization</a></li>
-                        <li><a href="/platform">Inspect & Repair</a></li>
-                        <li><a href="/platform">Product Features</a></li>
-                    </ul>
+            <div class="sticky-menu">
+                <div class="logo">
+                    <img src="img/logo-top.png" alt="Logo">
                 </div>
-                <a href="/platform">Platform</a>
-            </li>
-            <li class="header-solutions"><a href="/solutions">Solutions</a></li>
-            <li class="header-resources">
-                <div class="modals resources">
-                    <ul>
-                        <li><a href="/resources">Datasheet</a></li>
-                        <li><a href="/resources">From The News</a></li>
-                        <li><a href="/resources">Integrations</a></li>
-                    </ul>
-                </div>
-                <a href="/resources">Resources</a>
-            </li>
-            <li class="header-company"><a href="/about">Company</a></li>
-        </ul>
-        <button onclick="location.href='/contact'">Free trial</button>
-    </div>
+                <div class="row menu">
+                    <ul class="header-menu">
+                        <li class="header-home active"><a href="/">Home</a></li>
+                        <li class="header-platform">
+                            <div class="modals platform">
+                                <ul>
+                                    <li><a href="/platform.html#overview">Overview</a></li>
+                                    <li><a href="/platform.html#ext-management">External Surface Management</a></li>
+                                    <li><a href="/platform.html#analysis">Comprehensive Analysis</a></li>
+                                    <li><a href="/platform.html#risk-insights">Risk Insights & Prioritization</a></li>
+                                    <li><a href="/platform.html#insect">Inspect & Repair</a></li>
+                                    <li><a href="/platform.html#features">Product Features</a></li>
+                                </ul>
+                            </div>
+                            <a href="/platform.html">Platform</a>
+                        </li>
 
-    <button class="menu-open" id="menu-open">
-        <svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Header---Home-mobile" transform="translate(-331.000000, -20.000000)" stroke="#0E2133" stroke-width="2">
-                    <g id="Group" transform="translate(331.000000, 21.000000)">
-                        <path d="M23.4132543,0.413793103 L0,0.413793103" id="Path-2"></path>
-                        <path d="M23.4132543,9.03448276 L0,9.03448276" id="Path-2-Copy"></path>
-                        <path d="M23.4132543,17.6551724 L0,17.6551724" id="Path-2-Copy-2"></path>
-                    </g>
-                </g>
-            </g>
-        </svg>
-    </button>
+                        <li class="header-solutions">
+                            <div class="modals solutions">
+                                <ul>
+                                    <li><a href="/solutions.html#capabilities">Product capabilities</a></li>
+                                    <li><a href="/solutions.html#industries">Industries</a></li>
+                                    <li><a href="/industries/financial.html">Financial</a></li>
+                                    <li><a href="/industries/retail.html">Retail</a></li>
+                                    <li><a href="/industries/enterprise.html">Enterprise</a></li>
+                                    <li><a href="/industries/healthcare.html">Healthcare</a></li>
+                                    <li><a href="/industries/technology.html">Technology</a></li>
+                                    <li><a href="/industries/insurance.html">Insurance</a></li>
+                                </ul>
+                            </div>
+                            <a href="/solutions.html">Solutions</a>
+                        </li>
+
+                        <li class="header-resources">
+                            <div class="modals resources">
+                                <ul>
+                                    <li><a href="/resources.html#datasheet">Datasheet</a></li>
+                                    <li><a href="/resources.html#news">From The News</a></li>
+                                    <li><a href="/resources.html#integrations">Integrations</a></li>
+                                </ul>
+                            </div>
+                            <a href="/resources.html">Resources</a>
+                        </li>
+
+                        <li class="header-company">
+                            <div class="modals company">
+                                <ul>
+                                    <li><a href="/about.html">About us</a></li>
+                                    <li><a href="/events.html">Events</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="/contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <a href="/about.html">Company</a>
+                        </li>
+                    </ul>
+                    <button onclick="location.href='/contact'">Free trial</button>
+                </div>
+                <button class="menu-open" id="menu-open">
+                    <svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Header---Home-mobile" transform="translate(-331.000000, -20.000000)" stroke="#0E2133"
+                               stroke-width="2">
+                                <g id="Group" transform="translate(331.000000, 21.000000)">
+                                    <path d="M23.4132543,0.413793103 L0,0.413793103" id="Path-2"></path>
+                                    <path d="M23.4132543,9.03448276 L0,9.03448276" id="Path-2-Copy"></path>
+                                    <path d="M23.4132543,17.6551724 L0,17.6551724" id="Path-2-Copy-2"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="header-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Terms and conditions</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>WELCOME TO REPOSIFY</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <h5>ABOUT US</h5>
+                        <p>Reposify provides an innovative external surface management solution on an Internet-scale with no
+                            installation required. Our SaaS solution allows enterprises to become aware of their blind
+                            spots, prevent Shadow-IT while it happens, and gain visibility and control over their assets
+                            anywhere around the world.</p>
+
+                        <h5>TERMS & CONDITIONS</h5>
+                        <p>Welcome to Reposify Ltd. ("Reposify", "we" or "us"). Your use of this web site (the “Site”), the
+                            services and content made available on the Site (the "Services") are subject to these Terms of
+                            Use (these “Terms”). By accessing the Site, you acknowledge that you have read and agreed to
+                            comply with the terms and conditions of Reposify as set below. If you access and use the
+                            Services and/or the Site, you represent and warrant that you are of legal age and have the right
+                            and authority to engage with these Terms. If you are entering into these Terms on behalf of a
+                            company or other legal entity, you represent that you have the authority to bind such entity and
+                            its affiliates to these Terms.</p>
+                        <p>Please note that we may make changes to these Terms from time to time, without prior notice. When
+                            we do, we will revise the “last updated” date given below. It is your responsibility to review
+                            these Terms frequently and to remain informed of any changes made. The then-current version of
+                            these Terms will supersede all earlier versions. You agree that your continued use of the
+                            Services will constitute your acceptance of any such revised Terms.</p>
+
+                        <h5>1. Use License</h5>
+                        <p>Reposify if you become our client we will grant you a non-exclusive, non-transferable, non-sub
+                            licensable and fully revocable license to access and use the Site and Services, provided that
+                            you comply with these Terms and the restrictions hereunder.</p>
+                        <p>Under this license you may not and shall not allow any third party to: Copy, reproduce, record,
+                            or make available to the public any part of the downloaded materials or content delivered to you
+                            via the Reposify Services, or otherwise make use of the downloaded materials which is not
+                            expressly permitted under these Terms; use the Reposify Services to import or copy any local
+                            files you do not have the legal right to import or copy in this way; modify or copy the
+                            downloaded materials; use the downloaded materials for any commercial purpose, or for any public
+                            display (commercial or non-commercial); sell the downloaded materials to any third party;
+                            attempt to decompile or reverse engineer any software contained on the Site or in the downloaded
+                            materials ; remove any copyright or other proprietary notations from the downloaded materials;
+                            or transfer the downloaded materials to another person or "mirror" the downloaded materials on
+                            any other server. This license shall automatically be revoked if you violate any of these
+                            restrictions at any time.</p>
+                        <p>Permission is granted to temporarily download one copy of the materials (information or software)
+                            on the Site for personal, non-commercial transitory viewing only. Upon terminating your viewing
+                            of these downloaded materials or upon the revocation of this license, you must destroy any
+                            downloaded materials in your possession whether in electronic or printed format. Reposify is the
+                            sole owner of all proprietary rights relating to the Services; The materials contained in the
+                            Site are protected by applicable copyright and trademark law as well as international treaties
+                            for intellectual property protection.</p>
+
+                        <h5>2. Client Responsibility</h5>
+                        <p>Client agrees that the Services may include scanning and related analysis of Client's IT Systems,
+                            on-line servers, cloud services and other related serviced relevant to the client, for which
+                            Reposify may use various techniques and software tools, to which the Client hereby consents.
+                            Client acknowledges and agrees that Reposify cannot and does not guarantee that the results of
+                            the Services will identify entire assets inventory, all security issues and correctly measure
+                            the overall quality and security posture of the Client IT Systems. Without limiting the
+                            generality of the foregoing, Reposify will not conduct a review to detect fraud or similar
+                            illegal acts nor identify, address or correct or offer services for the correction of any errors
+                            or defects in Client's IT Systems, other devices or components thereof. Receipt of the Services
+                            does not mean that the entire Client IT Systems are being discovered and managed moreover are
+                            secure from every form of attack. To the extent required or deemed advisable by Reposify and/or
+                            Client, Client will inform or confirm to third parties that Reposify is conducting the Services
+                            with Client’s approval.</p>
+                        <p>The Services will be carried out on the Client IT Systems that we may reasonably believe belong
+                            to the Client through information we independently obtain. Reposify will notify the Client of
+                            the list of Client IT Systems that were found. The Client may manually identify additional
+                            systems that are part of the Client IT Systems and add them to the Services. It is the
+                            responsibility of the Client to verify that all such systems are indeed Client IT Systems and to
+                            confirm their inclusion in the Services and compliance with these Terms.</p>
+                        <p>Client shall have sole responsibility for all adequate protection and backup of data and/or
+                            equipment used in connection with or having any connection to the Client IT Systems and
+                            protection and backing up of all Client IT Systems. Client will not make any claim against
+                            Reposify for lost data, re-run time, inaccurate output, work delays or lost profits resulting
+                            from the Services. In order not to distort the results of the Services, you will respond in a
+                            normal fashion if or when you detect traces of activity from the Services in any logs of the
+                            Client IT Systems or any systems monitoring the Client IT Systems as would occur in the event of
+                            a real security penetration. Additionally, if legally required under any applicable law, you
+                            will be responsible to notify legal or public authorities of such activity detected, discovered
+                            or created by the Services.</p>
+                        <p>You represent and warrant that: (i) you have obtained and will hold for the entire duration of
+                            the provision of the Services from the third-party owner (or licensor, as the case may be) of
+                            all products and services contained in the Client IT Systems or otherwise subject to the
+                            Services (including internet service providers and hosting suppliers), all approvals and permits
+                            required in order to make the Services not infringing on the rights (intellectual property or
+                            other) of such third party, including such third party’s information systems, network, and
+                            infrastructure and to the extent required, you have obtained appropriate consent from such third
+                            parties for the Services to be carried out; and (ii) the Client Data and all other data you
+                            provide is lawful and non-infringing.</p>
+                        <p><b>By using our Service You agree to:</b></p>
+                        <ul>
+                            <li>Use the Services only for legitimate, reasonable, personal and non-commercial use.</li>
+                            <li>Refrain from using the information provided by the Services for any malicious or unlawful
+                                purposes or for unethical or unfair commercial practices.
+                            </li>
+                            <li>Refrain from accessing information regarding competitors.</li>
+                            <li>Keep the information provided by the Services confidential and limit access to it to your
+                                representatives who have a need to know basis.
+                            </li>
+                        </ul>
+
+                        <h5>3. Disclaimer</h5>
+                        <p>The downloaded materials on the Site are provided on an 'as is' basis. Reposify makes no
+                            warranties, express or implied, and hereby disclaims and negates all other warranties including,
+                            without limitation, implied warranties or conditions of merchantability, fitness for a
+                            particular purpose, or non-infringement of intellectual property or other violation of rights.
+                            Further, Reposify does not warrant or make any representations concerning the accuracy, likely
+                            results, or reliability of the use of the downloaded materials on the Site or otherwise relating
+                            to such materials or on any sites linked to the Site.</p>
+                        <p>Reposify does not warrant that the Services or access to and use of the Site or services will be
+                            uninterrupted or error free, that all assets, security issues and defects will be detected, or
+                            that the Site or Services is free from viruses or other harmful code.</p>
+                        <p>Reposify offers no warranty regarding the reliability of the performance of the services,
+                            including without limitation any warranty: (i) that we will find and locate all of the client's
+                            unmanaged and managed assets (ii) that the services will detect, block or prevent all security
+                            breaches or threats, viruses, spam or other harmful or unwanted code or intrusions; and (iii)
+                            that the services will prevent any cyber threats and/or attacks.</p>
+                        <p>The Materials and outcome of the services do not constitute legal or other advice, and you
+                            understand that you must determine for yourself the need to obtain your own independent legal or
+                            other advice regarding the subject matter of any report. Your use of and reliance upon the
+                            services and/or the Site and/or the Services results is entirely at your sole discretion and
+                            risk, and Reposify and anyone on its behalf shall have no responsibility or liability whatsoever
+                            to you in connection with any of the foregoing.</p>
+                        <p>You agree that we will not be held responsible for any consequences that may result from
+                            technical problems including without limitation in connection with the internet (such as slow
+                            connections, traffic congestion or overload of our or other servers) or any telecommunications
+                            or internet providers.</p>
+
+                        <h5>4. Limitations</h5>
+                        <p>In no event shall Reposify its directors, officers, employees, agents, representatives or
+                            suppliers be liable for any damages (including, without limitation, damages for loss of data or
+                            profit, or due to business interruption) arising out of the use or inability to use the
+                            materials on the Site, even if Reposify or a Reposify authorized representative has been
+                            notified orally or in writing of the possibility of such damage. In no event shall the aggregate
+                            liability of Reposify, its directors, officers, employees, agents, or suppliers, under, or
+                            otherwise in connection with, these terms (including the Site and the Services), exceed the
+                            total amount of fees actually paid by you (if any) for in the three (3) months immediately prior
+                            to the event giving rise to such liability.</p>
+                        <p>The foregoing exclusions and limitations on liability set forth in this section shall apply: (i)
+                            even if Reposify, its affiliates or suppliers, have been advised, or should have been aware, of
+                            the possibility of losses or damages; (ii) even if any remedy in these terms fails of its
+                            essential purpose; and (iii) regardless of the theory or basis of liability (such as, but not
+                            limited to, breach of contract or tort).</p>
+                        <p>No action, regardless of form, may be brought by you after the earlier of (a) 12 months after the
+                            date on which you become aware that a cause of action has arisen, or (b) the period set forth
+                            under the applicable statute of limitations.</p>
+                        <p>Applicable law may not allow the exclusion of certain warranties, so to that extent such
+                            exclusions may not apply.</p>
+
+                        <h5>5. Registration and Account</h5>
+                        <p>Reposify offers its Services in various methods (each, an "Account"). All Accounts require online
+                            registration and shall be governed by specific terms and conditions to be agreed between you and
+                            Reposify. You are responsible for maintaining the confidentiality of your Account, and fully
+                            responsible for all activities that occur under your Account. You agree to immediately notify
+                            Reposify of any unauthorized use of your Account or any other breach of security. Reposify
+                            cannot and will not be liable for any loss or damage arising from any unauthorized use of your
+                            Account.</p>
+
+                        <h5>6. Use of the Service/s</h5>
+                        <p>Reposify offers you a monthly or yearly subscriptions to use the Services during the valid
+                            subscription.</p>
+                        <p>A detailed description of our Accounts, including the prices and the features associated with
+                            each type of Account, is available on our Reposify Pricing page.</p>
+                        <p>You may discontinue our services at any time. The subscription be terminated at the end of the
+                            calendar month after receiving the notice of termination.</p>
+                        <p>Reposify may make changes to the applicable prices for any of the Services provided, from time to
+                            time, without notice. Such changes shall appear on its Website and shall come into effect the
+                            following month.</p>
+                        <p>Reposify outsources online payment processing to Bluesnap or similar secured services (the
+                            "Payment Processing Company"). Reposify does not have access to your credit card numbers and all
+                            other payment information submitted to the Payment Processing Company as a result of the online
+                            payment process. You agree to provide the Payment Processing Company with a valid credit card
+                            and accurate, complete and updated information required by the subscription registration form.
+                            Failure to comply may result in the immediate termination of Services.</p>
+
+                        <h5>7. Accuracy of materials</h5>
+                        <p>The materials appearing on the Site may contain technical, typographical, or photographic errors.
+                            Reposify does not warrant that any of the materials on the Site are accurate, complete or
+                            current. Reposify may make changes to the materials contained on the Site at any time without
+                            notice, However, Reposify does not make any commitment to update the materials.</p>
+
+                        <h5>8. Indemnity</h5>
+                        <p>You agree to defend, indemnify, and hold Reposify and its respective officers, directors,
+                            employees, agents, representatives and affiliates harmless from and against any claims,
+                            liabilities, damages, losses, and expenses, including without limitation reasonable attorney's
+                            fees and costs, arising out of or in any way connected with (i) your access to or use of the
+                            Site, Services or the content; (ii) your violation of these Terms; or (iii) your infringement of
+                            any third party right, including without limitation any intellectual property right, publicity,
+                            confidentiality, property or privacy right.</p>
+
+                        <h5>9. Links</h5>
+                        <p>Reposify has not reviewed all of the other sites linked to the Site and is not responsible for
+                            the contents of any such linked site. The inclusion of any link does not imply endorsement by
+                            Reposify of any site. Use of any such linked website is at the user's own risk.</p>
+
+                        <h5>10. Privacy Policy</h5>
+                        <p>You acknowledge and agree that Reposify can use any Personal Data that Reposify may collect or
+                            obtain in connection with the Site and/or the Services in accordance with Reposify Privacy
+                            Policy available at https://www.reposify.com/privacy. Reposify assumes no responsibility or
+                            liability for Client's Data, and the Client shall be solely responsible for its Data and the
+                            consequences of using, disclosing, storing, or transmitting it.</p>
+
+                        <h5>11. Termination</h5>
+                        <p>You acknowledge and agree that Reposify has the right, at any time and for any reason, at its
+                            sole discretion with or without notice to you: (i) to terminate and/or shut down (temporarily or
+                            permanently) parts or all of the Services. Upon termination of the Services, your right to use
+                            the Services will immediately cease. All provisions of the Terms which by their nature should
+                            survive termination shall survive termination.</p>
+
+                        <h5>12. Assignment</h5>
+                        <p>This Agreement is personal to you, and you may not assign your rights or obligations to anyone.
+                            Reposify, however, may assign these Terms without your notice or consent.</p>
+
+                        <h5>13. Governing Law</h5>
+                        <p>These terms and conditions are governed by and construed in accordance with the laws of the State
+                            of Israel without giving effect to any conflict of law provisions and you irrevocably submit to
+                            the exclusive jurisdiction of the courts in the city of Tel Aviv, Israel.</p>
+                        <p>Last updated: April 2019</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="logo">
+                <img src="img/logo-bottom.png" alt="Logo">
+            </div>
+
+            <div class="footer-content">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-1 col-md-offset-1">
+                            <ul class="home">
+                                <li><h5><a href="/">Home</a></h5>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                            <ul class="platform">
+                                <li><h5><a href="/platform.html">Platform</a></h5></li>
+                                <li><a href="/platform.html#overview">Overview</a></li>
+                                <li><a href="/platform.html#ext-management">External Surface Management</a></li>
+                                <li><a href="/platform.html#analysis">Comprehensive Analysis</a></li>
+                                <li><a href="/platform.html#risk-insights">Risk Insights & Prioritization</a></li>
+                                <li><a href="/platform.html#insect">Inspect & Repair</a></li>
+                                <li><a href="/platform.html#features">Product Features</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <ul class="resources">
+                                <li><h5><a href="/resources.html">Resources</a></h5></li>
+                                <li><a href="/resources.html#datasheet">Datasheet</a></li>
+                                <li><a href="/resources.html#news">From The News</a></li>
+                                <li><a href="/resources.html#integrations">Integrations</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <ul class="solutions">
+                                <li><h5><a href="#">Support</a></h5></li>
+                                <li><a href="#">Contact Support</a></li>
+                                <li><a href="#">API Status</a></li>
+                                <li><a href="#">Github</a></li>
+                                <li><a href="/security.html">Security</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <ul class="company">
+                                <li><h5><a href="/about.html">Company</a></h5></li>
+                                <li><a href="/about.html">About us</a></li>
+                                <li><a href="/events.html">Events</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="/contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-floor">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-2 col-md-offset-2">
+                            <a class="terms" href="/terms.html">Terms and conditions</a>
+                        </div>
+
+                        <div class="col-md-2 col-md-offset-1">
+                            <a href="/privacy.html">Privacy policy</a>
+                        </div>
+
+                        <div class="col-md-3">
+                            <p>© 2019 Reposify Ltd. All Rights Reserved.</p>
+                        </div>
+                        <div class="pixart col-md-2">
+                            <a href="https://pixart.dev/" target="_blank">built by Pixart</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</div>
+<div class="menu-block">
     <div class="mobile-menu" id="menu-root">
         <div class="logo">
             <img src="img/logo-top.png" alt="Logo">
         </div>
 
         <button class="close">
-            <svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="mobile---Menu" transform="translate(-333.000000, -19.000000)" stroke="#0E2133" stroke-width="2">
+                    <g id="mobile---Menu" transform="translate(-333.000000, -19.000000)" stroke="#0E2133"
+                       stroke-width="2">
                         <g id="Group" transform="translate(334.000000, 20.000000)">
                             <path d="M0,0.434782609 L18.9576151,19.3923977" id="Path-3"></path>
                             <path d="M0,19.3923977 L18.9576151,0.434782609" id="Path-3-Copy-3"></path>
@@ -103,8 +467,26 @@
                     </svg>
                 </span>
                 </li>
-                <li>
-                    <a href="/solutions">Solution</a>
+                <li id="menu-solutions-open">
+                    <span>Solution</span>
+                    <span class="next">
+                    <svg width="9px" height="13px" viewBox="0 0 9 13" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                           stroke-linecap="square">
+                            <g id="mobile---Menu" transform="translate(-257.000000, -174.000000)" stroke="#85A6B9"
+                               stroke-width="2">
+                                <g id="Group-2" transform="translate(259.000000, 175.000000)">
+                                    <path d="M0.218211288,10.1741864 L4.95761505,5.43478261"
+                                          id="Path-3-Copy-3"></path>
+                                    <path d="M0.218211288,0.695378846 L4.95761505,5.43478261"
+                                          id="Path-3-Copy-4"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
                 </li>
                 <li id="menu-resources-open">
                     <span>Resources</span>
@@ -128,7 +510,25 @@
                 </span>
                 </li>
                 <li id="menu-company-open">
-                    <a href="/about">Company</a>
+                    <span>Company</span>
+                    <span class="next">
+                    <svg width="9px" height="13px" viewBox="0 0 9 13" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                           stroke-linecap="square">
+                            <g id="mobile---Menu" transform="translate(-257.000000, -174.000000)" stroke="#85A6B9"
+                               stroke-width="2">
+                                <g id="Group-2" transform="translate(259.000000, 175.000000)">
+                                    <path d="M0.218211288,10.1741864 L4.95761505,5.43478261"
+                                          id="Path-3-Copy-3"></path>
+                                    <path d="M0.218211288,0.695378846 L4.95761505,5.43478261"
+                                          id="Path-3-Copy-4"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
                 </li>
             </ul>
         </div>
@@ -137,12 +537,16 @@
     </div>
     <div class="mobile-menu" id="menu-platform">
         <button class="back">
-            <svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="mobile---Menu---platform" transform="translate(-19.000000, -19.000000)" stroke="#0E2133" stroke-width="2">
+                    <g id="mobile---Menu---platform" transform="translate(-19.000000, -19.000000)" stroke="#0E2133"
+                       stroke-width="2">
                         <g id="Group-Copy" transform="translate(20.000000, 20.000000)">
-                            <path d="M0.478807525,9.91359013 L9.95761505,19.3923977" id="Path-3" stroke-linecap="square"></path>
-                            <path d="M0.478807525,9.91359013 L9.95761505,0.434782609" id="Path-3-Copy-3" stroke-linecap="square"></path>
+                            <path d="M0.478807525,9.91359013 L9.95761505,19.3923977" id="Path-3"
+                                  stroke-linecap="square"></path>
+                            <path d="M0.478807525,9.91359013 L9.95761505,0.434782609" id="Path-3-Copy-3"
+                                  stroke-linecap="square"></path>
                             <path d="M0.478807525,10 L31.2919922,10" id="Path-2"></path>
                         </g>
                     </g>
@@ -153,9 +557,11 @@
         <h3 class="menu-title">Platform</h3>
 
         <button class="close">
-            <svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="mobile---Menu" transform="translate(-333.000000, -19.000000)" stroke="#0E2133" stroke-width="2">
+                    <g id="mobile---Menu" transform="translate(-333.000000, -19.000000)" stroke="#0E2133"
+                       stroke-width="2">
                         <g id="Group" transform="translate(334.000000, 20.000000)">
                             <path d="M0,0.434782609 L18.9576151,19.3923977" id="Path-3"></path>
                             <path d="M0,19.3923977 L18.9576151,0.434782609" id="Path-3-Copy-3"></path>
@@ -167,12 +573,63 @@
 
         <div class="menu-list">
             <ul>
-                <li><a href="/platform">Overview</a></li>
-                <li><a href="/platform">External Surface Management</a></li>
-                <li><a href="/platform">Comprehensive Analysis</a></li>
-                <li><a href="/platform">Risk Insights & Prioritization</a></li>
-                <li><a href="/platform">Inspect & Repair</a></li>
-                <li><a href="/platform">Product Features</a></li>
+                <li><a href="/platform.html#overview">Overview</a></li>
+                <li><a href="/platform.html#ext-management">External Surface Management</a></li>
+                <li><a href="/platform.html#analysis">Comprehensive Analysis</a></li>
+                <li><a href="/platform.html#risk-insights">Risk Insights & Prioritization</a></li>
+                <li><a href="/platform.html#insect">Inspect & Repair</a></li>
+                <li><a href="/platform.html#features">Product Features</a></li>
+            </ul>
+        </div>
+
+        <button class="trial-button" onclick="location.href='/contact'">Free trial</button>
+    </div>
+    <div class="mobile-menu" id="menu-solutions">
+        <button class="back">
+            <svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="mobile---Menu---platform" transform="translate(-19.000000, -19.000000)" stroke="#0E2133"
+                       stroke-width="2">
+                        <g id="Group-Copy" transform="translate(20.000000, 20.000000)">
+                            <path d="M0.478807525,9.91359013 L9.95761505,19.3923977" id="Path-3"
+                                  stroke-linecap="square"></path>
+                            <path d="M0.478807525,9.91359013 L9.95761505,0.434782609" id="Path-3-Copy-3"
+                                  stroke-linecap="square"></path>
+                            <path d="M0.478807525,10 L31.2919922,10" id="Path-2"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
+
+        <h3 class="menu-title">Solution</h3>
+
+        <button class="close">
+            <svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="mobile---Menu" transform="translate(-333.000000, -19.000000)" stroke="#0E2133"
+                       stroke-width="2">
+                        <g id="Group" transform="translate(334.000000, 20.000000)">
+                            <path d="M0,0.434782609 L18.9576151,19.3923977" id="Path-3"></path>
+                            <path d="M0,19.3923977 L18.9576151,0.434782609" id="Path-3-Copy-3"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
+
+        <div class="menu-list">
+            <ul>
+                <li><a href="/solutions.html#capabilities">Product capabilities</a></li>
+                <li><a href="/solutions.html#industries">Industries</a></li>
+                <li><a href="/industries/financial.html">Financial</a></li>
+                <li><a href="/industries/retail.html">Retail</a></li>
+                <li><a href="/industries/enterprise.html">Enterprise</a></li>
+                <li><a href="/industries/healthcare.html">Healthcare</a></li>
+                <li><a href="/industries/technology.html">Technology</a></li>
+                <li><a href="/industries/insurance.html">Insurance</a></li>
             </ul>
         </div>
 
@@ -180,12 +637,16 @@
     </div>
     <div class="mobile-menu" id="menu-resources">
         <button class="back">
-            <svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="mobile---Menu---platform" transform="translate(-19.000000, -19.000000)" stroke="#0E2133" stroke-width="2">
+                    <g id="mobile---Menu---platform" transform="translate(-19.000000, -19.000000)" stroke="#0E2133"
+                       stroke-width="2">
                         <g id="Group-Copy" transform="translate(20.000000, 20.000000)">
-                            <path d="M0.478807525,9.91359013 L9.95761505,19.3923977" id="Path-3" stroke-linecap="square"></path>
-                            <path d="M0.478807525,9.91359013 L9.95761505,0.434782609" id="Path-3-Copy-3" stroke-linecap="square"></path>
+                            <path d="M0.478807525,9.91359013 L9.95761505,19.3923977" id="Path-3"
+                                  stroke-linecap="square"></path>
+                            <path d="M0.478807525,9.91359013 L9.95761505,0.434782609" id="Path-3-Copy-3"
+                                  stroke-linecap="square"></path>
                             <path d="M0.478807525,10 L31.2919922,10" id="Path-2"></path>
                         </g>
                     </g>
@@ -196,9 +657,11 @@
         <h3 class="menu-title">Platform</h3>
 
         <button class="close">
-            <svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="mobile---Menu" transform="translate(-333.000000, -19.000000)" stroke="#0E2133" stroke-width="2">
+                    <g id="mobile---Menu" transform="translate(-333.000000, -19.000000)" stroke="#0E2133"
+                       stroke-width="2">
                         <g id="Group" transform="translate(334.000000, 20.000000)">
                             <path d="M0,0.434782609 L18.9576151,19.3923977" id="Path-3"></path>
                             <path d="M0,19.3923977 L18.9576151,0.434782609" id="Path-3-Copy-3"></path>
@@ -210,242 +673,129 @@
 
         <div class="menu-list">
             <ul>
-                <li><a href="/resources">Datasheet</a></li>
-                <li><a href="/resources">From The News</a></li>
-                <li><a href="/resources">Integrations</a></li>
+                <li><a href="/resources.html#datasheet">Datasheet</a></li>
+                <li><a href="/resources.html#news">From The News</a></li>
+                <li><a href="/resources.html#integrations">Integrations</a></li>
             </ul>
         </div>
 
         <button class="trial-button" onclick="location.href='/contact'">Free trial</button>
     </div>
+    <div class="mobile-menu" id="menu-company">
+        <button class="back">
+            <svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="mobile---Menu---platform" transform="translate(-19.000000, -19.000000)" stroke="#0E2133"
+                       stroke-width="2">
+                        <g id="Group-Copy" transform="translate(20.000000, 20.000000)">
+                            <path d="M0.478807525,9.91359013 L9.95761505,19.3923977" id="Path-3"
+                                  stroke-linecap="square"></path>
+                            <path d="M0.478807525,9.91359013 L9.95761505,0.434782609" id="Path-3-Copy-3"
+                                  stroke-linecap="square"></path>
+                            <path d="M0.478807525,10 L31.2919922,10" id="Path-2"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
 
-    <div class="header-content">
-        <div class="container">
-            <div class="row">
-                 <div class="col-md-12">
-                    <h1>Terms and conditions</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        <h3 class="menu-title">Platform</h3>
 
-<section class="box">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h4>WELCOME TO REPOSIFY</h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+        <button class="close">
+            <svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="mobile---Menu" transform="translate(-333.000000, -19.000000)" stroke="#0E2133"
+                       stroke-width="2">
+                        <g id="Group" transform="translate(334.000000, 20.000000)">
+                            <path d="M0,0.434782609 L18.9576151,19.3923977" id="Path-3"></path>
+                            <path d="M0,19.3923977 L18.9576151,0.434782609" id="Path-3-Copy-3"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
 
-                <h5>ABOUT US</h5>
-                <p>Reposify provides an innovative external surface management solution on an Internet-scale with no installation required. Our SaaS solution allows enterprises to become aware of their blind spots, prevent Shadow-IT while it happens, and gain visibility and control over their assets anywhere around the world.</p>
-
-                <h5>TERMS & CONDITIONS</h5>
-                <p>Welcome to Reposify Ltd. ("Reposify", "we" or "us"). Your use of this web site (the “Site”), the services and content made available on the Site (the "Services") are subject to these Terms of Use (these “Terms”). By accessing the Site, you acknowledge that you have read and agreed to comply with the terms and conditions of Reposify as set below. If you access and use the Services and/or the Site, you represent and warrant that you are of legal age and have the right and authority to engage with these Terms. If you are entering into these Terms on behalf of a company or other legal entity, you represent that you have the authority to bind such entity and its affiliates to these Terms.</p>
-                <p>Please note that we may make changes to these Terms from time to time, without prior notice. When we do, we will revise the “last updated” date given below. It is your responsibility to review these Terms frequently and to remain informed of any changes made. The then-current version of these Terms will supersede all earlier versions. You agree that your continued use of the Services will constitute your acceptance of any such revised Terms.</p>
-
-                <h5>1. Use License</h5>
-                <p>Reposify if you become our client we will grant you a non-exclusive, non-transferable, non-sub licensable and fully revocable license to access and use the Site and Services, provided that you comply with these Terms and the restrictions hereunder.</p>
-                <p>Under this license you may not and shall not allow any third party to: Copy, reproduce, record, or make available to the public any part of the downloaded materials or content delivered to you via the Reposify Services, or otherwise make use of the downloaded materials which is not expressly permitted under these Terms; use the Reposify Services to import or copy any local files you do not have the legal right to import or copy in this way; modify or copy the downloaded materials; use the downloaded materials for any commercial purpose, or for any public display (commercial or non-commercial); sell the downloaded materials to any third party; attempt to decompile or reverse engineer any software contained on the Site or in the downloaded materials ; remove any copyright or other proprietary notations from the downloaded materials; or transfer the downloaded materials to another person or "mirror" the downloaded materials on any other server. This license shall automatically be revoked if you violate any of these restrictions at any time.</p>
-                <p>Permission is granted to temporarily download one copy of the materials (information or software) on the Site for personal, non-commercial transitory viewing only. Upon terminating your viewing of these downloaded materials or upon the revocation of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format. Reposify is the sole owner of all proprietary rights relating to the Services; The materials contained in the Site are protected by applicable copyright and trademark law as well as international treaties for intellectual property protection.</p>
-
-                <h5>2. Client Responsibility</h5>
-                <p>Client agrees that the Services may include scanning and related analysis of Client's IT Systems, on-line servers, cloud services and other related serviced relevant to the client, for which Reposify may use various techniques and software tools, to which the Client hereby consents. Client acknowledges and agrees that Reposify cannot and does not guarantee that the results of the Services will identify entire assets inventory, all security issues and correctly measure the overall quality and security posture of the Client IT Systems. Without limiting the generality of the foregoing, Reposify will not conduct a review to detect fraud or similar illegal acts nor identify, address or correct or offer services for the correction of any errors or defects in Client's IT Systems, other devices or components thereof. Receipt of the Services does not mean that the entire Client IT Systems are being discovered and managed moreover are secure from every form of attack. To the extent required or deemed advisable by Reposify and/or Client, Client will inform or confirm to third parties that Reposify is conducting the Services with Client’s approval.</p>
-                <p>The Services will be carried out on the Client IT Systems that we may reasonably believe belong to the Client through information we independently obtain. Reposify will notify the Client of the list of Client IT Systems that were found. The Client may manually identify additional systems that are part of the Client IT Systems and add them to the Services. It is the responsibility of the Client to verify that all such systems are indeed Client IT Systems and to confirm their inclusion in the Services and compliance with these Terms.</p>
-                <p>Client shall have sole responsibility for all adequate protection and backup of data and/or equipment used in connection with or having any connection to the Client IT Systems and protection and backing up of all Client IT Systems. Client will not make any claim against Reposify for lost data, re-run time, inaccurate output, work delays or lost profits resulting from the Services. In order not to distort the results of the Services, you will respond in a normal fashion if or when you detect traces of activity from the Services in any logs of the Client IT Systems or any systems monitoring the Client IT Systems as would occur in the event of a real security penetration. Additionally, if legally required under any applicable law, you will be responsible to notify legal or public authorities of such activity detected, discovered or created by the Services.</p>
-                <p>You represent and warrant that: (i) you have obtained and will hold for the entire duration of the provision of the Services from the third-party owner (or licensor, as the case may be) of all products and services contained in the Client IT Systems or otherwise subject to the Services (including internet service providers and hosting suppliers), all approvals and permits required in order to make the Services not infringing on the rights (intellectual property or other) of such third party, including such third party’s information systems, network, and infrastructure and to the extent required, you have obtained appropriate consent from such third parties for the Services to be carried out; and (ii) the Client Data and all other data you provide is lawful and non-infringing.</p>
-                <p><b>By using our Service You agree to:</b></p>
-                <ul>
-                    <li>Use the Services only for legitimate, reasonable, personal and non-commercial use.</li>
-                    <li>Refrain from using the information provided by the Services for any malicious or unlawful purposes or for unethical or unfair commercial practices.</li>
-                    <li>Refrain from accessing information regarding competitors.</li>
-                    <li>Keep the information provided by the Services confidential and limit access to it to your representatives who have a need to know basis.</li>
-                </ul>
-
-                <h5>3. Disclaimer</h5>
-                <p>The downloaded materials on the Site are provided on an 'as is' basis. Reposify makes no warranties, express or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, Reposify does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the downloaded materials on the Site or otherwise relating to such materials or on any sites linked to the Site.</p>
-                <p>Reposify does not warrant that the Services or access to and use of the Site or services will be uninterrupted or error free, that all assets, security issues and defects will be detected, or that the Site or Services is free from viruses or other harmful code.</p>
-                <p>Reposify offers no warranty regarding the reliability of the performance of the services, including without limitation any warranty: (i) that we will find and locate all of the client's unmanaged and managed assets (ii) that the services will detect, block or prevent all security breaches or threats, viruses, spam or other harmful or unwanted code or intrusions; and (iii) that the services will prevent any cyber threats and/or attacks.</p>
-                <p>The Materials and outcome of the services do not constitute legal or other advice, and you understand that you must determine for yourself the need to obtain your own independent legal or other advice regarding the subject matter of any report. Your use of and reliance upon the services and/or the Site and/or the Services results is entirely at your sole discretion and risk, and Reposify and anyone on its behalf shall have no responsibility or liability whatsoever to you in connection with any of the foregoing.</p>
-                <p>You agree that we will not be held responsible for any consequences that may result from technical problems including without limitation in connection with the internet (such as slow connections, traffic congestion or overload of our or other servers) or any telecommunications or internet providers.</p>
-
-                <h5>4. Limitations</h5>
-                <p>In no event shall Reposify its directors, officers, employees, agents, representatives or suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on the Site, even if Reposify or a Reposify authorized representative has been notified orally or in writing of the possibility of such damage. In no event shall the aggregate liability of Reposify, its directors, officers, employees, agents, or suppliers, under, or otherwise in connection with, these terms (including the Site and the Services), exceed the total amount of fees actually paid by you (if any) for in the three (3) months immediately prior to the event giving rise to such liability.</p>
-                <p>The foregoing exclusions and limitations on liability set forth in this section shall apply: (i) even if Reposify, its affiliates or suppliers, have been advised, or should have been aware, of the possibility of losses or damages; (ii) even if any remedy in these terms fails of its essential purpose; and (iii) regardless of the theory or basis of liability (such as, but not limited to, breach of contract or tort).</p>
-                <p>No action, regardless of form, may be brought by you after the earlier of (a) 12 months after the date on which you become aware that a cause of action has arisen, or (b) the period set forth under the applicable statute of limitations.</p>
-                <p>Applicable law may not allow the exclusion of certain warranties, so to that extent such exclusions may not apply.</p>
-
-                <h5>5. Registration and Account</h5>
-                <p>Reposify offers its Services in various methods (each, an "Account"). All Accounts require online registration and shall be governed by specific terms and conditions to be agreed between you and Reposify. You are responsible for maintaining the confidentiality of your Account, and fully responsible for all activities that occur under your Account. You agree to immediately notify Reposify of any unauthorized use of your Account or any other breach of security. Reposify cannot and will not be liable for any loss or damage arising from any unauthorized use of your Account.</p>
-
-                <h5>6. Use of the Service/s</h5>
-                <p>Reposify offers you a monthly or yearly subscriptions to use the Services during the valid subscription.</p>
-                <p>A detailed description of our Accounts, including the prices and the features associated with each type of Account, is available on our Reposify Pricing page.</p>
-                <p>You may discontinue our services at any time. The subscription be terminated at the end of the calendar month after receiving the notice of termination.</p>
-                <p>Reposify may make changes to the applicable prices for any of the Services provided, from time to time, without notice. Such changes shall appear on its Website and shall come into effect the following month.</p>
-                <p>Reposify outsources online payment processing to Bluesnap or similar secured services (the "Payment Processing Company"). Reposify does not have access to your credit card numbers and all other payment information submitted to the Payment Processing Company as a result of the online payment process. You agree to provide the Payment Processing Company with a valid credit card and accurate, complete and updated information required by the subscription registration form. Failure to comply may result in the immediate termination of Services.</p>
-
-                <h5>7. Accuracy of materials</h5>
-                <p>The materials appearing on the Site may contain technical, typographical, or photographic errors. Reposify does not warrant that any of the materials on the Site are accurate, complete or current. Reposify may make changes to the materials contained on the Site at any time without notice, However, Reposify does not make any commitment to update the materials.</p>
-
-                <h5>8. Indemnity</h5>
-                <p>You agree to defend, indemnify, and hold Reposify and its respective officers, directors, employees, agents, representatives and affiliates harmless from and against any claims, liabilities, damages, losses, and expenses, including without limitation reasonable attorney's fees and costs, arising out of or in any way connected with (i) your access to or use of the Site, Services or the content; (ii) your violation of these Terms; or (iii) your infringement of any third party right, including without limitation any intellectual property right, publicity, confidentiality, property or privacy right.</p>
-
-                <h5>9. Links</h5>
-                <p>Reposify has not reviewed all of the other sites linked to the Site and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Reposify of any site. Use of any such linked website is at the user's own risk.</p>
-
-                <h5>10. Privacy Policy</h5>
-                <p>You acknowledge and agree that Reposify can use any Personal Data that Reposify may collect or obtain in connection with the Site and/or the Services in accordance with Reposify Privacy Policy available at https://www.reposify.com/privacy. Reposify assumes no responsibility or liability for Client's Data, and the Client shall be solely responsible for its Data and the consequences of using, disclosing, storing, or transmitting it.</p>
-
-                <h5>11. Termination</h5>
-                <p>You acknowledge and agree that Reposify has the right, at any time and for any reason, at its sole discretion with or without notice to you: (i) to terminate and/or shut down (temporarily or permanently) parts or all of the Services. Upon termination of the Services, your right to use the Services will immediately cease. All provisions of the Terms which by their nature should survive termination shall survive termination.</p>
-
-                <h5>12. Assignment</h5>
-                <p>This Agreement is personal to you, and you may not assign your rights or obligations to anyone. Reposify, however, may assign these Terms without your notice or consent.</p>
-
-                <h5>13. Governing Law</h5>
-                <p>These terms and conditions are governed by and construed in accordance with the laws of the State of Israel without giving effect to any conflict of law provisions and you irrevocably submit to the exclusive jurisdiction of the courts in the city of Tel Aviv, Israel.</p>
-                <p>Last updated: April 2019</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="footer">
-    <div class="logo">
-        <img src="img/logo-bottom.png" alt="Logo">
-    </div>
-
-    <div class="footer-content">
-
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-1 col-md-offset-1">
-                    <ul class="home">
-                        <li><h5><a href="/">Home</a></h5>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3">
-                    <ul class="platform">
-                        <li><h5><a href="/platform">Platform</a></h5></li>
-                        <li><a href="/platform">Overview</a></li>
-                        <li><a href="/platform">External Surface Management</a></li>
-                        <li><a href="/platform">Comprehensive Analysis</a></li>
-                        <li><a href="/platform">Risk Insights & Prioritization</a></li>
-                        <li><a href="/platform">Inspect & Repair</a></li>
-                        <li><a href="/platform">Product Features</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2">
-                    <ul class="resources">
-                        <li><h5><a href="/resources">Resources</a></h5></li>
-                        <li><a href="/resources">DataSheet</a></li>
-                        <li><a href="/resources">From The News</a></li>
-                        <li><a href="/resources">Integrations</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2">
-                    <ul class="solutions">
-                        <li><h5><a href="#">Support</a></h5></li>
-                        <li><a href="#">Contact Support</a></li>
-                        <li><a href="#">API Status</a></li>
-                        <li><a href="#">Github</a></li>
-                        <li><a href="/security">Security</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2">
-                    <ul class="company">
-                        <li><h5><a href="/about">Company</a></h5></li>
-                        <li><a href="/about">About us</a></li>
-                        <li><a href="/events">Events</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
-                    </ul>
-                </div>
-
-            </div>
+        <div class="menu-list">
+            <ul>
+                <li><a href="/about.html">About us</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
         </div>
 
+        <button class="trial-button" onclick="location.href='/contact'">Free trial</button>
     </div>
-
-    <div class="footer-floor">
-
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-2 col-md-offset-2">
-                    <a class="terms" href="/terms">Terms and conditions</a>
-                </div>
-
-                <div class="col-md-2 col-md-offset-1">
-                    <a href="/privacy">Privacy policy</a>
-                </div>
-
-                <div class="col-md-3">
-                    <p>© 2019 Reposify Ltd. All Rights Reserved.</p>
-                </div>
-                <div class="pixart col-md-2">
-                    <a href="https://pixart.dev/" target="_blank">built by Pixart</a>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</section>
+</div>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
 
-        var openMenu = function (id) {
-            document.getElementById(id).classList.add("opened");
-            document.body.style.overflow = "hidden";
-        };
+    var wrapper = document.getElementsByClassName("body-wrapper")[0];
 
-        var hideMenu = function (id) {
-            document.getElementById(id).classList.remove("opened");
-            document.body.style["overflow-y"] = "auto";
-        };
+    var openMenu = function (id) {
+      document.getElementById(id).classList.add("opened");
+      wrapper.classList.add("no-scroll");
+    };
 
-        var hideAll = function() {
-            hideMenu("menu-root");
-            hideMenu("menu-platform");
-            hideMenu("menu-resources");
-        };
+    var hideMenu = function (id) {
+      document.getElementById(id).classList.remove("opened");
+      wrapper.classList.remove("no-scroll");
+    };
 
-        var openRoot = function () {
-            hideAll();
-            openMenu("menu-root");
-        };
+    var hideAll = function () {
+      hideMenu("menu-root");
+      hideMenu("menu-platform");
+      hideMenu("menu-resources");
+      hideMenu("menu-solutions");
+      hideMenu("menu-company");
+    };
 
-        var listListener = function(listenerId, menuId) {
-            document.getElementById(listenerId).addEventListener("click", function () {
-                hideAll();
-                openMenu(menuId);
-            });
-        };
+    var openRoot = function () {
+      hideAll();
+      openMenu("menu-root");
+    };
 
-        document.getElementById("menu-open").addEventListener("click", openRoot);
+    var listListener = function (listenerId, menuId) {
+      document.getElementById(listenerId).addEventListener("click", function () {
+        hideAll();
+        openMenu(menuId);
+      });
+    };
 
-        listListener("menu-platform-open", "menu-platform");
-        listListener("menu-resources-open", "menu-resources");
+    document.getElementById("menu-open").addEventListener("click", openRoot);
 
-        document.getElementsByClassName("close")[0].addEventListener("click", hideAll);
-        document.getElementsByClassName("close")[1].addEventListener("click", hideAll);
-        document.getElementsByClassName("close")[2].addEventListener("click", hideAll);
+    listListener("menu-platform-open", "menu-platform");
+    listListener("menu-resources-open", "menu-resources");
+    listListener("menu-solutions-open", "menu-solutions");
+    listListener("menu-company-open", "menu-company");
 
-        document.getElementsByClassName("back")[0].addEventListener("click", openRoot);
-        document.getElementsByClassName("back")[1].addEventListener("click", openRoot);
+    document.getElementsByClassName("close")[0].addEventListener("click", hideAll);
+    document.getElementsByClassName("close")[1].addEventListener("click", hideAll);
+    document.getElementsByClassName("close")[2].addEventListener("click", hideAll);
+    document.getElementsByClassName("close")[3].addEventListener("click", hideAll);
+    document.getElementsByClassName("close")[4].addEventListener("click", hideAll);
+
+    document.getElementsByClassName("back")[0].addEventListener("click", openRoot);
+    document.getElementsByClassName("back")[1].addEventListener("click", openRoot);
+    document.getElementsByClassName("back")[2].addEventListener("click", openRoot);
+    document.getElementsByClassName("back")[3].addEventListener("click", openRoot);
+
+    var stickyMenu = document.getElementsByClassName("sticky-menu")[0];
+    wrapper.addEventListener("scroll", function () {
+      if (wrapper.scrollTop > 200) {
+        if (!stickyMenu.classList.contains("fixed")) {
+          stickyMenu.classList.add("fixed");
+        }
+      } else {
+        if (stickyMenu.classList.contains("fixed")) {
+          stickyMenu.classList.remove("fixed");
+        }
+      }
     });
+  });
 </script>
 </body>
 </html>

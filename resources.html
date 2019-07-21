@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Reposify</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600&display=swap" rel="stylesheet">
@@ -11,57 +11,450 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-<section class="header">
-    <div class="logo">
-        <img src="img/logo-top.png" alt="Logo">
-    </div>
-    <div class="row menu">
-        <ul class="header-menu">
-            <li class="header-home"><a href="/">Home</a></li>
-            <li class="header-platform">
-                <div class="modals platform">
-                    <ul>
-                        <li><a href="/platform">Overview</a></li>
-                        <li><a href="/platform">External Surface Management</a></li>
-                        <li><a href="/platform">Comprehensive Analysis</a></li>
-                        <li><a href="/platform">Risk Insights & Prioritization</a></li>
-                        <li><a href="/platform">Inspect & Repair</a></li>
-                        <li><a href="/platform">Product Features</a></li>
-                    </ul>
-                </div>
-                <a href="/platform">Platform</a>
-            </li>
-            <li class="header-solutions"><a href="/solutions">Solutions</a></li>
-            <li class="header-resources active">
-                <div class="modals resources">
-                    <ul>
-                        <li><a href="/resources">Datasheet</a></li>
-                        <li><a href="/resources">From The News</a></li>
-                        <li><a href="/resources">Integrations</a></li>
-                    </ul>
-                </div>
-                <a href="/resources">Resources</a>
-            </li>
-            <li class="header-company"><a href="/about">Company</a></li>
-        </ul>
-        <button onclick="location.href='/contact'">Free trial</button>
-    </div>
 
-    <button class="menu-open" id="menu-open">
-        <svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Header---Home-mobile" transform="translate(-331.000000, -20.000000)" stroke="#0E2133"
-                   stroke-width="2">
-                    <g id="Group" transform="translate(331.000000, 21.000000)">
-                        <path d="M23.4132543,0.413793103 L0,0.413793103" id="Path-2"></path>
-                        <path d="M23.4132543,9.03448276 L0,9.03448276" id="Path-2-Copy"></path>
-                        <path d="M23.4132543,17.6551724 L0,17.6551724" id="Path-2-Copy-2"></path>
-                    </g>
-                </g>
-            </g>
-        </svg>
-    </button>
+<div class="body-wrapper">
+    <div class="scrollable-content">
+        <div class="background-block"></div>
+        <section class="header">
+            <div class="sticky-menu">
+                <div class="logo">
+                    <img src="img/logo-top.png" alt="Logo">
+                </div>
+                <div class="row menu">
+                    <ul class="header-menu">
+                        <li class="header-home"><a href="/">Home</a></li>
+                        <li class="header-platform">
+                            <div class="modals platform">
+                                <ul>
+                                    <li><a href="/platform.html#overview">Overview</a></li>
+                                    <li><a href="/platform.html#ext-management">External Surface Management</a></li>
+                                    <li><a href="/platform.html#analysis">Comprehensive Analysis</a></li>
+                                    <li><a href="/platform.html#risk-insights">Risk Insights & Prioritization</a></li>
+                                    <li><a href="/platform.html#insect">Inspect & Repair</a></li>
+                                    <li><a href="/platform.html#features">Product Features</a></li>
+                                </ul>
+                            </div>
+                            <a href="/platform.html">Platform</a>
+                        </li>
+
+                        <li class="header-solutions">
+                            <div class="modals solutions">
+                                <ul>
+                                    <li><a href="/solutions.html#capabilities">Product capabilities</a></li>
+                                    <li><a href="/solutions.html#industries">Industries</a></li>
+                                    <li><a href="/industries/financial.html">Financial</a></li>
+                                    <li><a href="/industries/retail.html">Retail</a></li>
+                                    <li><a href="/industries/enterprise.html">Enterprise</a></li>
+                                    <li><a href="/industries/healthcare.html">Healthcare</a></li>
+                                    <li><a href="/industries/technology.html">Technology</a></li>
+                                    <li><a href="/industries/insurance.html">Insurance</a></li>
+                                </ul>
+                            </div>
+                            <a href="/solutions.html">Solutions</a>
+                        </li>
+
+                        <li class="header-resources active">
+                            <div class="modals resources">
+                                <ul>
+                                    <li><a href="/resources.html#datasheet">Datasheet</a></li>
+                                    <li><a href="/resources.html#news">From The News</a></li>
+                                    <li><a href="/resources.html#integrations">Integrations</a></li>
+                                </ul>
+                            </div>
+                            <a href="/resources.html">Resources</a>
+                        </li>
+
+                        <li class="header-company">
+                            <div class="modals company">
+                                <ul>
+                                    <li><a href="/about.html">About us</a></li>
+                                    <li><a href="/events.html">Events</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="/contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <a href="/about.html">Company</a>
+                        </li>
+                    </ul>
+                    <button onclick="location.href='/contact'">Free trial</button>
+                </div>
+                <button class="menu-open" id="menu-open">
+                    <svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Header---Home-mobile" transform="translate(-331.000000, -20.000000)" stroke="#0E2133"
+                               stroke-width="2">
+                                <g id="Group" transform="translate(331.000000, 21.000000)">
+                                    <path d="M23.4132543,0.413793103 L0,0.413793103" id="Path-2"></path>
+                                    <path d="M23.4132543,9.03448276 L0,9.03448276" id="Path-2-Copy"></path>
+                                    <path d="M23.4132543,17.6551724 L0,17.6551724" id="Path-2-Copy-2"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="header-content">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <h1>Resources</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tabs">
+            <div class="container">
+                <!-- Nav tabs -->
+                <div class="row tabs-header">
+                    <div class="col-xs-12">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation" class="active tag">
+                                <a href="#datasheet" aria-controls="datasheet" role="tab" data-toggle="tab">DATASHEET</a>
+                            </li>
+                            <li class="tag">
+                                <a href="#news" data-toggle="tab">FROM THE NEWS</a>
+                            </li>
+                            <li class="tag">
+                                <a href="#integrations" aria-controls="integrations" role="tab"
+                                   data-toggle="tab">INTEGRATIONS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="datasheet">
+                        <div class="row">
+
+
+                            <div class="col-md-6 datasheet-left">
+                                <img class="datasheet" src="img/resources/datasheet.png" alt="datasheet">
+                                <a class="download" href="#">Download this data sheet to learn more about Reposify and
+                                    our external surface management SaaS solution.</a>
+                            </div>
+
+                            <div class="col-md-6 datasheet-form">
+                                <div class="row description">
+                                    <p>Fill in the below form and we will send the file to your mailbox right away:</p>
+                                </div>
+
+                                <form method="get" action="./Testing PDF for Datasheet download form.pdf" target="_blank">
+                                    <div class="row name-row">
+                                        <div class="col-md-6">
+                                            <div class="first_name form-field">
+                                                <legend>First Name*</legend>
+                                                <input type="text" placeholder="Your name" class="name" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="last_name form-field">
+                                                <legend>Last Name*</legend>
+                                                <input type="text" placeholder="Your last name" class="name" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-field">
+                                        <legend>Company Email*</legend>
+                                        <input type="email" placeholder="e.g. name@example.com" required>
+                                    </div>
+
+                                    <div class="company form-field">
+                                        <legend>Company Name*</legend>
+                                        <input type="text" placeholder="Your Company Name" required>
+                                    </div>
+
+                                    <div class="phone form-field">
+                                        <legend>Phone Number</legend>
+                                        <input type="tel" pattern="[\+]?\d{8,}" placeholder="Your phone number">
+                                    </div>
+
+                                    <div class="form-field information">
+                                        <input type="checkbox" id="agree" name="agree">
+                                        <label for="agree">I agree to receive information from Reposify</label>
+                                    </div>
+
+                                    <button>Download Datasheet</button>
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="news">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h2>Under The Looking Glass</h2>
+                                    <p class="green">Join us and take a good hard look at some infamous cyber attack cases that
+                                        could have easily been prevented using Reposify’s CyberSecurity SaaS platform.</p>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-12 card">
+                                        <div class="date">
+                                            <p class="month">Nov</p>
+                                            <p class="year">2014</p>
+                                        </div>
+                                        <div class="info">
+                                            <h3><b>Sony Pictures</b></h3>
+                                            <p>Apache Struts vulnerability allowed a breach to take place at Equifax</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12 card">
+                                        <div class="date">
+                                            <p class="month">May</p>
+                                            <p class="year">2017</p>
+                                        </div>
+                                        <div class="info">
+                                            <h3><b>Unpatched Software</b> - Equifax</h3>
+                                            <p>Apache Struts vulnerability allowed a breach to take place at Equifax</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-12 card">
+                                        <div class="date">
+                                            <p class="month">Jun</p>
+                                            <p class="year">2017</p>
+                                        </div>
+                                        <div class="info">
+                                            <h3><b>Misconfigured S3</b> - Verizon&nbsp;Leak</h3>
+                                            <p>Data of 6 million users leaked from AWS S3 Bucket</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12 card">
+                                        <div class="date">
+                                            <p class="month">Jun</p>
+                                            <p class="year">2017</p>
+                                        </div>
+                                        <div class="info">
+                                            <h3><b>Sensitive Port Open</b> - Boeing&nbsp;WannaCry</h3>
+                                            <p>Production servers were hit by WannaCry in Airplanes division</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-12 card">
+                                        <div class="date">
+                                            <p class="month">Jul</p>
+                                            <p class="year">2018</p>
+                                        </div>
+                                        <div class="info">
+                                            <h3><b>Exposed File Server</b> - Level&nbsp;One&nbsp;Robotics</h3>
+                                            <p>Data breach exposes trade secrets of carmakers GM, Ford, Tesla, Toyota</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12 card">
+                                        <div class="date">
+                                            <p class="month">May</p>
+                                            <p class="year">2019</p>
+                                        </div>
+                                        <div class="info">
+                                            <h3><b>Exposed Database</b> - Government&nbsp;of&nbsp;India</h3>
+                                            <p> 275M records of India's citizens leaked</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <p class="green">It is crucial for every organization to gain full visibility of the
+                                        uncharted territories in their company’s visible and invisible perimeter and stay on top
+                                        of their external surface to avoid huge costs, setback, damage their brand reputation
+                                        etc.</p>
+                                </div>
+                            </div>
+                            <div class="row text-center trial-button">
+                                <div class="col-md-4 col-md-offset-4">
+                                    <button onclick="location.href='/contact'">Start free trial</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="integrations">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 text-center">
+                                    <h2 class="desktop-only">Integrate Reposify with your existing security stack solutions to
+                                        push remediation steps
+                                        and secure your external surface in no time.</h2>
+                                    <h2 class="mobile-only">Explore uncharted territories in your company's visible and
+                                        invisible perimeter and
+                                        stay on top of your external surface</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 rectangle text-center">
+                                    <img src="img/resources/logo1.png" alt="logo1">
+                                    <p>This is a short explanation about how Reposify is integrating with this specific product
+                                        or service and how the user will benefit from this integration.</p>
+                                </div>
+                                <div class="col-md-3 rectangle text-center">
+                                    <img src="img/resources/logo2.png" alt="logo2" class="logo2">
+                                    <p>This is a short explanation about how Reposify is integrating with this specific product
+                                        or service and how the user will benefit from this integration.</p>
+                                </div>
+                                <div class="col-md-3 rectangle text-center">
+                                    <img src="img/resources/logo3.png" alt="logo3" class="logo3">
+                                    <p>This is a short explanation about how Reposify is integrating with this specific product
+                                        or service and how the user will benefit from this integration.</p>
+                                </div>
+                                <div class="col-md-3 rectangle text-center">
+                                    <img src="img/resources/logo4.png" alt="logo4" class="logo4">
+                                    <p>This is a short explanation about how Reposify is integrating with this specific product
+                                        or service and how the user will benefit from this integration.</p>
+                                </div>
+                                <div class="col-md-3 rectangle text-center">
+                                    <img src="img/resources/logo5.png" alt="logo5" class="logo5">
+                                    <p>This is a short explanation about how Reposify is integrating with this specific product
+                                        or service and how the user will benefit from this integration.</p>
+                                </div>
+                                <div class="col-md-3 rectangle text-center">
+                                    <img src="img/resources/logo6.png" alt="logo6">
+                                    <p>This is a short explanation about how Reposify is integrating with this specific product
+                                        or service and how the user will benefit from this integration.</p>
+                                </div>
+                                <div class="col-md-3 rectangle text-center">
+                                    <img src="img/resources/logo7.png" alt="logo7" class="logo7">
+                                    <p>This is a short explanation about how Reposify is integrating with this specific product
+                                        or service and how the user will benefit from this integration.</p>
+                                </div>
+                                <div class="col-md-3 rectangle text-center">
+                                    <img src="img/resources/logo8.png" alt="logo8">
+                                    <p>This is a short explanation about how Reposify is integrating with this specific product
+                                        or service and how the user will benefit from this integration.</p>
+                                </div>
+                                <div class="col-md-3 rectangle text-center">
+                                    <img src="img/resources/logo9.png" alt="logo9" class="logo9">
+                                    <p>This is a short explanation about how Reposify is integrating with this specific product
+                                        or service and how the user will benefit from this integration.</p>
+                                </div>
+                                <div class="col-md-3 rectangle text-center">
+                                    <img src="img/resources/logo10.png" alt="logo10" class="logo10">
+                                    <p>This is a short explanation about how Reposify is integrating with this specific product
+                                        or service and how the user will benefit from this integration.</p>
+                                </div>
+                                <div class="col-md-3 rectangle text-center">
+                                    <img src="img/resources/logo11.png" alt="logo11" class="logo11">
+                                    <p>This is a short explanation about how Reposify is integrating with this specific product
+                                        or service and how the user will benefit from this integration.</p>
+                                </div>
+                                <div class="col-md-3 rectangle text-center">
+                                    <img src="img/resources/logo12.png" alt="logo12" class="logo12">
+                                    <p>This is a short explanation about how Reposify is integrating with this specific product
+                                        or service and how the user will benefit from this integration.</p>
+                                </div>
+                            </div>
+                            <div class="row button-row">
+                                <div class="col-md-12 text-center">
+                                    <button onclick="location.href='/contact'">Start free trial</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="logo">
+                <img src="img/logo-bottom.png" alt="Logo">
+            </div>
+
+            <div class="footer-content">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-1 col-md-offset-1">
+                            <ul class="home">
+                                <li><h5><a href="/">Home</a></h5>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                            <ul class="platform">
+                                <li><h5><a href="/platform.html">Platform</a></h5></li>
+                                <li><a href="/platform.html#overview">Overview</a></li>
+                                <li><a href="/platform.html#ext-management">External Surface Management</a></li>
+                                <li><a href="/platform.html#analysis">Comprehensive Analysis</a></li>
+                                <li><a href="/platform.html#risk-insights">Risk Insights & Prioritization</a></li>
+                                <li><a href="/platform.html#insect">Inspect & Repair</a></li>
+                                <li><a href="/platform.html#features">Product Features</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <ul class="resources">
+                                <li><h5><a href="/resources.html">Resources</a></h5></li>
+                                <li><a href="/resources.html#datasheet">Datasheet</a></li>
+                                <li><a href="/resources.html#news">From The News</a></li>
+                                <li><a href="/resources.html#integrations">Integrations</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <ul class="solutions">
+                                <li><h5><a href="#">Support</a></h5></li>
+                                <li><a href="#">Contact Support</a></li>
+                                <li><a href="#">API Status</a></li>
+                                <li><a href="#">Github</a></li>
+                                <li><a href="/security.html">Security</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <ul class="company">
+                                <li><h5><a href="/about.html">Company</a></h5></li>
+                                <li><a href="/about.html">About us</a></li>
+                                <li><a href="/events.html">Events</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="/contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-floor">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-2 col-md-offset-2">
+                            <a class="terms" href="/terms.html">Terms and conditions</a>
+                        </div>
+
+                        <div class="col-md-2 col-md-offset-1">
+                            <a href="/privacy.html">Privacy policy</a>
+                        </div>
+
+                        <div class="col-md-3">
+                            <p>© 2019 Reposify Ltd. All Rights Reserved.</p>
+                        </div>
+                        <div class="pixart col-md-2">
+                            <a href="https://pixart.dev/" target="_blank">built by Pixart</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<div class="menu-block">
     <div class="mobile-menu" id="menu-root">
         <div class="logo">
             <img src="img/logo-top.png" alt="Logo">
@@ -106,8 +499,26 @@
                     </svg>
                 </span>
                 </li>
-                <li>
-                    <a href="/solutions">Solution</a>
+                <li id="menu-solutions-open">
+                    <span>Solution</span>
+                    <span class="next">
+                    <svg width="9px" height="13px" viewBox="0 0 9 13" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                           stroke-linecap="square">
+                            <g id="mobile---Menu" transform="translate(-257.000000, -174.000000)" stroke="#85A6B9"
+                               stroke-width="2">
+                                <g id="Group-2" transform="translate(259.000000, 175.000000)">
+                                    <path d="M0.218211288,10.1741864 L4.95761505,5.43478261"
+                                          id="Path-3-Copy-3"></path>
+                                    <path d="M0.218211288,0.695378846 L4.95761505,5.43478261"
+                                          id="Path-3-Copy-4"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
                 </li>
                 <li id="menu-resources-open">
                     <span>Resources</span>
@@ -131,7 +542,25 @@
                 </span>
                 </li>
                 <li id="menu-company-open">
-                    <a href="/about">Company</a>
+                    <span>Company</span>
+                    <span class="next">
+                    <svg width="9px" height="13px" viewBox="0 0 9 13" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                           stroke-linecap="square">
+                            <g id="mobile---Menu" transform="translate(-257.000000, -174.000000)" stroke="#85A6B9"
+                               stroke-width="2">
+                                <g id="Group-2" transform="translate(259.000000, 175.000000)">
+                                    <path d="M0.218211288,10.1741864 L4.95761505,5.43478261"
+                                          id="Path-3-Copy-3"></path>
+                                    <path d="M0.218211288,0.695378846 L4.95761505,5.43478261"
+                                          id="Path-3-Copy-4"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
                 </li>
             </ul>
         </div>
@@ -176,12 +605,63 @@
 
         <div class="menu-list">
             <ul>
-                <li><a href="/platform">Overview</a></li>
-                <li><a href="/platform">External Surface Management</a></li>
-                <li><a href="/platform">Comprehensive Analysis</a></li>
-                <li><a href="/platform">Risk Insights & Prioritization</a></li>
-                <li><a href="/platform">Inspect & Repair</a></li>
-                <li><a href="/platform">Product Features</a></li>
+                <li><a href="/platform.html#overview">Overview</a></li>
+                <li><a href="/platform.html#ext-management">External Surface Management</a></li>
+                <li><a href="/platform.html#analysis">Comprehensive Analysis</a></li>
+                <li><a href="/platform.html#risk-insights">Risk Insights & Prioritization</a></li>
+                <li><a href="/platform.html#insect">Inspect & Repair</a></li>
+                <li><a href="/platform.html#features">Product Features</a></li>
+            </ul>
+        </div>
+
+        <button class="trial-button" onclick="location.href='/contact'">Free trial</button>
+    </div>
+    <div class="mobile-menu" id="menu-solutions">
+        <button class="back">
+            <svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="mobile---Menu---platform" transform="translate(-19.000000, -19.000000)" stroke="#0E2133"
+                       stroke-width="2">
+                        <g id="Group-Copy" transform="translate(20.000000, 20.000000)">
+                            <path d="M0.478807525,9.91359013 L9.95761505,19.3923977" id="Path-3"
+                                  stroke-linecap="square"></path>
+                            <path d="M0.478807525,9.91359013 L9.95761505,0.434782609" id="Path-3-Copy-3"
+                                  stroke-linecap="square"></path>
+                            <path d="M0.478807525,10 L31.2919922,10" id="Path-2"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
+
+        <h3 class="menu-title">Solution</h3>
+
+        <button class="close">
+            <svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="mobile---Menu" transform="translate(-333.000000, -19.000000)" stroke="#0E2133"
+                       stroke-width="2">
+                        <g id="Group" transform="translate(334.000000, 20.000000)">
+                            <path d="M0,0.434782609 L18.9576151,19.3923977" id="Path-3"></path>
+                            <path d="M0,19.3923977 L18.9576151,0.434782609" id="Path-3-Copy-3"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
+
+        <div class="menu-list">
+            <ul>
+                <li><a href="/solutions.html#capabilities">Product capabilities</a></li>
+                <li><a href="/solutions.html#industries">Industries</a></li>
+                <li><a href="/industries/financial.html">Financial</a></li>
+                <li><a href="/industries/retail.html">Retail</a></li>
+                <li><a href="/industries/enterprise.html">Enterprise</a></li>
+                <li><a href="/industries/healthcare.html">Healthcare</a></li>
+                <li><a href="/industries/technology.html">Technology</a></li>
+                <li><a href="/industries/insurance.html">Insurance</a></li>
             </ul>
         </div>
 
@@ -225,418 +705,139 @@
 
         <div class="menu-list">
             <ul>
-                <li><a href="/resources">Datasheet</a></li>
-                <li><a href="/resources">From The News</a></li>
-                <li><a href="/resources">Integrations</a></li>
+                <li><a href="/resources.html#datasheet">Datasheet</a></li>
+                <li><a href="/resources.html#news">From The News</a></li>
+                <li><a href="/resources.html#integrations">Integrations</a></li>
             </ul>
         </div>
 
         <button class="trial-button" onclick="location.href='/contact'">Free trial</button>
     </div>
+    <div class="mobile-menu" id="menu-company">
+        <button class="back">
+            <svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="mobile---Menu---platform" transform="translate(-19.000000, -19.000000)" stroke="#0E2133"
+                       stroke-width="2">
+                        <g id="Group-Copy" transform="translate(20.000000, 20.000000)">
+                            <path d="M0.478807525,9.91359013 L9.95761505,19.3923977" id="Path-3"
+                                  stroke-linecap="square"></path>
+                            <path d="M0.478807525,9.91359013 L9.95761505,0.434782609" id="Path-3-Copy-3"
+                                  stroke-linecap="square"></path>
+                            <path d="M0.478807525,10 L31.2919922,10" id="Path-2"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
 
-    <div class="header-content">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h1>Resources</h1>
-            </div>
-        </div>
-    </div>
-</section>
+        <h3 class="menu-title">Platform</h3>
 
-<section class="tabs">
-    <div class="container">
-        <!-- Nav tabs -->
-        <div class="row tabs-header">
-            <div class="col-xs-12">
-                <ul class="nav nav-tabs">
-                    <li role="presentation" class="active tag">
-                        <a href="#datasheet" aria-controls="datasheet" role="tab" data-toggle="tab">DATASHEET</a>
-                    </li>
-                    <li class="tag">
-                        <a href="#news" data-toggle="tab">FROM THE NEWS</a>
-                    </li>
-                    <li class="tag">
-                        <a href="#integrations" aria-controls="integrations" role="tab"
-                           data-toggle="tab">INTEGRATIONS</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <button class="close">
+            <svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="mobile---Menu" transform="translate(-333.000000, -19.000000)" stroke="#0E2133"
+                       stroke-width="2">
+                        <g id="Group" transform="translate(334.000000, 20.000000)">
+                            <path d="M0,0.434782609 L18.9576151,19.3923977" id="Path-3"></path>
+                            <path d="M0,19.3923977 L18.9576151,0.434782609" id="Path-3-Copy-3"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
 
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div class="tab-pane" id="datasheet">
-                <div class="row">
-
-
-                    <div class="col-md-6 datasheet-left">
-                        <img class="datasheet" src="img/resources/datasheet.png" alt="datasheet">
-                        <a class="download" href="#">Download this data sheet to learn more about Reposify and
-                            our external surface management SaaS solution.</a>
-                    </div>
-
-                    <div class="col-md-6 datasheet-form">
-                        <div class="row description">
-                            <p>Fill in the below form and we will send the file to your mailbox right away:</p>
-                        </div>
-
-                        <form method="get" action="./Testing PDF for Datasheet download form.pdf" target="_blank">
-                            <div class="row name-row">
-                                <div class="col-md-6">
-                                    <div class="first_name form-field">
-                                        <legend>First Name*</legend>
-                                        <input type="text" placeholder="Your name" class="name" required>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="last_name form-field">
-                                        <legend>Last Name*</legend>
-                                        <input type="text" placeholder="Your last name" class="name" required>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-field">
-                                <legend>Company Email*</legend>
-                                <input type="text" placeholder="e.g. name@example.com" required>
-                            </div>
-
-                            <div class="company form-field">
-                                <legend>Company Name*</legend>
-                                <input type="text" placeholder="Your Company Name" required>
-                            </div>
-
-                            <div class="phone form-field">
-                                <legend>Phone Number</legend>
-                                <input type="text" placeholder="Your phone number">
-                            </div>
-
-                            <div class="form-field information">
-                                <input type="checkbox" id="agree" name="agree">
-                                <label for="agree">I agree to receive information from Reposify</label>
-                            </div>
-
-                            <button>Download Datasheet</button>
-                        </form>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="tab-pane active" id="news">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h2>Under The Looking Glass</h2>
-                            <p class="green">Join us and take a good hard look at some infamous cyber attack cases that
-                                could have easily been prevented using Reposify’s CyberSecurity SaaS platform.</p>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-12 card">
-                                <div class="date">
-                                    <p class="month">Nov</p>
-                                    <p class="year">2014</p>
-                                </div>
-                                <div class="info">
-                                    <h3><b>Sony Pictures</b></h3>
-                                    <p>Apache Struts vulnerability allowed a breach to take place at Equifax</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xs-12 card">
-                                <div class="date">
-                                    <p class="month">May</p>
-                                    <p class="year">2017</p>
-                                </div>
-                                <div class="info">
-                                    <h3><b>Unpatched Software</b> - Equifax</h3>
-                                    <p>Apache Struts vulnerability allowed a breach to take place at Equifax</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-xs-12 card">
-                                <div class="date">
-                                    <p class="month">Jun</p>
-                                    <p class="year">2017</p>
-                                </div>
-                                <div class="info">
-                                    <h3><b>Misconfigured S3</b> - Verizon&nbsp;Leak</h3>
-                                    <p>Data of 6 million users leaked from AWS S3 Bucket</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xs-12 card">
-                                <div class="date">
-                                    <p class="month">Jun</p>
-                                    <p class="year">2017</p>
-                                </div>
-                                <div class="info">
-                                    <h3><b>Sensitive Port Open</b> - Boeing&nbsp;WannaCry</h3>
-                                    <p>Production servers were hit by WannaCry in Airplanes division</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-xs-12 card">
-                                <div class="date">
-                                    <p class="month">Jul</p>
-                                    <p class="year">2018</p>
-                                </div>
-                                <div class="info">
-                                    <h3><b>Exposed File Server</b> - Level&nbsp;One&nbsp;Robotics</h3>
-                                    <p>Data breach exposes trade secrets of carmakers GM, Ford, Tesla, Toyota</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xs-12 card">
-                                <div class="date">
-                                    <p class="month">May</p>
-                                    <p class="year">2019</p>
-                                </div>
-                                <div class="info">
-                                    <h3><b>Exposed Database</b> - Government&nbsp;of&nbsp;India</h3>
-                                    <p> 275M records of India's citizens leaked</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <p class="green">It is crucial for every organization to gain full visibility of the
-                                uncharted territories in their company’s visible and invisible perimeter and stay on top
-                                of their external surface to avoid huge costs, setback, damage their brand reputation
-                                etc.</p>
-                        </div>
-                    </div>
-                    <div class="row text-center trial-button">
-                        <div class="col-md-4 col-md-offset-4">
-                            <button onclick="location.href='/contact'">Start free trial</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane" id="integrations">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 text-center">
-                            <h2 class="desktop-only">Integrate Reposify with your existing security stack solutions to
-                                push remediation steps
-                                and secure your external surface in no time.</h2>
-                            <h2 class="mobile-only">Explore uncharted territories in your company's visible and
-                                invisible perimeter and
-                                stay on top of your external surface</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 rectangle text-center">
-                            <img src="img/resources/logo1.png" alt="logo1">
-                            <p>This is a short explanation about how Reposify is integrating with this specific product
-                                or service and how the user will benefit from this integration.</p>
-                        </div>
-                        <div class="col-md-3 rectangle text-center">
-                            <img src="img/resources/logo2.png" alt="logo2" class="logo2">
-                            <p>This is a short explanation about how Reposify is integrating with this specific product
-                                or service and how the user will benefit from this integration.</p>
-                        </div>
-                        <div class="col-md-3 rectangle text-center">
-                            <img src="img/resources/logo3.png" alt="logo3" class="logo3">
-                            <p>This is a short explanation about how Reposify is integrating with this specific product
-                                or service and how the user will benefit from this integration.</p>
-                        </div>
-                        <div class="col-md-3 rectangle text-center">
-                            <img src="img/resources/logo4.png" alt="logo4" class="logo4">
-                            <p>This is a short explanation about how Reposify is integrating with this specific product
-                                or service and how the user will benefit from this integration.</p>
-                        </div>
-                        <div class="col-md-3 rectangle text-center">
-                            <img src="img/resources/logo5.png" alt="logo5" class="logo5">
-                            <p>This is a short explanation about how Reposify is integrating with this specific product
-                                or service and how the user will benefit from this integration.</p>
-                        </div>
-                        <div class="col-md-3 rectangle text-center">
-                            <img src="img/resources/logo6.png" alt="logo6">
-                            <p>This is a short explanation about how Reposify is integrating with this specific product
-                                or service and how the user will benefit from this integration.</p>
-                        </div>
-                        <div class="col-md-3 rectangle text-center">
-                            <img src="img/resources/logo7.png" alt="logo7" class="logo7">
-                            <p>This is a short explanation about how Reposify is integrating with this specific product
-                                or service and how the user will benefit from this integration.</p>
-                        </div>
-                        <div class="col-md-3 rectangle text-center">
-                            <img src="img/resources/logo8.png" alt="logo8">
-                            <p>This is a short explanation about how Reposify is integrating with this specific product
-                                or service and how the user will benefit from this integration.</p>
-                        </div>
-                        <div class="col-md-3 rectangle text-center">
-                            <img src="img/resources/logo9.png" alt="logo9" class="logo9">
-                            <p>This is a short explanation about how Reposify is integrating with this specific product
-                                or service and how the user will benefit from this integration.</p>
-                        </div>
-                        <div class="col-md-3 rectangle text-center">
-                            <img src="img/resources/logo10.png" alt="logo10" class="logo10">
-                            <p>This is a short explanation about how Reposify is integrating with this specific product
-                                or service and how the user will benefit from this integration.</p>
-                        </div>
-                        <div class="col-md-3 rectangle text-center">
-                            <img src="img/resources/logo11.png" alt="logo11" class="logo11">
-                            <p>This is a short explanation about how Reposify is integrating with this specific product
-                                or service and how the user will benefit from this integration.</p>
-                        </div>
-                        <div class="col-md-3 rectangle text-center">
-                            <img src="img/resources/logo12.png" alt="logo12" class="logo12">
-                            <p>This is a short explanation about how Reposify is integrating with this specific product
-                                or service and how the user will benefit from this integration.</p>
-                        </div>
-                    </div>
-                    <div class="row button-row">
-                        <div class="col-md-12 text-center">
-                            <button onclick="location.href='/contact'">Start free trial</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="footer">
-    <div class="logo">
-        <img src="img/logo-bottom.png" alt="Logo">
-    </div>
-
-    <div class="footer-content">
-
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-1 col-md-offset-1">
-                    <ul class="home">
-                        <li><h5><a href="/">Home</a></h5>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3">
-                    <ul class="platform">
-                        <li><h5><a href="/platform">Platform</a></h5></li>
-                        <li><a href="/platform">Overview</a></li>
-                        <li><a href="/platform">External Surface Management</a></li>
-                        <li><a href="/platform">Comprehensive Analysis</a></li>
-                        <li><a href="/platform">Risk Insights & Prioritization</a></li>
-                        <li><a href="/platform">Inspect & Repair</a></li>
-                        <li><a href="/platform">Product Features</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2">
-                    <ul class="resources">
-                        <li><h5><a href="/resources">Resources</a></h5></li>
-                        <li><a href="/resources">DataSheet</a></li>
-                        <li><a href="/resources">From The News</a></li>
-                        <li><a href="/resources">Integrations</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2">
-                    <ul class="solutions">
-                        <li><h5><a href="#">Support</a></h5></li>
-                        <li><a href="#">Contact Support</a></li>
-                        <li><a href="#">API Status</a></li>
-                        <li><a href="#">Github</a></li>
-                        <li><a href="/security">Security</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2">
-                    <ul class="company">
-                        <li><h5><a href="/about">Company</a></h5></li>
-                        <li><a href="/about">About us</a></li>
-                        <li><a href="/events">Events</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
-                    </ul>
-                </div>
-
-            </div>
+        <div class="menu-list">
+            <ul>
+                <li><a href="/about.html">About us</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
         </div>
 
+        <button class="trial-button" onclick="location.href='/contact'">Free trial</button>
     </div>
+</div>
 
-    <div class="footer-floor">
-
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-2 col-md-offset-2">
-                    <a class="terms" href="/terms">Terms and conditions</a>
-                </div>
-
-                <div class="col-md-2 col-md-offset-1">
-                    <a href="/privacy">Privacy policy</a>
-                </div>
-
-                <div class="col-md-3">
-                    <p>© 2019 Reposify Ltd. All Rights Reserved.</p>
-                </div>
-                <div class="pixart col-md-2">
-                    <a href="https://pixart.dev/" target="_blank">built by Pixart</a>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
 
-        var openMenu = function (id) {
-            document.getElementById(id).classList.add("opened");
-            document.body.style.overflow = "hidden";
-        };
+    var wrapper = document.getElementsByClassName("body-wrapper")[0];
 
-        var hideMenu = function (id) {
-            document.getElementById(id).classList.remove("opened");
-            document.body.style["overflow-y"] = "auto";
-        };
+    var openMenu = function (id) {
+      document.getElementById(id).classList.add("opened");
+      wrapper.classList.add("no-scroll");
+    };
 
-        var hideAll = function() {
-            hideMenu("menu-root");
-            hideMenu("menu-platform");
-            hideMenu("menu-resources");
-        };
+    var hideMenu = function (id) {
+      document.getElementById(id).classList.remove("opened");
+      wrapper.classList.remove("no-scroll");
+    };
 
-        var openRoot = function () {
-            hideAll();
-            openMenu("menu-root");
-        };
+    var hideAll = function () {
+      hideMenu("menu-root");
+      hideMenu("menu-platform");
+      hideMenu("menu-resources");
+      hideMenu("menu-solutions");
+      hideMenu("menu-company");
+    };
 
-        var listListener = function(listenerId, menuId) {
-            document.getElementById(listenerId).addEventListener("click", function () {
-                hideAll();
-                openMenu(menuId);
-            });
-        };
+    var openRoot = function () {
+      hideAll();
+      openMenu("menu-root");
+    };
 
-        document.getElementById("menu-open").addEventListener("click", openRoot);
+    var listListener = function (listenerId, menuId) {
+      document.getElementById(listenerId).addEventListener("click", function () {
+        hideAll();
+        openMenu(menuId);
+      });
+    };
 
-        listListener("menu-platform-open", "menu-platform");
-        listListener("menu-resources-open", "menu-resources");
+    document.getElementById("menu-open").addEventListener("click", openRoot);
 
-        document.getElementsByClassName("close")[0].addEventListener("click", hideAll);
-        document.getElementsByClassName("close")[1].addEventListener("click", hideAll);
-        document.getElementsByClassName("close")[2].addEventListener("click", hideAll);
+    listListener("menu-platform-open", "menu-platform");
+    listListener("menu-resources-open", "menu-resources");
+    listListener("menu-solutions-open", "menu-solutions");
+    listListener("menu-company-open", "menu-company");
 
-        document.getElementsByClassName("back")[0].addEventListener("click", openRoot);
-        document.getElementsByClassName("back")[1].addEventListener("click", openRoot);
+    document.getElementsByClassName("close")[0].addEventListener("click", hideAll);
+    document.getElementsByClassName("close")[1].addEventListener("click", hideAll);
+    document.getElementsByClassName("close")[2].addEventListener("click", hideAll);
+    document.getElementsByClassName("close")[3].addEventListener("click", hideAll);
+    document.getElementsByClassName("close")[4].addEventListener("click", hideAll);
+
+    document.getElementsByClassName("back")[0].addEventListener("click", openRoot);
+    document.getElementsByClassName("back")[1].addEventListener("click", openRoot);
+    document.getElementsByClassName("back")[2].addEventListener("click", openRoot);
+    document.getElementsByClassName("back")[3].addEventListener("click", openRoot);
+
+    var stickyMenu = document.getElementsByClassName("sticky-menu")[0];
+    wrapper.addEventListener("scroll", function () {
+      if (wrapper.scrollTop > 200) {
+        if (!stickyMenu.classList.contains("fixed")) {
+          stickyMenu.classList.add("fixed");
+        }
+      } else {
+        if (stickyMenu.classList.contains("fixed")) {
+          stickyMenu.classList.remove("fixed");
+        }
+      }
     });
+
+    var url = document.location.toString();
+    if (url.match('#')) {
+      $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show');
+    }
+  });
 </script>
 </body>
 </html>
