@@ -417,8 +417,9 @@ section.next .box .text-block button {
     margin-top: 58px;
   }
   section.next .box {
-    margin-left: 10px;
     max-width: 327px;
+    margin-left: auto;
+    margin-right: auto;
   }
   section.next .box .col-md-6:nth-child(1) {
     height: unset;
