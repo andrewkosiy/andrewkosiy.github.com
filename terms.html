@@ -739,11 +739,13 @@
     var openMenu = function (id) {
       document.getElementById(id).classList.add("opened");
       wrapper.classList.add("no-scroll");
+      document.getElementsByClassName("menu-block")[0].classList.add("opened");
     };
 
     var hideMenu = function (id) {
       document.getElementById(id).classList.remove("opened");
       wrapper.classList.remove("no-scroll");
+      document.getElementsByClassName("menu-block")[0].classList.remove("opened");
     };
 
     var hideAll = function () {

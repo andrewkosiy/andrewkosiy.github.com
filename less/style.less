@@ -1751,13 +1751,11 @@ section.solutions {
     min-height: 100%;
     left: 0;
     overflow: hidden;
-    display: none;
-    //transform: translateX(100%);
-    //transition: transform 0.6s;
+    transform: translateX(100%);
+    transition: transform 0.6s;
 
     &.opened {
-      //transform: unset;
-      display: block;
+      transform: unset;
     }
   }
 
@@ -1780,6 +1778,10 @@ section.solutions {
     position: relative;
     text-align: center;
     margin-bottom: 29px;
+
+    @media (max-height: 568px) {
+      margin-bottom: 15px;
+    }
   }
 
   .next {
@@ -1844,5 +1846,15 @@ section.solutions {
 }
 
 .menu-block {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: -1;
 
+  &.opened {
+    z-index: 1000;
+  }
 }

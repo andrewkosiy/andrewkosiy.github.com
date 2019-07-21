@@ -584,14 +584,15 @@ button:hover {
   min-height: 100%;
   left: 0;
   overflow: hidden;
-  display: none;
+  transform: translateX(100%);
+  transition: transform 0.6s;
 }
 .mobile-menu#menu-resources.opened,
 .mobile-menu#menu-platform.opened,
 .mobile-menu#menu-solutions.opened,
 .mobile-menu#menu-company.opened,
 .mobile-menu#menu-root.opened {
-  display: block;
+  transform: unset;
 }
 .mobile-menu .menu-list a,
 .mobile-menu .menu-list span {
@@ -609,6 +610,11 @@ button:hover {
   position: relative;
   text-align: center;
   margin-bottom: 29px;
+}
+@media (max-height: 568px) {
+  .mobile-menu li {
+    margin-bottom: 15px;
+  }
 }
 .mobile-menu .next {
   position: absolute;
@@ -665,4 +671,16 @@ button:hover {
   .mobile-menu {
     display: block;
   }
+}
+.menu-block {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.menu-block.opened {
+  z-index: 1000;
 }
