@@ -2,20 +2,6 @@ body {
   font-family: 'Rajdhani', sans-serif;
   background: url("../img/dots2.png") right 1193px no-repeat, url("../img/dots1.png") left 532px no-repeat;
 }
-body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  background-color: #F5F5F5;
-}
-body::-webkit-scrollbar {
-  width: 12px;
-  background-color: #F5F5F5;
-}
-body::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #555;
-}
 @media (max-width: 414px) {
   body {
     background: url("../img/events/mobile-dots1.png") -479px 1032px no-repeat;
@@ -28,6 +14,20 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   overflow-scrolling: touch;
   -webkit-overflow-scrolling: touch;
+}
+.body-wrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+.body-wrapper::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+.body-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
 }
 .body-wrapper.no-scroll {
   overflow: hidden;
