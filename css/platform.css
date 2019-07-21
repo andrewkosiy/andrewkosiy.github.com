@@ -861,122 +861,103 @@ button:hover {
 }
 @media (max-width: 768px) {
   .features {
-    padding-top: 62px;
+    padding-top: 77px;
+    padding-left: 15px;
   }
   .features .container {
-    margin: 0;
-    padding: 0 40px;
-    width: 100%;
+    max-width: 375px;
   }
   .features h2 {
     font-size: 32px;
-    margin-top: 32px;
-    margin-bottom: -5px;
-  }
-  .features .polygons .row {
-    margin: 0;
-    width: 375px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .features .polygons {
+    transform: none;
+    padding-top: 23px;
+  }
+  .features .polygons > .row {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0;
   }
-  .features .polygons .row {
-    margin-top: -750px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .features .polygons .row:nth-child(1) .polygon:nth-child(1) img,
-  .features .polygons .row:nth-child(1) .polygon:nth-child(2) img,
-  .features .polygons .row:nth-child(1) .polygon:nth-child(3) img {
-    transform: scale(1.4);
-    padding-top: 45px;
-    margin-left: 29px;
-    margin-bottom: -45px;
-  }
-  .features .polygons .row:nth-child(1) .polygon:nth-child(2) img {
-    margin-left: 45px;
-    padding-top: 40px;
-    margin-bottom: -38px;
-  }
-  .features .polygons .row:nth-child(1) .polygon:nth-child(3) img {
-    margin-left: 30px;
-    margin-bottom: -40px;
-    transform: scale(1.5);
-  }
-  .features .polygons .row:nth-child(1) .polygon:nth-child(4) img {
-    transform: scale(1.6);
-    padding-top: 12px;
-    margin-left: 24px;
-    margin-bottom: -33px;
-  }
-  .features .polygons .row:nth-child(1) .polygon:nth-child(5) img {
-    transform: scale(1.6);
-    padding-top: 21px;
-    margin-left: 16px;
-    margin-bottom: -33px;
-  }
-  .features .polygons .row:nth-child(1) .polygon:nth-child(6) img {
-    transform: scale(1.6);
-    padding-top: 19px;
-    margin-left: 20px;
-    margin-bottom: -33px;
-  }
-  .features .polygons .row:nth-child(1) .polygon:nth-child(7) img {
-    transform: scale(1.6);
-    padding-top: 6px;
-    margin-left: 16px;
-    margin-bottom: -33px;
-  }
-  .features .polygons .row:nth-child(1) .polygon:nth-child(8) img {
-    transform: scale(1.6);
-    padding-top: 18px;
-    margin-left: 23px;
-    margin-bottom: -33px;
-  }
-  .features .polygons .row:nth-child(1) .polygon:nth-child(9) img {
-    transform: scale(1.6);
-    padding-top: 12px;
-    margin-left: 22px;
-    margin-bottom: -33px;
-  }
-  .features .polygons .polygon-content-back {
+  .features .polygons .polygon-front,
+  .features .polygons .polygon-back,
+  .features .polygons .polygon-content-back,
+  .features .polygons .polygon-content {
     position: initial;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-  .features .polygons .polygon-content-back p {
-    width: 560px;
-    margin-top: 36px;
-    font-size: 24px;
-    line-height: 38px;
-    letter-spacing: 0.5px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .features .polygons .polygon-back {
-    transform: none;
-    top: 510px;
+    height: unset;
+    padding: 0;
+    margin: 0;
     transition: none;
-    -webkit-backface-visibility: visible;
-            backface-visibility: visible;
+    transform: none;
     background: none;
   }
-  .features .polygons .polygon-content h4 {
-    font-size: 43px;
-    line-height: 57px;
-    width: 500px;
-    margin-left: -83px;
-    margin-top: 177px;
-    letter-spacing: 1.5px;
+  .features .polygons .polygon-content,
+  .features .polygons .polygon-content-back {
+    position: initial;
+    width: 100%;
+    left: 0;
+    display: block;
+    transform: none;
+  }
+  .features .polygons .polygon-content h4,
+  .features .polygons .polygon-content-back h4 {
+    padding-top: 55px;
+    font-size: 27px;
+    line-height: 33px;
+    letter-spacing: 0.4px;
+    width: 100%;
+    max-width: 90%;
+  }
+  .features .polygons .polygon-content p,
+  .features .polygons .polygon-content-back p {
+    font-size: 15px;
+    margin-top: 8px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .features .polygons .polygon-front {
+    background: url(../img/platform/polygon.svg) center 0 no-repeat;
+    background-size: 60%;
+  }
+  .features .polygons .polygon:nth-child(n) img {
+    margin: 16% auto 0 auto;
+    display: block;
+    width: 29%;
+  }
+  .features .polygons .polygon:nth-child(1) img {
+    padding-left: 5%;
+    width: 38%;
+  }
+  .features .polygons .polygon:nth-child(3) img {
+    width: 22%;
+  }
+  .features .polygons .polygon:nth-child(4) img,
+  .features .polygons .polygon:nth-child(5) img {
+    margin-top: 19%;
+  }
+  .features .polygons .polygon:nth-child(6) img {
+    margin-top: 17%;
+  }
+  .features .polygons .polygon:nth-child(7) img {
+    margin-top: 15%;
+    width: 27%;
+  }
+  .features .polygons .polygon:nth-child(8) img {
+    margin-top: 18%;
+  }
+  .features .polygons .polygon:nth-child(9) img {
+    margin-top: 16%;
+    width: 20%;
   }
   .features .polygon {
     display: block;
-    margin: 0 auto 360px auto;
-    padding-top: 474px;
-    width: 100%;
+    height: unset;
+    transform: none;
   }
   .features .polygon:hover .polygon-back {
     transform: none;
@@ -984,128 +965,10 @@ button:hover {
   .features .polygon:hover .polygon-front {
     transform: none;
   }
-  .features .trial-button {
-    margin-top: -800px;
-  }
-  .features .trial-button button {
-    padding-top: 0;
-    width: 328px;
-    max-width: 80%;
-    margin-top: 100px;
-  }
-}
-@media (max-width: 520px) {
-  .features .polygons .polygon-content-back p {
-    width: 440px;
-    margin-top: 36px;
-    font-size: 24px;
-    line-height: 38px;
-    letter-spacing: 0.5px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media (max-width: 415px) {
-  .features {
-    margin-top: 0;
-  }
-  .features .trial-button {
-    margin-top: -550px;
-  }
-  .features .polygon {
-    transform: scale(0.7);
-    margin-left: -40px;
-    margin-bottom: 125px;
-  }
-  .features .polygons .row {
-    margin-top: -670px;
-    margin-left: 23px;
-  }
-  .features .polygons .polygon-content h4 {
-    margin-top: 210px;
-  }
-  .features .polygons .polygon-content p {
-    margin-top: 76px;
-  }
-  .features .polygons .polygon-content-back p {
-    width: 600px;
-    max-width: 200%;
-    margin-top: 83px;
-    font-size: 26px;
-    line-height: 40px;
-    letter-spacing: 0.4px;
-  }
-  .features .polygons .polygon:nth-child(1) .polygon-content-back p,
-  .features .polygons .polygon:nth-child(2) .polygon-content-back p,
-  .features .polygons .polygon:nth-child(3) .polygon-content-back p,
-  .features .polygons .polygon:nth-child(4) .polygon-content-back p,
-  .features .polygons .polygon:nth-child(5) .polygon-content-back p,
-  .features .polygons .polygon:nth-child(6) .polygon-content-back p {
-    margin-top: 165px;
-    margin-left: -20px;
-  }
-  .features .polygons .polygon:nth-child(7) .polygon-content-back p,
-  .features .polygons .polygon:nth-child(8) .polygon-content-back p,
-  .features .polygons .polygon:nth-child(9) .polygon-content-back p {
-    margin-left: -20px;
-  }
-  .features .polygons .row:nth-child(1) .polygon:nth-child(4) .polygon-content img,
-  .features .polygons .row:nth-child(1) .polygon:nth-child(5) .polygon-content img,
-  .features .polygons .row:nth-child(1) .polygon:nth-child(6) .polygon-content img,
-  .features .polygons .row:nth-child(1) .polygon:nth-child(7) .polygon-content img,
-  .features .polygons .row:nth-child(1) .polygon:nth-child(8) .polygon-content img,
-  .features .polygons .row:nth-child(1) .polygon:nth-child(9) .polygon-content img {
-    padding-top: 40px;
-  }
-}
-@media (max-width: 376px) {
-  .features .polygons .row {
-    margin-left: 7px;
-  }
-}
-@media (max-width: 360px) {
-  .features .polygons .row {
-    margin-left: 0;
-  }
-}
-@media (max-width: 350px) {
-  .features .polygon {
-    margin-left: -70px;
-    padding-top: 505px;
-  }
-  .features .polygons .row {
-    margin-left: 7px;
-  }
-  .features .polygons .polygon-content-back p {
-    width: 450px;
-    margin-left: 23%;
-    margin-top: 60%;
-  }
-  .features .polygons .polygon:nth-child(1) .polygon-content-back p,
-  .features .polygons .polygon:nth-child(2) .polygon-content-back p,
-  .features .polygons .polygon:nth-child(3) .polygon-content-back p {
-    margin-top: 195px;
-    margin-left: 65px;
-  }
-  .features .polygons .polygon:nth-child(4) .polygon-content-back p,
-  .features .polygons .polygon:nth-child(5) .polygon-content-back p,
-  .features .polygons .polygon:nth-child(6) .polygon-content-back p {
-    margin-top: 205px;
-    margin-left: 65px;
-  }
-  .features .polygons .polygon:nth-child(7) .polygon-content-back p,
-  .features .polygons .polygon:nth-child(8) .polygon-content-back p,
-  .features .polygons .polygon:nth-child(9) .polygon-content-back p {
-    margin-top: 125px;
-    margin-left: 65px;
-  }
-  .features .polygons .row:nth-child(1) .polygon:nth-child(4) .polygon-content img,
-  .features .polygons .row:nth-child(1) .polygon:nth-child(5) .polygon-content img,
-  .features .polygons .row:nth-child(1) .polygon:nth-child(6) .polygon-content img,
-  .features .polygons .row:nth-child(1) .polygon:nth-child(7) .polygon-content img,
-  .features .polygons .row:nth-child(1) .polygon:nth-child(8) .polygon-content img,
-  .features .polygons .row:nth-child(1) .polygon:nth-child(9) .polygon-content img {
-    padding-top: 40px;
+  .features .polygon .polygon-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
   }
 }
 .footer {
