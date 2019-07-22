@@ -32,7 +32,7 @@ body {
   height: 100%;
 }
 .background-block {
-  background: url("../img/home/dots.svg") center 480px no-repeat, url("../img/home/background-top.png") top center no-repeat;
+  background: url("../img/home/background-top.png") top center no-repeat;
   background-size: contain;
   position: absolute;
   top: 0;
@@ -43,14 +43,41 @@ body {
 }
 @media (min-width: 1201px) {
   .background-block {
-    background: url("../img/home/dots.svg") center 480px no-repeat, url("../img/home/lines.svg") center 480px no-repeat, url("../img/home/background-top.png") top center no-repeat;
+    background: url("../img/home/background-top.png") top center no-repeat;
     background-size: contain;
   }
 }
 @media (max-width: 415px) {
   .background-block {
-    background: url("../img/home/mobile-dots2.png") center 2808px no-repeat, url("../img/home/mobile-dots1.png") center 1107px no-repeat, url("../img/home/mobile-background.png") top center no-repeat;
+    background: url("../img/home/mobile-background.png") top center no-repeat, url("../img/home/mobile-dots2.png") center 2808px no-repeat, url("../img/home/mobile-dots1.png") center 1107px no-repeat;
     background-size: contain;
+  }
+}
+.background-dots-block {
+  background: url("../img/home/dots.svg") center 480px no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50vw;
+  left: 0;
+  width: 100%;
+  min-height: 6144px;
+  z-index: -1;
+}
+@media (min-width: 1201px) {
+  .background-dots-block {
+    background: url("../img/home/dots.svg") center 480px no-repeat, url("../img/home/lines.svg") center 480px no-repeat;
+    background-size: contain;
+  }
+}
+@media (min-width: 1440px) {
+  .background-dots-block {
+    background: url("../img/home/dots.svg") center -320px no-repeat, url("../img/home/lines.svg") center -320px no-repeat;
+    background-size: contain;
+  }
+}
+@media (max-width: 415px) {
+  .background-dots-block {
+    display: none;
   }
 }
 ul {
@@ -72,12 +99,10 @@ h1 {
   }
 }
 button:active {
-  -webkit-filter: brightness(85%);
-          filter: brightness(85%);
+  filter: brightness(85%);
 }
 button:hover {
-  -webkit-filter: brightness(90%);
-          filter: brightness(90%);
+  filter: brightness(90%);
 }
 .header {
   position: relative;
@@ -348,7 +373,7 @@ button:hover {
 }
 @media (min-width: 992px) {
   .header {
-    height: 797px;
+    height: 50vw;
   }
   .header .container {
     height: 1000px;

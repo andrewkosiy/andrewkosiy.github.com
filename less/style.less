@@ -55,26 +55,51 @@ body {
 }
 
 .background-block {
-  background: url("../img/home/dots.svg") center 480px no-repeat,
-  url("../img/home/background-top.png") top center no-repeat;
+  background: url("../img/home/background-top.png") top center no-repeat;
   background-size: contain;
 
   @media (min-width: 1201px) {
-    background: url("../img/home/dots.svg") center 480px no-repeat,
-    url("../img/home/lines.svg") center 480px no-repeat,
-    url("../img/home/background-top.png") top center no-repeat;
+    background: url("../img/home/background-top.png") top center no-repeat;
     background-size: contain;
   }
 
   .mobile({
-    background: url("../img/home/mobile-dots2.png") center 2808px no-repeat,
-    url("../img/home/mobile-dots1.png") center 1107px no-repeat,
-    url("../img/home/mobile-background.png") top center no-repeat;
+    background: url("../img/home/mobile-background.png") top center no-repeat,
+    url("../img/home/mobile-dots2.png") center 2808px no-repeat,
+    url("../img/home/mobile-dots1.png") center 1107px no-repeat;
     background-size: contain;
   });
 
   position: absolute;
   top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 6144px;
+  z-index: -1;
+}
+
+.background-dots-block {
+  background: url("../img/home/dots.svg") center 480px no-repeat;
+  background-size: contain;
+
+  @media (min-width: 1201px) {
+    background: url("../img/home/dots.svg") center 480px no-repeat,
+    url("../img/home/lines.svg") center 480px no-repeat;
+    background-size: contain;
+  }
+
+  @media (min-width: 1440px) {
+    background: url("../img/home/dots.svg") center -320px no-repeat,
+    url("../img/home/lines.svg") center -320px no-repeat;
+    background-size: contain;
+  }
+
+  .mobile({
+    display: none;
+  });
+
+  position: absolute;
+  top: 50vw;
   left: 0;
   width: 100%;
   min-height: 6144px;
@@ -442,7 +467,7 @@ button:hover {
   }
 
   @media (min-width: 992px) {
-    height: 797px;
+    height: 50vw;
 
     .container {
       height: 1000px;

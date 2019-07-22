@@ -83,7 +83,6 @@ button:hover {
   }
 }
 .header {
-  height: 353px;
   position: relative;
 }
 .header-content h1 {
@@ -325,7 +324,7 @@ button:hover {
 .tabs {
   margin-left: auto;
   margin-right: auto;
-  margin-top: -79px;
+  margin-top: 140px;
   width: 1200px;
   max-width: 100%;
   border: 1px solid #EBF0F4;
@@ -443,6 +442,10 @@ button:hover {
   .tabs .nav-tabs > li > a {
     padding-top: 7px;
   }
+}
+.tabs .tab-pane {
+  padding-top: 100px;
+  margin-top: -100px;
 }
 #datasheet .datasheet {
   margin-top: 185px;
