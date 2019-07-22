@@ -63,9 +63,14 @@ body {
   min-height: 6144px;
   z-index: -1;
 }
+@media (max-width: 415px) {
+  .background-dots-block {
+    display: none;
+  }
+}
 @media (min-width: 1201px) {
   .background-dots-block {
-    background: url("../img/home/dots.svg") center 480px no-repeat, url("../img/home/lines.svg") center 480px no-repeat;
+    background: url("../img/home/dots.svg") center -21vw no-repeat, url("../img/home/lines.svg") center -21vw no-repeat;
     background-size: contain;
   }
 }
@@ -73,11 +78,6 @@ body {
   .background-dots-block {
     background: url("../img/home/dots.svg") center -320px no-repeat, url("../img/home/lines.svg") center -320px no-repeat;
     background-size: contain;
-  }
-}
-@media (max-width: 415px) {
-  .background-dots-block {
-    display: none;
   }
 }
 ul {
@@ -99,10 +99,20 @@ h1 {
   }
 }
 button:active {
-  filter: brightness(85%);
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
 }
 button:hover {
-  filter: brightness(90%);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+.preloader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: white;
+  z-index: 10000;
+  transition: opacity 0.5s;
 }
 .header {
   position: relative;
@@ -381,11 +391,17 @@ button:hover {
 }
 @media (max-width: 415px) {
   .header {
-    height: 712px;
+    height: 170vw;
+  }
+  .header .trial-container {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-44%);
   }
 }
 section.second {
-  padding-top: 140px;
+  padding-top: 10vw;
   margin-left: -2px;
 }
 @media (max-width: 415px) {
