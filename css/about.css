@@ -122,8 +122,9 @@ button:hover {
 }
 .header {
   position: relative;
-  height: 310px;
   margin-bottom: 56px;
+  height: 22vw;
+  min-height: 310px;
 }
 .header .container {
   margin-left: auto;
@@ -319,6 +320,7 @@ button:hover {
   .header {
     height: 227px;
     margin-bottom: 52px;
+    min-height: unset;
   }
   .header .container,
   .header .row,

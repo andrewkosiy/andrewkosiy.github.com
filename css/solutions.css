@@ -79,7 +79,8 @@ button:hover {
           filter: brightness(90%);
 }
 .header {
-  height: 353px;
+  height: 22vw;
+  min-height: 353px;
   position: relative;
 }
 .header-content {
@@ -302,6 +303,7 @@ button:hover {
 @media (max-width: 414px) {
   .header {
     height: 234px;
+    min-height: unset;
   }
 }
 .text {
