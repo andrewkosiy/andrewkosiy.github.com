@@ -27,7 +27,7 @@
         <section class="header">
             <div class="sticky-menu">
                 <div class="logo">
-                    <img src="img/logo-top.png" alt="Logo">
+                    <a href="/"><img src="img/logo-top.png" alt="Logo"></a>
                 </div>
                 <div class="row menu">
                     <ul class="header-menu">
@@ -65,9 +65,9 @@
                         <li class="header-resources active">
                             <div class="modals resources">
                                 <ul>
-                                    <li><a href="#" onclick="openTab('datasheet')">Datasheet</a></li>
-                                    <li><a href="#" onclick="openTab('news')">From The News</a></li>
-                                    <li><a href="#" onclick="openTab('integrations')">Integrations</a></li>
+                                    <li><a href="#datasheet" onclick="openTab('datasheet')">Datasheet</a></li>
+                                    <li><a href="#news" onclick="openTab('news')">From The News</a></li>
+                                    <li><a href="#integrations" onclick="openTab('integrations')">Integrations</a></li>
                                 </ul>
                             </div>
                             <a href="/resources.html">Resources</a>
@@ -82,7 +82,7 @@
                                     <li><a href="/contact.html">Contact Us</a></li>
                                 </ul>
                             </div>
-                            <a href="/about.html">Company</a>
+                            <p>Company</p>
                         </li>
                     </ul>
                     <button onclick="location.href='/contact.html'">Free trial</button>
@@ -141,8 +141,8 @@
 
                             <div class="col-md-6 datasheet-left">
                                 <img class="datasheet" src="img/resources/datasheet.png" alt="datasheet">
-                                <a class="download" href="#">Download this data sheet to learn more about Reposify and
-                                    our external surface management SaaS solution.</a>
+                                <p class="download">Download this data sheet to learn more about Reposify and
+                                    our external surface management SaaS solution.</p>
                             </div>
 
                             <div class="col-md-6 datasheet-form">
@@ -373,7 +373,7 @@
 
         <section class="footer">
             <div class="logo">
-                <img src="img/logo-bottom.png" alt="Logo">
+                <a href="/"><img src="img/logo-bottom.png" alt="Logo"></a>
             </div>
 
             <div class="footer-content">
@@ -403,25 +403,25 @@
                         <div class="col-md-2">
                             <ul class="resources">
                                 <li><h5><a href="/resources.html">Resources</a></h5></li>
-                                <li><a href="/resources.html#datasheet">Datasheet</a></li>
-                                <li><a href="/resources.html#news">From The News</a></li>
-                                <li><a href="/resources.html#integrations">Integrations</a></li>
+                                <li><a href="#datasheet" onclick="openTab('datasheet')">Datasheet</a></li>
+                                <li><a href="#news" onclick="openTab('news')">From The News</a></li>
+                                <li><a href="#integrations" onclick="openTab('integrations')">Integrations</a></li>
                             </ul>
                         </div>
 
                         <div class="col-md-2">
                             <ul class="solutions">
-                                <li><h5><a href="#">Support</a></h5></li>
-                                <li><a href="#">Contact Support</a></li>
-                                <li><a href="#">API Status</a></li>
-                                <li><a href="#">Github</a></li>
+                                <li><h5>Support</h5></li>
+                                <li><a href="/contact.html">Contact Support</a></li>
+                                <li><a href="https://status.reposify.com/" target="_blank">API Status</a></li>
+                                <li><a href="https://github.com/reposify/" target="_blank">Github</a></li>
                                 <li><a href="/security.html">Security</a></li>
                             </ul>
                         </div>
 
                         <div class="col-md-2">
                             <ul class="company">
-                                <li><h5><a href="/about.html">Company</a></h5></li>
+                                <li><h5>Company</h5></li>
                                 <li><a href="/about.html">About us</a></li>
                                 <li><a href="/events.html">Events</a></li>
                                 <li><a href="https://reposify.recruiterbox.com/" target="_blank">Careers</a></li>
@@ -465,7 +465,7 @@
 <div class="menu-block">
     <div class="mobile-menu" id="menu-root">
         <div class="logo">
-            <img src="img/logo-top.png" alt="Logo">
+            <a href="/"><img src="img/logo-top.png" alt="Logo"></a>
         </div>
 
         <button class="close">
@@ -713,9 +713,9 @@
 
         <div class="menu-list">
             <ul>
-                <li><a href="/resources.html#datasheet">Datasheet</a></li>
-                <li><a href="/resources.html#news">From The News</a></li>
-                <li><a href="/resources.html#integrations">Integrations</a></li>
+                <li><a href="#datasheet" onclick="openTab('datasheet'); hideAll();">Datasheet</a></li>
+                <li><a href="#news" onclick="openTab('news'); hideAll();">From The News</a></li>
+                <li><a href="#integrations" onclick="openTab('integrations'); hideAll();">Integrations</a></li>
             </ul>
         </div>
 
@@ -775,6 +775,7 @@
 <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 
 <script>
+  var hideAll;
   document.addEventListener("DOMContentLoaded", function () {
 
     var wrapper = document.getElementsByClassName("body-wrapper")[0];
@@ -788,10 +789,21 @@
     var hideMenu = function (id) {
       document.getElementById(id).classList.remove("opened");
       wrapper.classList.remove("no-scroll");
-      document.getElementsByClassName("menu-block")[0].classList.remove("opened");
     };
 
-    var hideAll = function () {
+    hideAll = function () {
+      hideMenu("menu-root");
+      hideMenu("menu-platform");
+      hideMenu("menu-resources");
+      hideMenu("menu-solutions");
+      hideMenu("menu-company");
+
+      setTimeout(function () {
+        document.getElementsByClassName("menu-block")[0].classList.remove("opened");
+      }, 600);
+    };
+
+    var closeMenu = function () {
       hideMenu("menu-root");
       hideMenu("menu-platform");
       hideMenu("menu-resources");
@@ -800,13 +812,13 @@
     };
 
     var openRoot = function () {
-      hideAll();
+      closeMenu();
       openMenu("menu-root");
     };
 
     var listListener = function (listenerId, menuId) {
       document.getElementById(listenerId).addEventListener("click", function () {
-        hideAll();
+        closeMenu();
         openMenu(menuId);
       });
     };
@@ -840,6 +852,16 @@
           stickyMenu.classList.remove("fixed");
         }
       }
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
     });
 
     var url = document.location.toString();

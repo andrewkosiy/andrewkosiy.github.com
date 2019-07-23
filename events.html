@@ -20,7 +20,7 @@
         <section class="header">
             <div class="sticky-menu">
                 <div class="logo">
-                    <img src="img/logo-top.png" alt="Logo">
+                    <a href="/"><img src="img/logo-top.png" alt="Logo"></a>
                 </div>
                 <div class="row menu">
                     <ul class="header-menu">
@@ -75,7 +75,7 @@
                                     <li><a href="/contact.html">Contact Us</a></li>
                                 </ul>
                             </div>
-                            <a href="/about.html">Company</a>
+                            <p>Company</p>
                         </li>
                     </ul>
                     <button onclick="location.href='/contact.html'">Free trial</button>
@@ -174,7 +174,7 @@
 
         <section class="footer">
             <div class="logo">
-                <img src="img/logo-bottom.png" alt="Logo">
+                <a href="/"><img src="img/logo-bottom.png" alt="Logo"></a>
             </div>
 
             <div class="footer-content">
@@ -212,17 +212,17 @@
 
                         <div class="col-md-2">
                             <ul class="solutions">
-                                <li><h5><a href="#">Support</a></h5></li>
-                                <li><a href="#">Contact Support</a></li>
-                                <li><a href="#">API Status</a></li>
-                                <li><a href="#">Github</a></li>
+                                <li><h5>Support</h5></li>
+                                <li><a href="/contact.html">Contact Support</a></li>
+                                <li><a href="https://status.reposify.com/" target="_blank">API Status</a></li>
+                                <li><a href="https://github.com/reposify/" target="_blank">Github</a></li>
                                 <li><a href="/security.html">Security</a></li>
                             </ul>
                         </div>
 
                         <div class="col-md-2">
                             <ul class="company">
-                                <li><h5><a href="/about.html">Company</a></h5></li>
+                                <li><h5>Company</h5></li>
                                 <li><a href="/about.html">About us</a></li>
                                 <li><a href="/events.html">Events</a></li>
                                 <li><a href="https://reposify.recruiterbox.com/" target="_blank">Careers</a></li>
@@ -269,7 +269,7 @@
 <div class="menu-block">
     <div class="mobile-menu" id="menu-root">
         <div class="logo">
-            <img src="img/logo-top.png" alt="Logo">
+            <a href="/"><img src="img/logo-top.png" alt="Logo"></a>
         </div>
 
         <button class="close">
@@ -588,7 +588,6 @@
     var hideMenu = function (id) {
       document.getElementById(id).classList.remove("opened");
       wrapper.classList.remove("no-scroll");
-      document.getElementsByClassName("menu-block")[0].classList.remove("opened");
     };
 
     var hideAll = function () {
@@ -597,16 +596,28 @@
       hideMenu("menu-resources");
       hideMenu("menu-solutions");
       hideMenu("menu-company");
+
+      setTimeout(function () {
+        document.getElementsByClassName("menu-block")[0].classList.remove("opened");
+      }, 600);
+    };
+
+    var closeMenu = function () {
+      hideMenu("menu-root");
+      hideMenu("menu-platform");
+      hideMenu("menu-resources");
+      hideMenu("menu-solutions");
+      hideMenu("menu-company");
     };
 
     var openRoot = function () {
-      hideAll();
+      closeMenu();
       openMenu("menu-root");
     };
 
     var listListener = function (listenerId, menuId) {
       document.getElementById(listenerId).addEventListener("click", function () {
-        hideAll();
+        closeMenu();
         openMenu(menuId);
       });
     };
