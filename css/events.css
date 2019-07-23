@@ -274,7 +274,7 @@ button:hover {
 @media (max-width: 776px) {
   .header .sticky-menu {
     height: 60px;
-    transition: background 0.2s;
+    transition: background 0.5s;
   }
 }
 @media (max-width: 776px) {

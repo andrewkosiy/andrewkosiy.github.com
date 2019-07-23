@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Reposify</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-3.7.7.min.css">
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/contact.css">
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600,700&display=swap" rel="stylesheet">
@@ -127,14 +127,20 @@
                                 <div class="col-md-6">
                                     <div class="first_name form-input">
                                         <legend>First Name*</legend>
-                                        <input type="text" placeholder="Your name" class="name" required>
+                                        <input type="text" placeholder="Your name" class="name"
+                                               name="given-name" id="given-name" pattern="[a-zA-Z]+"
+                                               oninvalid="setCustomValidity('Please use only Latin letters')"
+                                               onchange="try{setCustomValidity('')}catch(e){}" required>
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <div class="last_name form-input">
                                         <legend>Last Name*</legend>
-                                        <input type="text" placeholder="Your last name" class="name" required>
+                                        <input type="text" placeholder="Your last name" class="name"
+                                               name="family-name" id="family-name" pattern="[a-zA-Z]+"
+                                               oninvalid="setCustomValidity('Please use only Latin letters')"
+                                               onchange="try{setCustomValidity('')}catch(e){}" required>
                                     </div>
                                 </div>
                             </div>
@@ -160,7 +166,7 @@
                             </div>
 
                             <div class="form-input checkbox">
-                                <input type="checkbox" id="agree" name="agree">
+                                <input type="checkbox" id="agree" name="agree" required>
                                 <label for="agree">I agree to receive information from Reposify</label>
                             </div>
 
@@ -427,8 +433,6 @@
                 </li>
             </ul>
         </div>
-
-        <button class="trial-button" onclick="location.href='/contact.html'">Free trial</button>
     </div>
     <div class="mobile-menu" id="menu-platform">
         <button class="back">
@@ -476,8 +480,6 @@
                 <li><a href="/platform.html#features">Product Features</a></li>
             </ul>
         </div>
-
-        <button class="trial-button" onclick="location.href='/contact.html'">Free trial</button>
     </div>
     <div class="mobile-menu" id="menu-solutions">
         <button class="back">
@@ -527,8 +529,6 @@
                 <li><a href="/industries/insurance.html">Insurance</a></li>
             </ul>
         </div>
-
-        <button class="trial-button" onclick="location.href='/contact.html'">Free trial</button>
     </div>
     <div class="mobile-menu" id="menu-resources">
         <button class="back">
@@ -573,8 +573,6 @@
                 <li><a href="/resources.html#integrations">Integrations</a></li>
             </ul>
         </div>
-
-        <button class="trial-button" onclick="location.href='/contact.html'">Free trial</button>
     </div>
     <div class="mobile-menu" id="menu-company">
         <button class="back">
@@ -620,8 +618,6 @@
                 <li><a href="/contact.html">Contact Us</a></li>
             </ul>
         </div>
-
-        <button class="trial-button" onclick="location.href='/contact.html'">Free trial</button>
     </div>
 </div>
 
@@ -693,7 +689,8 @@
 
     var stickyMenu = document.getElementsByClassName("sticky-menu")[0];
     wrapper.addEventListener("scroll", function () {
-      if (wrapper.scrollTop > 200) {
+      var top = window.innerWidth >= 776 ? 200 : 50;
+      if (wrapper.scrollTop > top) {
         if (!stickyMenu.classList.contains("fixed")) {
           stickyMenu.classList.add("fixed");
         }

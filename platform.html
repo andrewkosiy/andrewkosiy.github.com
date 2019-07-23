@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Reposify</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-3.7.7.min.css">
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/platform.css">
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600,700&display=swap" rel="stylesheet">
@@ -601,7 +601,7 @@
             </ul>
         </div>
 
-        <button class="trial-button" onclick="location.href='/contact.html'">Free trial</button>
+
     </div>
     <div class="mobile-menu" id="menu-platform">
         <button class="back">
@@ -650,7 +650,7 @@
             </ul>
         </div>
 
-        <button class="trial-button" onclick="location.href='/contact.html'">Free trial</button>
+
     </div>
     <div class="mobile-menu" id="menu-solutions">
         <button class="back">
@@ -701,7 +701,7 @@
             </ul>
         </div>
 
-        <button class="trial-button" onclick="location.href='/contact.html'">Free trial</button>
+
     </div>
     <div class="mobile-menu" id="menu-resources">
         <button class="back">
@@ -747,7 +747,7 @@
             </ul>
         </div>
 
-        <button class="trial-button" onclick="location.href='/contact.html'">Free trial</button>
+
     </div>
     <div class="mobile-menu" id="menu-company">
         <button class="back">
@@ -794,7 +794,7 @@
             </ul>
         </div>
 
-        <button class="trial-button" onclick="location.href='/contact.html'">Free trial</button>
+
     </div>
 </div>
 
@@ -867,7 +867,8 @@
 
     var stickyMenu = document.getElementsByClassName("sticky-menu")[0];
     wrapper.addEventListener("scroll", function () {
-      if (wrapper.scrollTop > 200) {
+      var top = window.innerWidth >= 776 ? 200 : 50;
+      if (wrapper.scrollTop > top) {
         if (!stickyMenu.classList.contains("fixed")) {
           stickyMenu.classList.add("fixed");
         }
