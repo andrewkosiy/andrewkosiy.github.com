@@ -1,0 +1,18 @@
+<svg width="357px" height="397px" viewBox="0 0 357 397" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\
+    <defs>\
+        <path d="M980.5,3926.1547 L1125.02336,4009.5953 C1126.26096,4010.30983 1127.02336,4011.63034 1127.02336,4013.0594 L1127.02336,4179.9406 C1127.02336,4181.36966 1126.26096,4182.69017 1125.02336,4183.4047 L980.5,4266.8453 C979.262396,4267.55983 977.737604,4267.55983 976.5,4266.8453 L831.976643,4183.4047 C830.739039,4182.69017 829.976643,4181.36966 829.976643,4179.9406 L829.976643,4013.0594 C829.976643,4011.63034 830.739039,4010.30983 831.976643,4009.5953 L976.5,3926.1547 C977.737604,3925.44017 979.262396,3925.44017 980.5,3926.1547 Z" id="path-1"></path>\
+        <filter x="-7.6%" y="-11.8%" width="115.2%" height="128.2%" filterUnits="objectBoundingBox" id="filter-2">\
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>\
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>\
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>\
+        </filter>\
+    </defs>\
+    <g id="New-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\
+        <g id="Platform" transform="translate(-800.000000, -3906.000000)">\
+            <g id="Polygon-Copy-34">\
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>\
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>\
+            </g>\
+        </g>\
+    </g>\
+</svg>
