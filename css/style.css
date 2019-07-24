@@ -1232,7 +1232,7 @@ section.solutions button {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
+  bottom: 5px;
   left: 0;
   background: url("../img/home/integrate-left-dots.png") left bottom no-repeat, url("../img/home/integrate-right-dots.png") right bottom no-repeat;
   background-size: auto;
