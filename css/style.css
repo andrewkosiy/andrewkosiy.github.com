@@ -50,7 +50,7 @@ body {
 }
 .background-lines {
   position: absolute;
-  top: calc(50vw + 45px);
+  top: calc(50vw + 21px);
   left: 0;
   width: 100%;
   height: calc(100% - 50vw - 45px);
