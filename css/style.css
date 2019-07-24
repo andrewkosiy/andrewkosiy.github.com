@@ -781,7 +781,7 @@ section.world .polygon:nth-child(4) .pre-header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 60vw;
+    height: 62vw;
   }
   section.world .row {
     padding-top: 0;
@@ -1129,7 +1129,7 @@ section.solutions button {
   margin-top: 193px;
   padding-top: 100px;
   position: relative;
-  background: url("../img/home/integrate-background.svg") center no-repeat;
+  background: url("../img/home/integrate-background.png") center no-repeat;
   background-size: cover;
 }
 .integrate h2 {
@@ -1234,8 +1234,6 @@ section.solutions button {
   position: absolute;
   bottom: 5px;
   left: 0;
-  background: url("../img/home/integrate-left-dots.png") left bottom no-repeat, url("../img/home/integrate-right-dots.png") right bottom no-repeat;
-  background-size: auto;
 }
 @media (max-width: 415px) {
   .integrate .integrate-background {
@@ -1261,6 +1259,8 @@ section.solutions button {
     margin-top: 72px;
     padding-top: 50px;
     padding-bottom: 56px;
+    background: url("../img/home/integrate-background.svg") center no-repeat;
+    background-size: cover;
   }
   .integrate h2 {
     font-size: 32px;
