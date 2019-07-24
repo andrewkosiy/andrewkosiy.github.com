@@ -304,6 +304,11 @@ button:hover {
     display: block;
   }
 }
+@-moz-document url-prefix() {
+  .header .sticky-menu {
+    width: 100%;
+  }
+}
 .box {
   margin-left: auto;
   margin-right: auto;

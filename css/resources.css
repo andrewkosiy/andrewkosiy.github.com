@@ -345,6 +345,11 @@ button:hover {
     display: block;
   }
 }
+@-moz-document url-prefix() {
+  .header .sticky-menu {
+    width: 100%;
+  }
+}
 .tabs {
   margin: 82px auto 100px auto;
   width: 1200px;

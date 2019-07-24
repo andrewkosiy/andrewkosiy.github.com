@@ -361,6 +361,11 @@ button:hover {
     display: block;
   }
 }
+@-moz-document url-prefix() {
+  .header .sticky-menu {
+    width: 100%;
+  }
+}
 .info h2 {
   margin-bottom: 39px;
 }

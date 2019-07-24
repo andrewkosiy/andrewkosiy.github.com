@@ -304,6 +304,11 @@ button:hover {
     display: block;
   }
 }
+@-moz-document url-prefix() {
+  .header .sticky-menu {
+    width: 100%;
+  }
+}
 .box {
   max-width: 926px;
   border: 1px solid #ebf0f4;

@@ -311,6 +311,11 @@ button:hover {
     display: block;
   }
 }
+@-moz-document url-prefix() {
+  .header .sticky-menu {
+    width: 100%;
+  }
+}
 .second {
   max-width: 1138px;
   margin-left: auto;

@@ -319,6 +319,11 @@ button:hover {
     min-height: unset;
   }
 }
+@-moz-document url-prefix() {
+  .header .sticky-menu {
+    width: 100%;
+  }
+}
 .text {
   padding-top: 14px;
 }

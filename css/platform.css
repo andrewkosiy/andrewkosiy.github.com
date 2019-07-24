@@ -325,6 +325,11 @@ button:hover {
     height: 227px;
   }
 }
+@-moz-document url-prefix() {
+  .header .sticky-menu {
+    width: 100%;
+  }
+}
 .second {
   position: relative;
 }

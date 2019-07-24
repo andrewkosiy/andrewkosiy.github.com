@@ -437,6 +437,11 @@ button:hover {
     transform: translateX(-44%);
   }
 }
+@-moz-document url-prefix() {
+  .header .sticky-menu {
+    width: 100%;
+  }
+}
 section.second {
   padding-top: calc(8vw + 45px);
   margin-left: -2px;
