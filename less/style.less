@@ -55,15 +55,11 @@ body {
 }
 
 .background-block {
-  background: url("../img/home/background-top.png") top center no-repeat;
-  background-size: contain;
-
-  @media (min-width: 1201px) {
-    background: url("../img/home/background-top.png") top center no-repeat;
-    background-size: contain;
-  }
-
   .mobile({
+    #lottie {
+      display: none;
+    }
+
     background: url("../img/home/mobile-background.png") top center no-repeat,
     url("../img/mobile-dots2.png") left 2808px no-repeat,
     url("../img/mobile-dots1.png") right 1107px no-repeat;
@@ -169,7 +165,7 @@ button:hover {
     .small({
       &.header-content {
         p {
-          max-width: 600px;
+          max-width: 500px;
         }
       }
     });
@@ -470,6 +466,22 @@ button:hover {
     @media (max-width: 776px) {
       height: 60px;
       transition: background 0.5s;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .container {
+      padding-top: 120px;
+      margin-left: 100px;
+
+      h1 {
+        font-size: 44px;
+        line-height: 52px;
+      }
+
+      p {
+        font-size: 15px;
+      }
     }
   }
 

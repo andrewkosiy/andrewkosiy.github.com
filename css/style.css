@@ -32,8 +32,6 @@ body {
   height: auto;
 }
 .background-block {
-  background: url("../img/home/background-top.png") top center no-repeat;
-  background-size: contain;
   position: absolute;
   top: 0;
   left: 0;
@@ -41,16 +39,13 @@ body {
   height: 100%;
   z-index: -1;
 }
-@media (min-width: 1201px) {
-  .background-block {
-    background: url("../img/home/background-top.png") top center no-repeat;
-    background-size: contain;
-  }
-}
 @media (max-width: 415px) {
   .background-block {
     background: url("../img/home/mobile-background.png") top center no-repeat, url("../img/mobile-dots2.png") left 2808px no-repeat, url("../img/mobile-dots1.png") right 1107px no-repeat;
     background-size: contain;
+  }
+  .background-block #lottie {
+    display: none;
   }
 }
 .background-lines {
@@ -140,7 +135,7 @@ button:hover {
 }
 @media (max-width: 992px) {
   .header .container.header-content p {
-    max-width: 600px;
+    max-width: 500px;
   }
 }
 .header .row {
@@ -382,6 +377,19 @@ button:hover {
   .header .sticky-menu {
     height: 60px;
     transition: background 0.5s;
+  }
+}
+@media (max-width: 1200px) {
+  .header .container {
+    padding-top: 120px;
+    margin-left: 100px;
+  }
+  .header .container h1 {
+    font-size: 44px;
+    line-height: 52px;
+  }
+  .header .container p {
+    font-size: 15px;
   }
 }
 @media (max-width: 776px) {
