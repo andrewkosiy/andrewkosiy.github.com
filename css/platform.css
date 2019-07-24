@@ -273,7 +273,7 @@ button:hover {
 }
 .header .sticky-menu {
   position: fixed;
-  width: 100%;
+  width: calc(100% - 12px);
   height: 70px;
   z-index: 999;
   transition: background 1s;
@@ -285,6 +285,11 @@ button:hover {
   .header .sticky-menu {
     height: 60px;
     transition: background 0.5s;
+  }
+}
+@media (min-width: 1441px) {
+  .header {
+    height: 26vw;
   }
 }
 @media (max-width: 776px) {
@@ -602,6 +607,10 @@ button:hover {
   text-align: center;
   text-transform: uppercase;
   padding-top: 9px;
+}
+.features .container {
+  z-index: 1;
+  position: relative;
 }
 @media (min-width: 992px) {
   .features .container {
