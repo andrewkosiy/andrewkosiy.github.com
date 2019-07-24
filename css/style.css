@@ -29,7 +29,7 @@ body {
 .scrollable-content {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .background-block {
   background: url("../img/home/background-top.png") top center no-repeat;
@@ -38,7 +38,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 6144px;
+  height: 100%;
   z-index: -1;
 }
 @media (min-width: 1201px) {
@@ -49,13 +49,31 @@ body {
 }
 @media (max-width: 415px) {
   .background-block {
-    background: url("../img/home/mobile-background.png") top center no-repeat, url("../img/home/mobile-dots2.png") center 2808px no-repeat, url("../img/home/mobile-dots1.png") center 1107px no-repeat;
+    background: url("../img/home/mobile-background.png") top center no-repeat, url("../img/mobile-dots2.png") left 2808px no-repeat, url("../img/mobile-dots1.png") right 1107px no-repeat;
     background-size: contain;
   }
 }
+.background-lines {
+  position: absolute;
+  top: calc(50vw + 45px);
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50vw - 45px);
+  z-index: -1;
+}
+@media (min-width: 1201px) {
+  .background-lines {
+    background: url("../img/home/lines.svg") center -21vw no-repeat;
+    background-size: contain;
+  }
+}
+@media (min-width: 1440px) {
+  .background-lines {
+    background: url("../img/home/lines.svg") center -320px no-repeat;
+    background-size: auto;
+  }
+}
 .background-dots-block {
-  background: url("../img/home/dots.svg") center 480px no-repeat;
-  background-size: contain;
   position: absolute;
   top: 50vw;
   left: 0;
@@ -63,21 +81,9 @@ body {
   min-height: 6144px;
   z-index: -1;
 }
-@media (max-width: 415px) {
+@media (min-width: 1000px) {
   .background-dots-block {
-    display: none;
-  }
-}
-@media (min-width: 1201px) {
-  .background-dots-block {
-    background: url("../img/home/dots.svg") center -21vw no-repeat, url("../img/home/lines.svg") center -21vw no-repeat;
-    background-size: contain;
-  }
-}
-@media (min-width: 1440px) {
-  .background-dots-block {
-    background: url("../img/home/dots.svg") center -320px no-repeat, url("../img/home/lines.svg") center -320px no-repeat;
-    background-size: contain;
+    background: url("../img/home/left-dots.png") left -280px no-repeat, url("../img/home/right-dots.png") right 0 no-repeat;
   }
 }
 ul {
@@ -424,7 +430,7 @@ button:hover {
   }
 }
 section.second {
-  padding-top: 10vw;
+  padding-top: calc(8vw + 45px);
   margin-left: -2px;
 }
 @media (max-width: 415px) {
@@ -769,6 +775,18 @@ section.world .polygon:nth-child(4) .pre-header {
   width: 100%;
   top: -48px;
 }
+@media (min-width: 1441px) {
+  section.world {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60vw;
+  }
+  section.world .row {
+    padding-top: 0;
+  }
+}
 @media (max-width: 415px) {
   section.world {
     margin-top: 0;
@@ -1110,7 +1128,8 @@ section.solutions button {
 .integrate {
   margin-top: 193px;
   padding-top: 100px;
-  background: url("../img/home/integrate-background.png") center no-repeat;
+  position: relative;
+  background: url("../img/home/integrate-background.svg") center no-repeat;
   background-size: cover;
 }
 .integrate h2 {
@@ -1209,14 +1228,39 @@ section.solutions button {
   text-transform: uppercase;
   border: none;
 }
+.integrate .integrate-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/home/integrate-left-dots.png") left bottom no-repeat, url("../img/home/integrate-right-dots.png") right bottom no-repeat;
+  background-size: auto;
+}
+@media (max-width: 415px) {
+  .integrate .integrate-background {
+    background: url("../img/mobile-dots3.png") center 625px no-repeat;
+    background-size: contain;
+  }
+}
+@media (min-width: 1441px) {
+  .integrate {
+    background-size: contain;
+    height: 55vw;
+  }
+  .integrate .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
 @media (max-width: 415px) {
   .integrate {
     height: unset;
     margin-top: 72px;
     padding-top: 50px;
     padding-bottom: 56px;
-    background: url("../img/home/mobile-dots3.png") center 625px no-repeat, url("../img/home/mobile-integrate-background.svg") center no-repeat;
-    background-size: cover;
   }
   .integrate h2 {
     font-size: 32px;

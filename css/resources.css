@@ -1,6 +1,5 @@
 body {
   font-family: 'Rajdhani', sans-serif;
-  background: url("../img/resources/dots.png") left 553px no-repeat;
 }
 .body-wrapper {
   padding: 0;
@@ -48,10 +47,23 @@ body {
   height: 100%;
   z-index: -1;
 }
-@media (max-width: 415px) {
+@media (max-width: 600px) {
   .background-block {
-    background: url(../img/resources/mobile-background.png) top no-repeat;
+    background: url(../img/resources/mobile-background.png) top no-repeat, url("../img/mobile-dots2.png") left 2808px no-repeat, url("../img/mobile-dots1.png") right 1107px no-repeat;
     background-size: contain;
+  }
+}
+.background-dots-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+@media (min-width: 1000px) {
+  .background-dots-block {
+    background: url("../img/resources/left-dots.png") left 553px no-repeat;
   }
 }
 ul {

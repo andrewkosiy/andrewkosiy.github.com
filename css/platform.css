@@ -1,7 +1,5 @@
 body {
   font-family: 'Rajdhani', sans-serif;
-  background: url("../img/platform/dots1.png") right 357px no-repeat, url("../img/platform/dots2.png") left 264px no-repeat, url("../img/platform/dots3.png") right 924px no-repeat, url("../img/platform/dots4.png") left 1564px no-repeat;
-  background-size: auto;
 }
 .body-wrapper {
   padding: 0;
@@ -31,7 +29,7 @@ body {
 .scrollable-content {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .background-block {
   background: url("../img/background.png") top center no-repeat;
@@ -45,8 +43,21 @@ body {
 }
 @media (max-width: 415px) {
   .background-block {
-    background: url("../img/events/mobile-dots2.png") -34px 2130px no-repeat, url("../img/events/mobile-dots1.png") -480px 1032px no-repeat, url("../img/events/mobile-background.png") top center no-repeat;
+    background: url("../img/events/mobile-background.png") top center no-repeat, url("../img/mobile-dots2.png") left 2808px no-repeat, url("../img/mobile-dots1.png") right 1107px no-repeat;
     background-size: contain;
+  }
+}
+.background-dots-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+@media (min-width: 1000px) {
+  .background-dots-block {
+    background: url("../img/platform/left-dots.png") left 250px no-repeat, url("../img/platform/right-dots.png") right 350px no-repeat;
   }
 }
 ul {
@@ -447,6 +458,7 @@ button:hover {
 }
 .block .block4 {
   margin-top: 110px;
+  margin-bottom: 100px;
 }
 .block .block4 p {
   width: 420px;
@@ -566,7 +578,6 @@ button:hover {
   }
 }
 .features {
-  background: url("../img/platform/dots5.png") right top no-repeat;
   background-color: #EAF3FB;
   margin-top: 141px;
   padding-top: 64px;
@@ -860,6 +871,14 @@ button:hover {
   padding-top: 5px;
   border: none;
 }
+.features-background {
+  position: absolute;
+  top: -400px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/platform/features-right-dots.png") right top no-repeat;
+}
 @media (max-width: 1250px) {
   .features .polygons {
     transform: scale(0.8);
@@ -869,6 +888,13 @@ button:hover {
   .features {
     padding-top: 77px;
     padding-left: 15px;
+    margin-top: 0;
+  }
+  .features-background {
+    position: absolute;
+    top: -470px;
+    left: 0;
+    background-image: none;
   }
   .features .container {
     max-width: 375px;

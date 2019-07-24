@@ -6,15 +6,6 @@
 
 body {
   font-family: 'Rajdhani', sans-serif;
-  background: url("../img/solutions/dots4.png") right 1796px no-repeat,
-  url("../img/solutions/dots3.png") left 917px no-repeat,
-  url("../img/solutions/dots2.png") right 250px no-repeat,
-  url("../img/solutions/dots1.png") left 352px no-repeat;
-
-  .mobile ({
-    background: url("../img/terms/mobile-dots2.png") -33px 2130px no-repeat,
-      url("../img/terms/mobile-dots1.png") -450px 1032px no-repeat;
-  });
 }
 
 .body-wrapper {
@@ -50,17 +41,33 @@ body {
 .scrollable-content {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .background-block {
   background: url("../img/background.png") top center no-repeat;
   background-size: contain;
 
-  .mobile({
-    background: url("../img/terms/mobile-background.png") top center no-repeat;
+  @media (max-width: 600px) {
+    background: url("../img/terms/mobile-background.png") top center no-repeat,
+    url("../img/mobile-dots2.png") left 2808px no-repeat,
+    url("../img/mobile-dots1.png") right 1107px no-repeat;;
     background-size: contain;
-  });
+  };
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-dots-block {
+  @media (min-width: 1000px) {
+    background: url("../img/solutions/right-dots.png") right 250px no-repeat,
+    url("../img/solutions/left-dots.png") left 352px no-repeat;
+  }
 
   position: absolute;
   top: 0;
@@ -744,6 +751,18 @@ button:hover {
       letter-spacing: -0.07px;
       line-height: 40px;
       text-align: center;
+    }
+  }
+
+  &-background {
+    position: absolute;
+    top: -630px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    @media (min-width: 1000px) {
+      background: url("../img/solutions/industries-right-dots.png") right top no-repeat;
     }
   }
 
