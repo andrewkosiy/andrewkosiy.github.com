@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
+    <channel>
+        <title>estore.ua</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <link>https://estore.ua/</link>
+        <item>
+            <g:id>120332</g:id>
+            <g:title>Наушники Apple AirPods (MMEF2)</g:title>
+            <g:description>Процессор Apple W1
+                Режим разговора До 2 ч
+                Интерфейсы Bluetooth
+                Вес, г 4 (каждый)
+                Другие функции Встроенный в наушник микрофон, Регулировка громкости, Контроль звонков
+
+                Цена действует только при условии заказа на сайте. Стоимость в розничных магазинах может отличаться</g:description>
+            <g:link>https://estore.ua/naushniki-apple-airpods-mme-f2/</g:link>
+            <g:image_link>https://estore.ua/media/catalog/product/m/m/mmef2-2-2.jpeg</g:image_link>
+            <g:additional_image_link>https://estore.ua/media/catalog/product/2/6/262423_2.jpg</g:additional_image_link>
+            <g:additional_image_link>https://estore.ua/media/catalog/product/m/m/mmef2_av2-2.jpeg</g:additional_image_link>
+            <g:additional_image_link>https://estore.ua/media/catalog/product/2/6/262423_4.jpg</g:additional_image_link>
+            <g:brand>Apple</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>in stock</g:availability>
+            <g:price>5499.00 UAH</g:price>
+            <g:sale_price>4215.00 UAH</g:sale_price>
+            <g:google_product_category>505771</g:google_product_category>
+            <g:custom_label_0>Наушники</g:custom_label_0>
+            <g:custom_label_1>2000-5000</g:custom_label_1>
+        </item>
+    </channel>
+</rss>
